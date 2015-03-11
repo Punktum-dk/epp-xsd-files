@@ -15,7 +15,7 @@
 
     
     <annotation>
-        <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v1.3</documentation>
+        <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v1.4</documentation>
     </annotation>
     <!--
         Child elements found in EPP commands.
