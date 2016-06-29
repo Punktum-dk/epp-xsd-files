@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-1.4"
-        xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-1.4"
+<schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-1.5"
+        xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-1.5"
         xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
         xmlns="http://www.w3.org/2001/XMLSchema"
         elementFormDefault="qualified">
