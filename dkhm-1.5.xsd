@@ -2,6 +2,7 @@
 <schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-1.5"
         xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-1.5"
         xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
+        xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"
         xmlns="http://www.w3.org/2001/XMLSchema"
         elementFormDefault="qualified">
     <!--
@@ -9,7 +10,7 @@
     -->
     
     <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
-    <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
+    <import namespace="urn:ietf:params:xml:ns:contact-1.0" schemaLocation="contact-1.0.xsd"/>
     <import namespace="urn:dkhm:params:xml:ns:dkhm-1.1" schemaLocation="dkhm-1.1.xsd"/>
     <import namespace="urn:dkhm:params:xml:ns:dkhm-1.2" schemaLocation="dkhm-1.2.xsd"/>
     <import namespace="urn:dkhm:params:xml:ns:dkhm-1.3" schemaLocation="dkhm-1.3.xsd"/>
@@ -25,6 +26,8 @@
     <element name="userType" type="dkhm:userType" />
     <element name="EAN" type="dkhm:EAN" />
     <element name="CVR" type="dkhm:CVR" />
+    <element name="mobilephone" type="dkhm:mobilephone" />
+    <element name="attention" type="dkhm:attention" />   
     <element name="pnumber" type="dkhm:pnumber" />
     <element name="contact" type="dkhm:contact" />
     <element name="trackingNo" type="dkhm:trackingNo" />
@@ -38,6 +41,16 @@
     <!--
         Utility types.
     -->
+
+    <!-- custom: contact mobilephone -->
+    <simpleType name="mobilephone">
+        <restriction base="contact:e164Type" />
+    </simpleType>
+
+    <!-- custom: contact attention -->
+    <simpleType name="attention">
+        <restriction base="contact:postalLineType" />
+    </simpleType>
 
     <!-- custom: host contact -->
     <simpleType name="contact">
