@@ -8,26 +8,27 @@
     <!--
     Import common element types.
     -->
-    
+
     <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
     <import namespace="urn:ietf:params:xml:ns:contact-1.0" schemaLocation="contact-1.0.xsd"/>
     <import namespace="urn:dkhm:params:xml:ns:dkhm-1.1" schemaLocation="dkhm-1.1.xsd"/>
     <import namespace="urn:dkhm:params:xml:ns:dkhm-1.2" schemaLocation="dkhm-1.2.xsd"/>
     <import namespace="urn:dkhm:params:xml:ns:dkhm-1.3" schemaLocation="dkhm-1.3.xsd"/>
     <import namespace="urn:dkhm:params:xml:ns:dkhm-1.4" schemaLocation="dkhm-1.4.xsd"/>
-    
+
     <annotation>
         <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v1.5</documentation>
     </annotation>
     <!--
         Child elements found in EPP commands.
     -->
-    
+
     <element name="userType" type="dkhm:userType" />
     <element name="EAN" type="dkhm:EAN" />
     <element name="CVR" type="dkhm:CVR" />
     <element name="mobilephone" type="dkhm:mobilephone" />
-    <element name="attention" type="dkhm:attention" />   
+    <element name="attention" type="dkhm:attention" />
+    <element name="secondaryEmail" type="dkhm:secondaryEmail" />
     <element name="pnumber" type="dkhm:pnumber" />
     <element name="contact" type="dkhm:contact" />
     <element name="trackingNo" type="dkhm:trackingNo" />
@@ -37,41 +38,48 @@
     <element name="contact_validated" type="dkhm:contact_validated" />
     <element name="registrant_validated" type="dkhm:registrant_validated" />
     <element name="requestedNsAdmin" type="dkhm:requestedNsAdmin" />
-    
+
     <!--
         Utility types.
     -->
 
     <!-- custom: contact mobilephone -->
-    <simpleType name="mobilephone">
-        <restriction base="contact:e164Type" />
-    </simpleType>
+    <complexType name="mobilephone">
+        <sequence>
+            <element name="mobilephone" type="contact:e164Type" minOccurs="0"/>
+        </sequence>
+    </complexType>
 
     <!-- custom: contact attention -->
     <simpleType name="attention">
         <restriction base="contact:postalLineType" />
     </simpleType>
 
+    <!-- custom: contact secondary email -->
+    <simpleType name="secondaryEmail">
+        <restriction base="eppcom:minTokenType" />
+    </simpleType>
+
     <!-- custom: host contact -->
     <simpleType name="contact">
         <restriction base="eppcom:clIDType" />
     </simpleType>
-    
+
     <!-- custom: trackingNo  -->
     <simpleType name="trackingNo">
         <restriction base="token" />
     </simpleType>
-    
+
     <!-- custom: contact_validated  -->
     <simpleType name="contact_validated">
         <restriction base="token" />
     </simpleType>
-    
+
     <!-- custom: registrant_validated  -->
     <simpleType name="registrant_validated">
         <restriction base="token" />
     </simpleType>
-    
+
     <!-- custom: domain_confirmed  -->
     <simpleType name="domain_confirmed">
         <restriction base="token" />
