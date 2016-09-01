@@ -45,9 +45,9 @@
 
     <!-- custom: contact mobilephone -->
     <complexType name="mobilephone">
-        <sequence>
-            <element name="mobilephone" type="contact:e164Type" minOccurs="0"/>
-        </sequence>
+        <complexContent>
+            <extension base="contact:e164Type"/>
+        </complexContent>
     </complexType>
 
     <!-- custom: contact attention -->
