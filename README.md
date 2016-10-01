@@ -6,6 +6,7 @@
     - [XSD file references](#xsd-file-references)
     - [XSD files](#xsd-files)
     - [XSD History](#xsd-history)
+        - [2.0](#20)
         - [1.6](#16)
         - [1.5](#15)
         - [1.4](#14)
@@ -47,12 +48,18 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 * dkhm-1.4.xsd, DK Hostmaster EPP extensions version 1.4
 * dkhm-1.5.xsd, DK Hostmaster EPP extensions version 1.5
 * dkhm-1.6.xsd, DK Hostmaster EPP extensions version 1.6
+* dkhm-2.0.xsd, DK Hostmaster EPP extensions version 2.0
 * epp.xsd (a collection files for easier test, validation and maintenance)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
 
 <a name="xsd-history"></a>
 ## XSD History
+
+<a name="20"></a>
+### 2.0
+
+  * Official release of changes proposed in revisions 1.5 and 1.6
 
 <a name="16"></a>
 ### 1.6
