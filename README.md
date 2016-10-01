@@ -16,7 +16,7 @@ The current actively used XSD file is indicated in the [EPP service specificatio
 <a name="xsd-file-references"></a>
 ## XSD file references
 
-Please note that the following files haev been lifted from their respective RFCs. These files are copyrighted 
+Please note that the following files have been lifted from their respective RFCs. These files are copyrighted 
 by their respective authors, please refer to the RFCs for more information.
 
 * contact-1.0.xsd [RFC 5733](http://datatracker.ietf.org/doc/rfc5733/)
