@@ -3,17 +3,17 @@
 <!-- MarkdownTOC depth=4 -->
 
 - [XSD files for the DK Hostmaster EPP service](#xsd-files-for-the-dk-hostmaster-epp-service)
-    - [XSD file references](#xsd-file-references)
-    - [XSD files](#xsd-files)
-    - [XSD History](#xsd-history)
-        - [2.0](#20)
-        - [1.6](#16)
-        - [1.5](#15)
-        - [1.4](#14)
-        - [1.3](#13)
-        - [1.2](#12)
-        - [1.1](#11)
-        - [1.0](#10)
+  - [XSD file references](#xsd-file-references)
+  - [XSD files](#xsd-files)
+  - [XSD History](#xsd-history)
+    - [2.0](#20)
+    - [1.6](#16)
+    - [1.5](#15)
+    - [1.4](#14)
+    - [1.3](#13)
+    - [1.2](#12)
+    - [1.1](#11)
+    - [1.0](#10)
 
 <!-- /MarkdownTOC -->
 
@@ -65,7 +65,7 @@ The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/e
 ### 1.6
 
   * Development use only
-  * Introduction of `requestedNsAdmin` for update host and create host
+  * Introduction of `dkhm:requestedNsAdmin` for update host and create host
 
 <a name="15"></a>
 ### 1.5
