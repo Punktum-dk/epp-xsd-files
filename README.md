@@ -1,11 +1,17 @@
 # epp-xsd-files
 
-<!-- MarkdownTOC -->
+<!-- MarkdownTOC depth=4 -->
 
 - [XSD files for the DK Hostmaster EPP service](#xsd-files-for-the-dk-hostmaster-epp-service)
     - [XSD file references](#xsd-file-references)
     - [XSD files](#xsd-files)
     - [XSD History](#xsd-history)
+        - [1.5](#15)
+        - [1.4](#14)
+        - [1.3](#13)
+        - [1.2](#12)
+        - [1.1](#11)
+        - [1.0](#10)
 
 <!-- /MarkdownTOC -->
 
@@ -46,17 +52,20 @@ The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/e
 <a name="xsd-history"></a>
 ## XSD History
 
+<a name="15"></a>
 ### 1.5
 
   * Development use only
   * Introduction of `dkhm:mobilephone`
   * Introduction of `dkhm:secondaryEmail`
 
+<a name="14"></a>
 ### 1.4
 
   * EPP Service version 1.3.X
   * Introduction of `dkhm:pnumber` for production unit number information for create contact
 
+<a name="13"></a>
 ### 1.3
 
   * EPP Service version 1.2.X
@@ -64,16 +73,19 @@ The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/e
   * Introduction of `dkhm:contact_validated` for information for info contact
   * Introduction of `dkhm:registrant_validated` for information for create domain
 
+<a name="12"></a>
 ### 1.2
 
   * EPP Service version 1.1.X
   * Introduction of `dkhm:orderConfirmation` for create domain and support of [Pre-activation Service](#pre-activation-service)
 
+<a name="11"></a>
 ### 1.1
 
   * EPP Service version 1.0.9
   * Introduction of `dkhm:domainAdvisory` for support of blocked status for create domain for blocked domain names
 
+<a name="10"></a>
 ### 1.0
 
   * EPP Service version 1.0.0
