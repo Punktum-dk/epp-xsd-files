@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-1.5"
-        xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-1.5"
+<schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-1.6"
+        xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-1.6"
         xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
         xmlns="http://www.w3.org/2001/XMLSchema"
         elementFormDefault="qualified">
@@ -16,7 +16,7 @@
     <import namespace="urn:dkhm:params:xml:ns:dkhm-1.4" schemaLocation="dkhm-1.4.xsd"/>
     
     <annotation>
-        <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v1.5</documentation>
+        <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v1.6</documentation>
     </annotation>
     <!--
         Child elements found in EPP commands.
