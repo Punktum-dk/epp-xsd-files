@@ -64,8 +64,8 @@ The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/e
 ### 1.5
 
   * Development use only
-  * Introduction of `dkhm:mobilephone`
-  * Introduction of `dkhm:secondaryEmail`
+  * Introduction of `dkhm:mobilephone` on update contact
+  * Introduction of `dkhm:secondaryEmail` on update contact
 
 <a name="14"></a>
 ### 1.4
