@@ -1,8 +1,20 @@
 # epp-xsd-files
 
-XSD files for the DK Hostmaster EPP service
+<!-- MarkdownTOC -->
+
+- [XSD files for the DK Hostmaster EPP service](#xsd-files-for-the-dk-hostmaster-epp-service)
+    - [XSD file references](#xsd-file-references)
+    - [XSD files](#xsd-files)
+
+<!-- /MarkdownTOC -->
+
+<a name="xsd-files-for-the-dk-hostmaster-epp-service"></a>
+# XSD files for the DK Hostmaster EPP service
 
 The current actively used XSD file is indicated in the [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification), this repository might contain changes not actively used in the service.
+
+<a name="xsd-file-references"></a>
+## XSD file references
 
 Please note that the following files haev been lifted from their respective RFCs. These files are copyrighted 
 by their respective authors, please refer to the RFCs for more information.
@@ -16,6 +28,9 @@ by their respective authors, please refer to the RFCs for more information.
 * secDNS-1.1.xsd [RFC 5910](http://datatracker.ietf.org/doc/rfc5910/)
 
 The following files are owned and copyright by DK Hostmaster A/S under the MIT License, please see the LICENSE file.
+
+<a name="xsd-files"></a>
+## XSD files
 
 * dkhm-1.0.xsd, DK Hostmaster EPP extensions version 1.0
 * dkhm-1.1.xsd, DK Hostmaster EPP extensions version 1.1
