@@ -1,26 +1,22 @@
-# epp-xsd-files
+# XSD files for the DK Hostmaster EPP service
 
 <!-- MarkdownTOC depth=4 -->
 
-- [XSD files for the DK Hostmaster EPP service](#xsd-files-for-the-dk-hostmaster-epp-service)
-  - [XSD file references](#xsd-file-references)
-  - [XSD files](#xsd-files)
-  - [XSD History](#xsd-history)
-    - [2.0](#20)
-    - [1.6](#16)
-    - [1.5](#15)
-    - [1.4](#14)
-    - [1.3](#13)
-    - [1.2](#12)
-    - [1.1](#11)
-    - [1.0](#10)
+- [XSD file references](#xsd-file-references)
+- [XSD files](#xsd-files)
+- [XSD History](#xsd-history)
+  - [2.0](#20)
+  - [1.6](#16)
+  - [1.5](#15)
+  - [1.4](#14)
+  - [1.3](#13)
+  - [1.2](#12)
+  - [1.1](#11)
+  - [1.0](#10)
 
 <!-- /MarkdownTOC -->
 
-<a name="xsd-files-for-the-dk-hostmaster-epp-service"></a>
-# XSD files for the DK Hostmaster EPP service
-
-The current actively used XSD file is indicated in the [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification), this repository might contain changes not actively used in the service.
+The current actively used XSD file is indicated in the [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification), this repository might contain changes not actively used by the service.
 
 <a name="xsd-file-references"></a>
 ## XSD file references
