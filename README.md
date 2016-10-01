@@ -46,6 +46,12 @@ The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/e
 <a name="xsd-history"></a>
 ## XSD History
 
+### 1.5
+
+  * Development use only
+  * Introduction of `dkhm:mobilephone`
+  * Introduction of `dkhm:secondaryEmail`
+
 ### 1.4
 
   * EPP Service version 1.3.X
