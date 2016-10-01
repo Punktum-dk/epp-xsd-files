@@ -2,6 +2,8 @@
 
 XSD files for the DK Hostmaster EPP service
 
+The current actively used XSD file is indicated in the [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification), this repository might contain changes not actively used in the service.
+
 Please note that the following files haev been lifted from their respective RFCs. These files are copyrighted 
 by their respective authors, please refer to the RFCs for more information.
 
