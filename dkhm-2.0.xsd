@@ -29,7 +29,6 @@
     <element name="EAN" type="dkhm:EAN" />
     <element name="CVR" type="dkhm:CVR" />
     <element name="mobilephone" type="dkhm:mobilephone" />
-    <element name="attention" type="dkhm:attention" />
     <element name="secondaryEmail" type="dkhm:secondaryEmail" />
     <element name="pnumber" type="dkhm:pnumber" />
     <element name="contact" type="dkhm:contact" />
@@ -51,11 +50,6 @@
             <extension base="contact:e164Type"/>
         </complexContent>
     </complexType>
-
-    <!-- custom: contact attention -->
-    <simpleType name="attention">
-        <restriction base="contact:postalLineType" />
-    </simpleType>
 
     <!-- custom: contact secondary email -->
     <simpleType name="secondaryEmail">
