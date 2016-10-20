@@ -85,6 +85,7 @@
     <complexType name="domainAdvisory">
     <attribute name="domain" type="token"/>
     <attribute name="advisory" type="token"/>
+    <attribute name="date" type="dateTime"/>
     </complexType>
 
     <!-- custom: Usertype enumeration -->
