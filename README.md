@@ -56,8 +56,6 @@ The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/e
 <a name="xsd-history"></a>
 ## XSD History
 
-<a name="21"></a>
-
 <a name="22"></a>
 ### 2.2
 
