@@ -5,6 +5,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+	- [2.2](#22)
 	- [2.1](#21)
 	- [2.0](#20)
 	- [1.6](#16)
@@ -47,12 +48,20 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 * dkhm-1.6.xsd, DK Hostmaster EPP extensions version 1.6
 * dkhm-2.0.xsd, DK Hostmaster EPP extensions version 2.0
 * dkhm-2.1.xsd, DK Hostmaster EPP extensions version 2.1
+* dkhm-2.2.xsd, DK Hostmaster EPP extensions version 2.2
 * epp.xsd (a collection files for easier test, validation and maintenance)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
 
 <a name="xsd-history"></a>
 ## XSD History
+
+<a name="21"></a>
+
+<a name="22"></a>
+### 2.2
+
+* Introduction of `dkhm:risk_assessment` for poll messages in relation to domain creation, where the risk assessment is communicated as part of the domain creation process.
 
 <a name="21"></a>
 ### 2.1
