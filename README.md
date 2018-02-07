@@ -64,49 +64,49 @@ The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/e
 <a name="20"></a>
 ### 2.0
 
-	* Official release of changes proposed in revisions 1.5 and 1.6
+- Official release of changes proposed in revisions 1.5 and 1.6
 
 <a name="16"></a>
 ### 1.6
 
-	* Development use only
-	* Introduction of `dkhm:requestedNsAdmin` for update host and create host
+- Development use only
+- Introduction of `dkhm:requestedNsAdmin` for update host and create host
 
 <a name="15"></a>
 ### 1.5
 
-	* Development use only
-	* Introduction of `dkhm:mobilephone` on update contact
-	* Introduction of `dkhm:secondaryEmail` on update contact
+- Development use only
+- Introduction of `dkhm:mobilephone` on update contact
+- Introduction of `dkhm:secondaryEmail` on update contact
 
 <a name="14"></a>
 ### 1.4
 
-	* EPP Service version 1.3.X
-	* Introduction of `dkhm:pnumber` for production unit number information for create contact
+- EPP Service version 1.3.X
+- Introduction of `dkhm:pnumber` for production unit number information for create contact
 
 <a name="13"></a>
 ### 1.3
 
-	* EPP Service version 1.2.X
-	* Introduction of `dkhm:domain_confirmed` for information for create domain
-	* Introduction of `dkhm:contact_validated` for information for info contact
-	* Introduction of `dkhm:registrant_validated` for information for create domain
+- EPP Service version 1.2.X
+- Introduction of `dkhm:domain_confirmed` for information for create domain
+- Introduction of `dkhm:contact_validated` for information for info contact
+- Introduction of `dkhm:registrant_validated` for information for create domain
 
 <a name="12"></a>
 ### 1.2
 
-	* EPP Service version 1.1.X
-	* Introduction of `dkhm:orderConfirmation` for create domain and support of [Pre-activation Service](#pre-activation-service)
+- EPP Service version 1.1.X
+- Introduction of `dkhm:orderConfirmation` for create domain and support of [Pre-activation Service](#pre-activation-service)
 
 <a name="11"></a>
 ### 1.1
 
-	* EPP Service version 1.0.9
-	* Introduction of `dkhm:domainAdvisory` for support of blocked status for create domain for blocked domain names
+- EPP Service version 1.0.9
+- Introduction of `dkhm:domainAdvisory` for support of blocked status for create domain for blocked domain names
 
 <a name="10"></a>
 ### 1.0
 
-	* EPP Service version 1.0.0
-	* Released 2014-02-25
+- EPP Service version 1.0.0
+- Released 2014-02-25
