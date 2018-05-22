@@ -54,7 +54,7 @@ The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/e
 The file `epp.xsd` is just for easier test and validation as mentioned, it can be used together with [`xmllint`](http://xmlsoft.org/xmllint.html):
 
 ```bash
-$ xml --schema xsd/epp.xsd 
+$ xml --schema xsd/epp.xsd your_xml_file.xml
 ```
 It will then either omit an error message or the success message: `your_xml_file.xml validates`.
 
