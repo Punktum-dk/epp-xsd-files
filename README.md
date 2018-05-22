@@ -47,7 +47,7 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 * dkhm-1.6.xsd, DK Hostmaster EPP extensions version 1.6
 * dkhm-2.0.xsd, DK Hostmaster EPP extensions version 2.0
 * dkhm-2.1.xsd, DK Hostmaster EPP extensions version 2.1
-* epp.xsd (a collection files for easier test, validation and maintenance)
+* epp.xsd (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
 
