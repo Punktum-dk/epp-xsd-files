@@ -49,9 +49,16 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 * dkhm-2.0.xsd, DK Hostmaster EPP extensions version 2.0
 * dkhm-2.1.xsd, DK Hostmaster EPP extensions version 2.1
 * dkhm-2.2.xsd, DK Hostmaster EPP extensions version 2.2
-* epp.xsd (a collection files for easier test, validation and maintenance)
+* epp.xsd (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
+
+The file `epp.xsd` is just for easier test and validation as mentioned, it can be used together with [`xmllint`](http://xmlsoft.org/xmllint.html):
+
+```bash
+$ xml --schema epp.xsd your_file.xml
+```
+It will then either omit an error message or the success message: `your_file.xml validates`.
 
 <a name="xsd-history"></a>
 ## XSD History
@@ -71,49 +78,49 @@ The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/e
 <a name="20"></a>
 ### 2.0
 
-	* Official release of changes proposed in revisions 1.5 and 1.6
+- Official release of changes proposed in revisions 1.5 and 1.6
 
 <a name="16"></a>
 ### 1.6
 
-	* Development use only
-	* Introduction of `dkhm:requestedNsAdmin` for update host and create host
+- Development use only
+- Introduction of `dkhm:requestedNsAdmin` for update host and create host
 
 <a name="15"></a>
 ### 1.5
 
-	* Development use only
-	* Introduction of `dkhm:mobilephone` on update contact
-	* Introduction of `dkhm:secondaryEmail` on update contact
+- Development use only
+- Introduction of `dkhm:mobilephone` on update contact
+- Introduction of `dkhm:secondaryEmail` on update contact
 
 <a name="14"></a>
 ### 1.4
 
-	* EPP Service version 1.3.X
-	* Introduction of `dkhm:pnumber` for production unit number information for create contact
+- EPP Service version 1.3.X
+- Introduction of `dkhm:pnumber` for production unit number information for create contact
 
 <a name="13"></a>
 ### 1.3
 
-	* EPP Service version 1.2.X
-	* Introduction of `dkhm:domain_confirmed` for information for create domain
-	* Introduction of `dkhm:contact_validated` for information for info contact
-	* Introduction of `dkhm:registrant_validated` for information for create domain
+- EPP Service version 1.2.X
+- Introduction of `dkhm:domain_confirmed` for information for create domain
+- Introduction of `dkhm:contact_validated` for information for info contact
+- Introduction of `dkhm:registrant_validated` for information for create domain
 
 <a name="12"></a>
 ### 1.2
 
-	* EPP Service version 1.1.X
-	* Introduction of `dkhm:orderConfirmation` for create domain and support of [Pre-activation Service](#pre-activation-service)
+- EPP Service version 1.1.X
+- Introduction of `dkhm:orderConfirmation` for create domain and support of [Pre-activation Service](#pre-activation-service)
 
 <a name="11"></a>
 ### 1.1
 
-	* EPP Service version 1.0.9
-	* Introduction of `dkhm:domainAdvisory` for support of blocked status for create domain for blocked domain names
+- EPP Service version 1.0.9
+- Introduction of `dkhm:domainAdvisory` for support of blocked status for create domain for blocked domain names
 
 <a name="10"></a>
 ### 1.0
 
-	* EPP Service version 1.0.0
-	* Released 2014-02-25
+- EPP Service version 1.0.0
+- Released 2014-02-25
