@@ -1,0 +1,17 @@
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/Attribute.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/AttributeLibrary.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/AttributeNode.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/ComplexTypeNode.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/ElementLibrary.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/ElementNode.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/ElementRefNode.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/Library.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/ModelNode.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/Node.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/Parser.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/RootNode.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/SimpleType.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/SimpleTypeNode.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/TypeLibrary.pm
+/Users/jonasbn/develop/github-dkhm/epp-xsd-files/bin/local/lib/perl5/XML/Validator/Schema/Util.pm

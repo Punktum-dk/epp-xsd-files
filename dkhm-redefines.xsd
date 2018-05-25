@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema targetNamespace="urn:ietf:params:xml:ns:epp-1.0"
+    xmlns:epp="urn:ietf:params:xml:ns:epp-1.0"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="qualified">
+
+<!-- redefing password (pwType) definition -->
+<redefine schemaLocation="epp-1.0.xsd">
+    <simpleType name="pwType">
+        <restriction base="token">
+          <minLength value="8"/>
+          <maxLength value="64"/>
+        </restriction>
+    </simpleType>
+</redefine>
+
+<element name="pwType" type="pwType" />
+
+  <!--
+  End of schema.
+  -->
+</schema>

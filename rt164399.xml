@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd"
+xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.0">
+<command>
+<create>
+<contact:create xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"
+xsi:schemaLocation="urn:ietf:params:xml:ns:contact-1.0 contact-1.0.xsd">
+<contact:id>auto</contact:id>
+<contact:postalInfo type="loc">
+<contact:name>Netsite Hostmaster</contact:name>
+<contact:org>Netsite A/S</contact:org>
+<contact:addr>
+<contact:street>Bredgade 30</contact:street>
+<contact:city>København K</contact:city>
+<contact:pc>1260</contact:pc>
+<contact:cc>DK</contact:cc>
+</contact:addr>
+</contact:postalInfo>
+<contact:voice>+45.70254343</contact:voice>
+<contact:email>netsite@netsite.dk</contact:email>
+<contact:authInfo>
+          <contact:pw />
+</contact:authInfo>
+</contact:create>
+</create>
+<extension>
+<dkhm:userType
+xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-1.2">company</dkhm:userType>
+<dkhm:CVR
+xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-1.2">25233476</dkhm:CVR>
+</extension>
+<clTRID>5af2e3886b0a2</clTRID>
+</command>
+</epp>

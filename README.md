@@ -1,10 +1,11 @@
 # XSD files for the DK Hostmaster EPP service
 
-<!-- MarkdownTOC depth=4 -->
+<!-- MarkdownTOC levels: [1,2,3,4] -->
 
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+	- [2.3](#23)
 	- [2.2](#22)
 	- [2.1](#21)
 	- [2.0](#20)
@@ -21,6 +22,7 @@
 The current actively used XSD file is indicated in the [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification), this repository might contain changes not actively used by the service.
 
 <a name="xsd-file-references"></a>
+<a id="xsd-file-references"></a>
 ## XSD file references
 
 Please note that the following files have been lifted from their respective RFCs. These files are copyrighted 
@@ -37,6 +39,7 @@ by their respective authors, please refer to the RFCs for more information.
 The following files are owned and copyright by DK Hostmaster A/S under the MIT License, please see the LICENSE file.
 
 <a name="xsd-files"></a>
+<a id="xsd-files"></a>
 ## XSD files
 
 * dkhm-1.0.xsd, DK Hostmaster EPP extensions version 1.0
@@ -49,6 +52,7 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 * dkhm-2.0.xsd, DK Hostmaster EPP extensions version 2.0
 * dkhm-2.1.xsd, DK Hostmaster EPP extensions version 2.1
 * dkhm-2.2.xsd, DK Hostmaster EPP extensions version 2.2
+* dkhm-2.3.xsd, DK Hostmaster EPP extensions version 2.3
 * epp.xsd (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
@@ -61,45 +65,54 @@ $ xml --schema epp.xsd your_file.xml
 It will then either omit an error message or the success message: `your_file.xml validates`.
 
 <a name="xsd-history"></a>
+<a id="xsd-history"></a>
 ## XSD History
 
-<a name="22"></a>
+<a id="23"></a>
+### 2.3
+
+- EPP Service version 2.3.X
+- Introduction of `dkhm:url` for poll messages in relation to domain creation, where a URL is communicated, which can be presented to the end-user as part of the domain creation process.
+
+<a id="22"></a>
 ### 2.2
 
-* Introduction of `dkhm:risk_assessment` for poll messages in relation to domain creation, where the risk assessment is communicated as part of the domain creation process.
+- EPP Service version 2.3.X
+- Introduction of `dkhm:risk_assessment` for poll messages in relation to domain creation, where the risk assessment is communicated as part of the domain creation process.
 
-<a name="21"></a>
+<a id="21"></a>
 ### 2.1
 
+- EPP Service version 2.3.X
 - **Warning!** This release includes a change to the standard XSD from [RFC:5730](https://tools.ietf.org/html/rfc5730), aligning the values for the password type. It has not been possible to get the patch applied using the XML Schema feature: `redefine` or `overwrite`. When this succeeds this change will have to be rolled-back. The change has been applied so the schema file conforms with the schema file used at DK Hostmaster A/S.
 
 - The DKHM Schema file has been updated to revision 2.1, the file does not contain any changes apart from the import, this file was created for a uniform communication in regard to revision numbers etc.
 
-<a name="20"></a>
+<a id="20"></a>
 ### 2.0
 
 - Official release of changes proposed in revisions 1.5 and 1.6
 
-<a name="16"></a>
+<a id="16"></a>
 ### 1.6
 
 - Development use only
 - Introduction of `dkhm:requestedNsAdmin` for update host and create host
 
-<a name="15"></a>
+<a id="15"></a>
 ### 1.5
 
 - Development use only
 - Introduction of `dkhm:mobilephone` on update contact
 - Introduction of `dkhm:secondaryEmail` on update contact
 
-<a name="14"></a>
+<a id="14"></a>
 ### 1.4
 
 - EPP Service version 1.3.X
 - Introduction of `dkhm:pnumber` for production unit number information for create contact
 
-<a name="13"></a>
+<a id="13"></a>
 ### 1.3
 
 - EPP Service version 1.2.X
@@ -107,19 +120,19 @@ It will then either omit an error message or the success message: `your_file.xml
 - Introduction of `dkhm:contact_validated` for information for info contact
 - Introduction of `dkhm:registrant_validated` for information for create domain
 
-<a name="12"></a>
+<a id="12"></a>
 ### 1.2
 
 - EPP Service version 1.1.X
 - Introduction of `dkhm:orderConfirmation` for create domain and support of [Pre-activation Service](#pre-activation-service)
 
-<a name="11"></a>
+<a id="11"></a>
 ### 1.1
 
 - EPP Service version 1.0.9
 - Introduction of `dkhm:domainAdvisory` for support of blocked status for create domain for blocked domain names
 
-<a name="10"></a>
+<a id="10"></a>
 ### 1.0
 
 - EPP Service version 1.0.0
