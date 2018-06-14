@@ -21,7 +21,7 @@
     <import namespace="urn:dkhm:params:xml:ns:dkhm-2.1" schemaLocation="dkhm-2.1.xsd"/>
     <import namespace="urn:dkhm:params:xml:ns:dkhm-2.2" schemaLocation="dkhm-2.2.xsd"/>
     <annotation>
-        <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v2.1</documentation>
+        <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v2.3</documentation>
     </annotation>
     <!--
         Child elements found in EPP commands.
@@ -41,6 +41,8 @@
     <element name="contact_validated" type="dkhm:contact_validated" />
     <element name="registrant_validated" type="dkhm:registrant_validated" />
     <element name="requestedNsAdmin" type="dkhm:requestedNsAdmin" />
+    <element name="risk_assessment" type="dkhm:risk_assessment" />
+    <element name="url" type="dkhm:url" />
 
     <!--
         Utility types.
@@ -135,6 +137,17 @@
     <!-- custom: requestedNsAdmin  -->
     <simpleType name="requestedNsAdmin">
         <restriction base="eppcom:clIDType" />
+    </simpleType>
+
+    <!-- custom: risk assessment enumeration -->
+    <simpleType name="risk_assessment">
+        <restriction base="token">
+            <enumeration value="GREEN" />
+            <enumeration value="BLUE" />
+            <enumeration value="YELLOW" />
+            <enumeration value="RED" />
+            <enumeration value="N/A" />
+        </restriction>
     </simpleType>
 
     <!-- custom: url  -->
