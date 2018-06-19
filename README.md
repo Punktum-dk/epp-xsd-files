@@ -1,10 +1,13 @@
 # XSD files for the DK Hostmaster EPP service
 
+## Table of Contents
+
 <!-- MarkdownTOC levels: [1,2,3,4] -->
 
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+	- [2.4](#24)
 	- [2.3](#23)
 	- [2.2](#22)
 	- [2.1](#21)
@@ -21,7 +24,6 @@
 
 The current actively used XSD file is indicated in the [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification), this repository might contain changes not actively used by the service.
 
-<a name="xsd-file-references"></a>
 <a id="xsd-file-references"></a>
 ## XSD file references
 
@@ -38,7 +40,6 @@ by their respective authors, please refer to the RFCs for more information.
 
 The following files are owned and copyright by DK Hostmaster A/S under the MIT License, please see the LICENSE file.
 
-<a name="xsd-files"></a>
 <a id="xsd-files"></a>
 ## XSD files
 
@@ -53,6 +54,7 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 * dkhm-2.1.xsd, DK Hostmaster EPP extensions version 2.1
 * dkhm-2.2.xsd, DK Hostmaster EPP extensions version 2.2
 * dkhm-2.3.xsd, DK Hostmaster EPP extensions version 2.3
+* dkhm-2.4.xsd, DK Hostmaster EPP extensions version 2.4
 * epp.xsd (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
@@ -64,9 +66,14 @@ $ xml --schema epp.xsd your_file.xml
 ```
 It will then either omit an error message or the success message: `your_file.xml validates`.
 
-<a name="xsd-history"></a>
 <a id="xsd-history"></a>
 ## XSD History
+
+<a id="24"></a>
+### 2.4
+
+- EPP Service version 2.3.X
+- Minor bug fix release as 2.4, since 2.3 had some minor issues
 
 <a id="23"></a>
 ### 2.3

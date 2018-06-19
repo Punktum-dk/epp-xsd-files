@@ -3,7 +3,7 @@
     xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"
     xmlns:host="urn:ietf:params:xml:ns:host-1.0"
     xmlns:domain="urn:ietf:params:xml:ns:domain-1.0"
-    xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.3"
+    xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.4"
     xmlns:epp="urn:ietf:params:xml:ns:epp-1.0"
     xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
     xmlns="http://www.w3.org/2001/XMLSchema"
@@ -17,7 +17,7 @@
   <import namespace="urn:ietf:params:xml:ns:domain-1.0" schemaLocation="domain-1.0.xsd" />
   <import namespace="urn:ietf:params:xml:ns:host-1.0" schemaLocation="host-1.0.xsd" />
   <import namespace="urn:ietf:params:xml:ns:contact-1.0" schemaLocation="contact-1.0.xsd" />
-  <import namespace="urn:dkhm:params:xml:ns:dkhm-2.3" schemaLocation="dkhm-2.3.xsd" />
+  <import namespace="urn:dkhm:params:xml:ns:dkhm-2.4" schemaLocation="dkhm-2.4.xsd" />
   <import namespace="urn:ietf:params:xml:ns:secDNS-1.1" schemaLocation="secDNS-1.1.xsd" />
   <!--
   End of schema.
