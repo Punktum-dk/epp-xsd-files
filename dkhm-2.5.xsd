@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-2.4"
-        xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.4"
+<schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-2.5"
+        xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.5"
         xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
         xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"
         xmlns="http://www.w3.org/2001/XMLSchema"
@@ -22,7 +22,7 @@
     <import namespace="urn:dkhm:params:xml:ns:dkhm-2.2" schemaLocation="dkhm-2.2.xsd"/>
     <import namespace="urn:dkhm:params:xml:ns:dkhm-2.3" schemaLocation="dkhm-2.3.xsd"/>
     <annotation>
-        <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v2.3</documentation>
+        <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v2.5</documentation>
     </annotation>
     <!--
         Child elements found in EPP commands.
