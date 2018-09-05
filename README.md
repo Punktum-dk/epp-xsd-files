@@ -2,23 +2,23 @@
 
 ## Table of Contents
 
-<!-- MarkdownTOC levels: [1,2,3,4] -->
+<!-- MarkdownTOC bracket=round levels="1,2,3,4" indent="  " -->
 
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
-	- [2.4](#24)
-	- [2.3](#23)
-	- [2.2](#22)
-	- [2.1](#21)
-	- [2.0](#20)
-	- [1.6](#16)
-	- [1.5](#15)
-	- [1.4](#14)
-	- [1.3](#13)
-	- [1.2](#12)
-	- [1.1](#11)
-	- [1.0](#10)
+  - [2.4](#24)
+  - [2.3](#23)
+  - [2.2](#22)
+  - [2.1](#21)
+  - [2.0](#20)
+  - [1.6](#16)
+  - [1.5](#15)
+  - [1.4](#14)
+  - [1.3](#13)
+  - [1.2](#12)
+  - [1.1](#11)
+  - [1.0](#10)
 
 <!-- /MarkdownTOC -->
 
@@ -27,35 +27,35 @@ The current actively used XSD file is indicated in the [EPP service specificatio
 <a id="xsd-file-references"></a>
 ## XSD file references
 
-Please note that the following files have been lifted from their respective RFCs. These files are copyrighted 
+Please note that the following files have been lifted from their respective RFCs. These files are copyrighted
 by their respective authors, please refer to the RFCs for more information.
 
-* contact-1.0.xsd [RFC 5733](http://datatracker.ietf.org/doc/rfc5733/)
-* domain-1.0.xsd [RFC 5731](http://datatracker.ietf.org/doc/rfc5731/)
-* epp-1.0.xsd [RFC 5730](http://datatracker.ietf.org/doc/rfc5730/)
-* eppcom-1.0.xsd [RFC 5730](http://datatracker.ietf.org/doc/rfc5730/)
-* host-1.0.xsd [RFC 5732](http://datatracker.ietf.org/doc/rfc5732/)
-* secDNS-1.0.xsd [RFC 4310](http://datatracker.ietf.org/doc/rfc4310/)
-* secDNS-1.1.xsd [RFC 5910](http://datatracker.ietf.org/doc/rfc5910/)
+- `contact-1.0.xsd` [RFC 5733](http://datatracker.ietf.org/doc/rfc5733/)
+- `domain-1.0.xsd` [RFC 5731](http://datatracker.ietf.org/doc/rfc5731/)
+- `epp-1.0.xsd` [RFC 5730](http://datatracker.ietf.org/doc/rfc5730/)
+- `eppcom-1.0.xsd` [RFC 5730](http://datatracker.ietf.org/doc/rfc5730/)
+- `host-1.0.xsd` [RFC 5732](http://datatracker.ietf.org/doc/rfc5732/)
+- `secDNS-1.0.xsd` [RFC 4310](http://datatracker.ietf.org/doc/rfc4310/)
+- `secDNS-1.1.xsd` [RFC 5910](http://datatracker.ietf.org/doc/rfc5910/)
 
 The following files are owned and copyright by DK Hostmaster A/S under the MIT License, please see the LICENSE file.
 
 <a id="xsd-files"></a>
 ## XSD files
 
-* dkhm-1.0.xsd, DK Hostmaster EPP extensions version 1.0
-* dkhm-1.1.xsd, DK Hostmaster EPP extensions version 1.1
-* dkhm-1.2.xsd, DK Hostmaster EPP extensions version 1.2
-* dkhm-1.3.xsd, DK Hostmaster EPP extensions version 1.3
-* dkhm-1.4.xsd, DK Hostmaster EPP extensions version 1.4
-* dkhm-1.5.xsd, DK Hostmaster EPP extensions version 1.5
-* dkhm-1.6.xsd, DK Hostmaster EPP extensions version 1.6
-* dkhm-2.0.xsd, DK Hostmaster EPP extensions version 2.0
-* dkhm-2.1.xsd, DK Hostmaster EPP extensions version 2.1
-* dkhm-2.2.xsd, DK Hostmaster EPP extensions version 2.2
-* dkhm-2.3.xsd, DK Hostmaster EPP extensions version 2.3
-* dkhm-2.4.xsd, DK Hostmaster EPP extensions version 2.4
-* epp.xsd (a collection files for easier test, validation and maintenance, see below)
+- `dkhm-1.0.xsd`, DK Hostmaster EPP extensions version 1.0
+- `dkhm-1.1.xsd`, DK Hostmaster EPP extensions version 1.1
+- `dkhm-1.2.xsd`, DK Hostmaster EPP extensions version 1.2
+- `dkhm-1.3.xsd`, DK Hostmaster EPP extensions version 1.3
+- `dkhm-1.4.xsd`, DK Hostmaster EPP extensions version 1.4
+- `dkhm-1.5.xsd`, DK Hostmaster EPP extensions version 1.5
+- `dkhm-1.6.xsd`, DK Hostmaster EPP extensions version 1.6
+- `dkhm-2.0.xsd`, DK Hostmaster EPP extensions version 2.0
+- `dkhm-2.1.xsd`, DK Hostmaster EPP extensions version 2.1
+- `dkhm-2.2.xsd`, DK Hostmaster EPP extensions version 2.2
+- `dkhm-2.3.xsd`, DK Hostmaster EPP extensions version 2.3
+- `dkhm-2.4.xsd`, DK Hostmaster EPP extensions version 2.4
+- `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
 
@@ -64,6 +64,7 @@ The file `epp.xsd` is just for easier test and validation as mentioned, it can b
 ```bash
 $ xml --schema epp.xsd your_file.xml
 ```
+
 It will then either omit an error message or the success message: `your_file.xml validates`.
 
 <a id="xsd-history"></a>
