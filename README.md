@@ -7,6 +7,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+  - [2.5](#25)
   - [2.4](#24)
   - [2.3](#23)
   - [2.2](#22)
@@ -55,6 +56,7 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-2.2.xsd`, DK Hostmaster EPP extensions version 2.2
 - `dkhm-2.3.xsd`, DK Hostmaster EPP extensions version 2.3
 - `dkhm-2.4.xsd`, DK Hostmaster EPP extensions version 2.4
+- `dkhm-2.5.xsd`, DK Hostmaster EPP extensions version 2.5
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
@@ -69,6 +71,12 @@ It will then either omit an error message or the success message: `your_file.xml
 
 <a id="xsd-history"></a>
 ## XSD History
+
+<a id="25"></a>
+### 2.5
+
+- EPP Service version 2.3.X
+- Clearing out some minor issues in the DK Hostmaster XSD
 
 <a id="24"></a>
 ### 2.4
