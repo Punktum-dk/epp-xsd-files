@@ -17,7 +17,7 @@
   <import namespace="urn:ietf:params:xml:ns:domain-1.0" schemaLocation="domain-1.0.xsd" />
   <import namespace="urn:ietf:params:xml:ns:host-1.0" schemaLocation="host-1.0.xsd" />
   <import namespace="urn:ietf:params:xml:ns:contact-1.0" schemaLocation="contact-1.0.xsd" />
-  <import namespace="urn:dkhm:params:xml:ns:dkhm-2.4" schemaLocation="dkhm-2.5.xsd" />
+  <import namespace="urn:dkhm:params:xml:ns:dkhm-2.5" schemaLocation="dkhm-2.5.xsd" />
   <import namespace="urn:ietf:params:xml:ns:secDNS-1.1" schemaLocation="secDNS-1.1.xsd" />
   <!--
   End of schema.
