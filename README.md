@@ -77,6 +77,8 @@ It will then either omit an error message or the success message: `your_file.xml
 
 - EPP Service version 2.3.X
 - Clearing out some minor issues in the DK Hostmaster XSD
+- Removed excessive import statements, one should suffice
+- All XML cleaned up and formatted, mostly by automation
 
 <a id="24"></a>
 ### 2.4
