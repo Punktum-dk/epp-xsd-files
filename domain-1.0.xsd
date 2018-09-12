@@ -116,10 +116,6 @@
     <complexType name="sNameType">
         <sequence>
             <element name="name" type="eppcom:labelType"/>
-
-
-
-
         </sequence>
     </complexType>
     <!--
@@ -165,9 +161,6 @@
         <sequence>
             <element name="name" type="eppcom:labelType"/>
             <element name="curExpDate" type="date"/>
-
-
-
             <element name="period" type="domain:periodType" minOccurs="0"/>
         </sequence>
     </complexType>
@@ -387,6 +380,6 @@
     </complexType>
 
     <!--
-   End of schema.
-   -->
+    End of schema.
+    -->
 </schema>

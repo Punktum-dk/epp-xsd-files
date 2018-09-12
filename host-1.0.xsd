@@ -7,8 +7,8 @@
     xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
     <!--
-   Import common element types.
-   -->
+    Import common element types.
+    -->
     <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
     <import namespace="urn:ietf:params:xml:ns:epp-1.0" schemaLocation="epp-1.0.xsd"/>
 
@@ -20,8 +20,8 @@
     </annotation>
 
     <!--
-   Child elements found in EPP commands.
-   -->
+    Child elements found in EPP commands.
+    -->
     <element name="check" type="host:mNameType"/>
     <element name="create" type="host:createType"/>
     <element name="delete" type="host:sNameType"/>
@@ -29,8 +29,8 @@
     <element name="update" type="host:updateType"/>
 
     <!--
-   Child elements of the <create> command.
-   -->
+    Child elements of the <create> command.
+    -->
     <complexType name="createType">
         <sequence>
             <element name="name" type="eppcom:labelType"/>
@@ -61,8 +61,8 @@
     </simpleType>
 
     <!--
-   Child elements of the <delete> and <info> commands.
-   -->
+    Child elements of the <delete> and <info> commands.
+    -->
     <complexType name="sNameType">
         <sequence>
             <element name="name" type="eppcom:labelType"/>
@@ -70,16 +70,16 @@
     </complexType>
 
     <!--
-   Child element of commands that accept multiple names.
-   -->
+    Child element of commands that accept multiple names.
+    -->
     <complexType name="mNameType">
         <sequence>
             <element name="name" type="eppcom:labelType" maxOccurs="unbounded"/>
         </sequence>
     </complexType>
     <!--
-   Child elements of the <update> command.
-   -->
+    Child elements of the <update> command.
+    -->
     <complexType name="updateType">
         <sequence>
             <element name="name" type="eppcom:labelType"/>
@@ -90,8 +90,8 @@
     </complexType>
 
     <!--
-   Data elements that can be added or removed.
-   -->
+    Data elements that can be added or removed.
+    -->
     <complexType name="addRemType">
         <sequence>
             <element name="addr" type="host:addrType" minOccurs="0" maxOccurs="unbounded"/>
@@ -100,8 +100,8 @@
     </complexType>
 
     <!--
-   Data elements that can be changed.
-   -->
+    Data elements that can be changed.
+    -->
     <complexType name="chgType">
         <sequence>
             <element name="name" type="eppcom:labelType"/>
@@ -109,16 +109,16 @@
     </complexType>
 
     <!--
-   Child response elements.
-   -->
+    Child response elements.
+    -->
     <element name="chkData" type="host:chkDataType"/>
     <element name="creData" type="host:creDataType"/>
     <element name="infData" type="host:infDataType"/>
     <element name="panData" type="host:panDataType"/>
 
     <!--
-   <check> response elements.
-   -->
+    <check> response elements.
+    -->
     <complexType name="chkDataType">
         <sequence>
             <element name="cd" type="host:checkType" maxOccurs="unbounded"/>
@@ -141,8 +141,8 @@
     </complexType>
 
     <!--
-   <create> response elements.
-   -->
+    <create> response elements.
+    -->
     <complexType name="creDataType">
         <sequence>
             <element name="name" type="eppcom:labelType"/>
@@ -151,8 +151,8 @@
     </complexType>
 
     <!--
-   <info> response elements.
-   -->
+    <info> response elements.
+    -->
     <complexType name="infDataType">
         <sequence>
             <element name="name" type="eppcom:labelType"/>
@@ -169,9 +169,9 @@
     </complexType>
 
     <!--
-   Status is a combination of attributes and an optional human-readable
-   message that may be expressed in languages other than English.
-   -->
+    Status is a combination of attributes and an optional human-readable
+    message that may be expressed in languages other than English.
+    -->
     <complexType name="statusType">
         <simpleContent>
             <extension base="normalizedString">
@@ -215,6 +215,6 @@
     </complexType>
 
     <!--
-   End of schema.
-   -->
+    End of schema.
+    -->
 </schema>

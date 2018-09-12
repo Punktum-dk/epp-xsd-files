@@ -9,13 +9,13 @@
         </documentation>
     </annotation>
     <!--
-   Child elements found in EPP commands.
-   -->
+    Child elements found in EPP commands.
+    -->
     <element name="create" type="secDNS:dsType"/>
     <element name="update" type="secDNS:updateType"/>
     <!--
-   Child elements of the <create> command.
-   -->
+    Child elements of the <create> command.
+    -->
     <complexType name="dsType">
         <sequence>
             <element name="dsData" type="secDNS:dsDataType" maxOccurs="unbounded"/>
@@ -50,8 +50,8 @@
         </restriction>
     </simpleType>
     <!--
-   Child elements of the <update> command.
-   -->
+    Child elements of the <update> command.
+    -->
     <complexType name="updateType">
         <choice>
             <element name="add" type="secDNS:dsType"/>
@@ -66,10 +66,10 @@
         </sequence>
     </complexType>
     <!--
-   Child response elements.
-   -->
+    Child response elements.
+    -->
     <element name="infData" type="secDNS:dsType"/>
     <!--
-   End of schema.
-   -->
+    End of schema.
+    -->
 </schema>

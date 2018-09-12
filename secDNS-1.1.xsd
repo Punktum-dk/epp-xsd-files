@@ -9,14 +9,14 @@
         </documentation>
     </annotation>
     <!--
-     Child elements found in EPP commands.
-     -->
+        Child elements found in EPP commands.
+    -->
     <element name="create" type="secDNS:dsOrKeyType"/>
     <element name="update" type="secDNS:updateType"/>
     <!--
-	     Child elements supporting either the
-	     dsData or the keyData interface.
-	     -->
+        Child elements supporting either the
+        dsData or the keyData interface.
+    -->
     <complexType name="dsOrKeyType">
         <sequence>
             <element name="maxSigLife" type="secDNS:maxSigLifeType" minOccurs="0"/>
@@ -27,16 +27,16 @@
         </sequence>
     </complexType>
     <!--
-	     Definition for the maximum signature lifetime (maxSigLife)
-	     -->
+        Definition for the maximum signature lifetime (maxSigLife)
+    -->
     <simpleType name="maxSigLifeType">
         <restriction base="int">
             <minInclusive value="1"/>
         </restriction>
     </simpleType>
     <!--
-	     Child elements of dsData used for dsData interface
-	     -->
+        Child elements of dsData used for dsData interface
+    -->
     <complexType name="dsDataType">
         <sequence>
             <element name="keyTag" type="unsignedShort"/>
@@ -47,9 +47,9 @@
         </sequence>
     </complexType>
     <!--
-	     Child elements of keyData used for keyData interface
-	     and optionally with dsData interface
-	     -->
+        Child elements of keyData used for keyData interface
+        and optionally with dsData interface
+    -->
     <complexType name="keyDataType">
         <sequence>
             <element name="flags" type="unsignedShort"/>
@@ -59,16 +59,16 @@
         </sequence>
     </complexType>
     <!--
-		     Definition for the public key
-		     -->
+        Definition for the public key
+    -->
     <simpleType name="keyType">
         <restriction base="base64Binary">
             <minLength value="1"/>
         </restriction>
     </simpleType>
     <!--
-		     Child elements of the <update> element.
-		     -->
+		Child elements of the <update> element.
+    -->
     <complexType name="updateType">
         <sequence>
             <element name="rem" type="secDNS:remType" minOccurs="0"/>
@@ -78,8 +78,8 @@
         <attribute name="urgent" type="boolean" default="false"/>
     </complexType>
     <!--
-		     Child elements of the <rem> command.
-		     -->
+		Child elements of the <rem> command.
+    -->
     <complexType name="remType">
         <choice>
             <element name="all" type="boolean"/>
@@ -88,15 +88,15 @@
         </choice>
     </complexType>
     <!--
-		     Child elements supporting the <chg> element.
-		     -->
+		Child elements supporting the <chg> element.
+    -->
     <complexType name="chgType">
         <sequence>
             <element name="maxSigLife" type="secDNS:maxSigLifeType" minOccurs="0"/>
         </sequence>
     </complexType>
     <!--
-		     Child response elements.
-		     -->
+		Child response elements.
+    -->
     <element name="infData" type="secDNS:dsOrKeyType"/>
 </schema>
