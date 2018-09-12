@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-1.6"
-        xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-1.6"
-        xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
-        xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"
-        xmlns="http://www.w3.org/2001/XMLSchema"
-        elementFormDefault="qualified">
+    xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-1.6"
+    xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
+    xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"
+    xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
     <!--
     Import common element types.
     -->
-
     <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
     <import namespace="urn:ietf:params:xml:ns:contact-1.0" schemaLocation="contact-1.0.xsd"/>
     <import namespace="urn:dkhm:params:xml:ns:dkhm-1.1" schemaLocation="dkhm-1.1.xsd"/>
@@ -20,6 +19,7 @@
     <annotation>
         <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v1.6</documentation>
     </annotation>
+
     <!--
         Child elements found in EPP commands.
     -->
@@ -88,8 +88,8 @@
 
     <!-- custom: domainAdvisory  -->
     <complexType name="domainAdvisory">
-    <attribute name="domain" type="token"/>
-    <attribute name="advisory" type="token"/>
+        <attribute name="domain" type="token"/>
+        <attribute name="advisory" type="token"/>
     </complexType>
 
     <!-- custom: Usertype enumeration -->
@@ -101,7 +101,7 @@
             <enumeration value="I" />
             <enumeration value="company" />
             <enumeration value="public_organization" />
-        <!--  <enumeration value="public_organisation" /> -->
+            <!--  <enumeration value="public_organisation" /> -->
             <enumeration value="association" />
             <enumeration value="individual" />
         </restriction>
@@ -140,6 +140,6 @@
     </simpleType>
 
     <!--
-   End of schema.
-   -->
+    End of schema.
+    -->
 </schema>

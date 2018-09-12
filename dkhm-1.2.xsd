@@ -1,24 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-1.2"
-        xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-1.2"
-        xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
-        xmlns="http://www.w3.org/2001/XMLSchema"
-        elementFormDefault="qualified">
+    xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-1.2"
+    xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
+    xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+
     <!--
     Import common element types.
     -->
-    
     <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
     <import namespace="urn:dkhm:params:xml:ns:dkhm-1.1" schemaLocation="dkhm-1.1.xsd"/>
 
-    
     <annotation>
         <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v1.2</documentation>
     </annotation>
+
     <!--
         Child elements found in EPP commands.
     -->
-    
     <element name="userType" type="dkhm:userType" />
     <element name="EAN" type="dkhm:EAN" />
     <element name="CVR" type="dkhm:CVR" />
@@ -26,7 +24,7 @@
     <element name="trackingNo" type="dkhm:trackingNo" />
     <element name="domainAdvisory" type="dkhm:domainAdvisory" />
     <element name="orderconfirmationToken" type="dkhm:orderconfirmationToken" />
-    
+
     <!--
         Utility types.
     -->
@@ -35,7 +33,7 @@
     <simpleType name="contact">
         <restriction base="eppcom:clIDType" />
     </simpleType>
-    
+
     <!-- custom: trackingNo  -->
     <simpleType name="trackingNo">
         <restriction base="token" />
@@ -43,8 +41,8 @@
 
     <!-- custom: domainAdvisory  -->
     <complexType name="domainAdvisory">
-	<attribute name="domain" type="token"/>
-	<attribute name="advisory" type="token"/>
+        <attribute name="domain" type="token"/>
+        <attribute name="advisory" type="token"/>
     </complexType>
 
     <!-- custom: Usertype enumeration -->
@@ -56,7 +54,7 @@
             <enumeration value="I" />
             <enumeration value="company" />
             <enumeration value="public_organization" />
-        <!--  <enumeration value="public_organisation" /> -->
+            <!--  <enumeration value="public_organisation" /> -->
             <enumeration value="association" />
             <enumeration value="individual" />
         </restriction>
@@ -83,6 +81,6 @@
     </simpleType>
 
     <!--
-   End of schema.
-   -->
+    End of schema.
+    -->
 </schema>
