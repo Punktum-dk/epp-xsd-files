@@ -9,8 +9,8 @@
         </documentation>
     </annotation>
     <!--
-  Object authorization information types.
-  -->
+    Object authorization information types.
+    -->
     <complexType name="pwAuthInfoType">
         <simpleContent>
             <extension base="normalizedString">
@@ -24,8 +24,8 @@
         </sequence>
     </complexType>
     <!--
-  <check> response types.
-  -->
+    <check> response types.
+    -->
     <complexType name="reasonType">
         <simpleContent>
             <extension base="eppcom:reasonBaseType">
