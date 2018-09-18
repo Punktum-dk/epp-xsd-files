@@ -150,12 +150,21 @@
     <restriction base="token" />
   </simpleType>
 
-  <!-- custom: authId  -->
-  <simpleType name="authId">
+  <!-- custom: updateDomainOperation enumeration -->
+  <simpleType name="updateDomainOperation">
     <restriction base="token">
-      <maxLength value="32" />
+      <enumeration value="change_nameserver" />
     </restriction>
   </simpleType>
+
+  <!-- custom: authId  -->
+  <complexType name="authId">
+    <simpleContent>
+      <extension base="token">
+        <attribute name=m"operation" type="dkhm:updateDomainOperation" />
+      </extension>
+    </simpleContent>
+  </complexType>
 
   <!--
     End of schema.
