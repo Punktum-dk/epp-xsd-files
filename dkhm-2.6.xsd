@@ -161,7 +161,7 @@
   <complexType name="authId">
     <simpleContent>
       <extension base="token">
-        <attribute name=m"operation" type="dkhm:updateDomainOperation" />
+        <attribute name="operation" type="dkhm:updateDomainOperation" />
       </extension>
     </simpleContent>
   </complexType>
