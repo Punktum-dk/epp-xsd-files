@@ -7,6 +7,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+  - [2.6](#26)
   - [2.5](#25)
   - [2.4](#24)
   - [2.3](#23)
@@ -57,6 +58,7 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-2.3.xsd`, DK Hostmaster EPP extensions version 2.3
 - `dkhm-2.4.xsd`, DK Hostmaster EPP extensions version 2.4
 - `dkhm-2.5.xsd`, DK Hostmaster EPP extensions version 2.5
+- `dkhm-2.6.xsd`, DK Hostmaster EPP extensions version 2.6
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
@@ -72,13 +74,21 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="xsd-history"></a>
 ## XSD History
 
+<a id="26"></a>
+### 2.6
+
+- EPP Service version 2.3.X
+- Reinstated excessive import statements, since this might break interaction with the existing service (2.3.X), which has some XSD schema issues triggered by this clean up
+- The clean up will be completed and announced as **3.0**, since the XSD as a stand-alone breaks support for older schema versions and `epp.xsd` will be the only entrypoint to support the older schema versions
+- More XML cleaned up and formatted, mostly by automation
+
 <a id="25"></a>
 ### 2.5
 
 - EPP Service version 2.3.X
 - Clearing out some minor issues in the DK Hostmaster XSD
 - Removed excessive import statements, one should suffice
-- All XML cleaned up and formatted, mostly by automation
+- XML cleaned up and formatted, mostly by automation
 
 <a id="24"></a>
 ### 2.4
