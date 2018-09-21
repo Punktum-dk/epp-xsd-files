@@ -23,7 +23,7 @@
 
 <!-- /MarkdownTOC -->
 
-The current actively used XSD file is indicated in the [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification), this repository might contain changes not actively used by the service. Please see the [EPP Service Specification Wiki](https://github.com/DK-Hostmaster/epp-service-specification/wiki) for exact details.
+:exclamation: The current actively used XSD file is indicated in the [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification), this repository might contain changes not actively used by the service. Please see the [EPP Service Specification Wiki](https://github.com/DK-Hostmaster/epp-service-specification/wiki) for exact details.
 
 <a id="xsd-file-references"></a>
 ## XSD file references
