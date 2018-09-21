@@ -154,6 +154,8 @@
   <simpleType name="updateDomainOperation">
     <restriction base="token">
       <enumeration value="change_nameserver" />
+      <enumeration value="set_change_nameserver_authid" />
+      <enumeration value="unset_change_nameserver_authid" />
     </restriction>
   </simpleType>
 
