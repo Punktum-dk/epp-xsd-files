@@ -74,6 +74,12 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="xsd-history"></a>
 ## XSD History
 
+## 3.0 _draft_
+
+- EPP Service version 3.0.X
+- Removed excessive import statements, one should suffice
+- This revision of the schema file, eliminates support for older schema versions
+
 <a id="26"></a>
 ### 2.6
 
