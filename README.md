@@ -7,6 +7,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+  - [3.0 _draft_](#30-_draft_)
   - [2.6](#26)
   - [2.5](#25)
   - [2.4](#24)
@@ -74,7 +75,8 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="xsd-history"></a>
 ## XSD History
 
-## 3.0 _draft_
+<a id="30-_draft_"></a>
+### 3.0 _draft_
 
 - EPP Service version 3.0.X
 - Removed excessive import statements, one should suffice
