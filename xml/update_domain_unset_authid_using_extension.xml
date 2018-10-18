@@ -4,20 +4,10 @@
     <update>
       <domain:update xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
         <domain:name>example.com</domain:name>
-        <domain:add>
-          <domain:ns>
-            <domain:hostObj>ns2.example.com</domain:hostObj>
-          </domain:ns>
-        </domain:add>
-        <domain:rem>
-          <domain:ns>
-            <domain:hostObj>ns1.example.com</domain:hostObj>
-          </domain:ns>
-        </domain:rem>
       </domain:update>
     </update>
     <extension>
-      <dkhm:authId xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.6" operation="set_change_nameserver_authid">95fb63c00061cb202bdef5f209f5c3ff</dkhm:authId>
+      <dkhm:authId xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.6" operation="unset_change_nameserver_authid">95fb63c00061cb202bdef5f209f5c3ff</dkhm:authId>
     </extension>
     <clTRID>ABC-12345</clTRID>
   </command>
