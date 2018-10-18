@@ -17,7 +17,7 @@
       </domain:update>
     </update>
     <extension>
-      <dkhm:authId xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.6" operation="change_nameserver">95fb63c00061cb202bdef5f209f5c3ff</dkhm:authId>
+      <dkhm:authId xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.6">95fb63c00061cb202bdef5f209f5c3ff</dkhm:authId>
     </extension>
     <clTRID>ABC-12345</clTRID>
   </command>
