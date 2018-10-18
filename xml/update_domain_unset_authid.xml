@@ -4,11 +4,13 @@
     <update>
       <domain:update xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
         <domain:name>example.com</domain:name>
+        <domain:chg>
+          <domain:authInfo>
+            <domain:pw>95fb63c00061cb202bdef5f209f5c3ff</domain:pw>
+          </domain:authInfo>
+        </domain:chg>
       </domain:update>
     </update>
-    <extension>
-      <dkhm:authId xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.6" operation="set">95fb63c00061cb202bdef5f209f5c3ff</dkhm:authId>
-    </extension>
     <clTRID>ABC-12345</clTRID>
   </command>
 </epp>
