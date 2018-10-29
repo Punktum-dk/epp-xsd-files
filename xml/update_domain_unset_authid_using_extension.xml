@@ -7,7 +7,7 @@
       </domain:update>
     </update>
     <extension>
-      <dkhm:authId xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.6" operation="unset">95fb63c00061cb202bdef5f209f5c3ff</dkhm:authId>
+      <dkhm:authId xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.6" operation="unset">DKHM1-DK-098f6bcd4621d373cade4e832627b4f6</dkhm:authId>
     </extension>
     <clTRID>ABC-12345</clTRID>
   </command>
