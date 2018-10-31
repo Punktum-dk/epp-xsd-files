@@ -151,7 +151,7 @@
   </simpleType>
 
   <!-- custom: authId  -->
-  <simpleType name="authId">
+  <simpleType name="authIdExDate">
     <restriction base="dateTime" />
   </simpleType>
 
