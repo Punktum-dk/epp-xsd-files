@@ -7,5 +7,6 @@
     "no-hard-tabs": false,
     "blanks-around-headings": false,
     "ul-indent": false,
-    "commands-show-output": false
+    "commands-show-output": false,
+    "first-line-h1": false
 }

@@ -1,3 +1,5 @@
+![DK Hostmaster Logo](https://www.dk-hostmaster.dk/sites/default/files/dk-logo_0.png)
+
 # XSD files for the DK Hostmaster EPP service
 
 ## Table of Contents
