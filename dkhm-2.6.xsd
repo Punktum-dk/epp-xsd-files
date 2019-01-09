@@ -151,12 +151,12 @@
   </simpleType>
 
   <!-- custom: authId  -->
-  <simpleType name="authId">
+  <simpleType name="authInfoToken">
     <restriction base="token" />
   </simpleType>
 
   <!-- custom: authId expiration date -->
-  <simpleType name="authIdExDate">
+  <simpleType name="authInfoExDate">
     <restriction base="dateTime" />
   </simpleType>
 
