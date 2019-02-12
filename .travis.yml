@@ -10,9 +10,9 @@ install:
 
 jobs:
   include:
-    - stage: "Markdown test"
+    - stage: "Documentation test"
       name: "Markdown test"
-      script: markdownlint *.md ; markdownlint */*.md
+      script: markdownlint *.md && markdownlint */*.md
     - stage: "XML/XSD test"
-      name: "XML/XSD test"
-      script: xmllint --schema epp.xsd */*.xml
+      name: "Product test"
+      script: xmllint --schema epp.xsd xml/*.xml
