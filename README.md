@@ -2,6 +2,8 @@
 
 # XSD files for the DK Hostmaster EPP service
 
+[![Build Status](https://travis-ci.org/DK-Hostmaster/epp-xsd-files.svg?branch=master)](https://travis-ci.org/DK-Hostmaster/epp-xsd-files)
+
 ## Table of Contents
 
 <!-- MarkdownTOC bracket=round levels="1,2,3,4" indent="  " -->
