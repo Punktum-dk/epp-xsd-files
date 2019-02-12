@@ -12,7 +12,7 @@ jobs:
   include:
     - stage: "Documentation test"
       name: "Markdown test"
-      script: markdownlint *.md && markdownlint */*.md
-    - stage: "XML/XSD test"
-      name: "Product test"
+      script: markdownlint README.md
+    - stage: "Product test"
+      name: "XML/XSD test"
       script: xmllint --schema epp.xsd xml/*.xml
