@@ -1,12 +1,10 @@
 {
     "default": true,
-    "MD004": { "style": "dash" },
-    "html": false,
+    "ul-style": { "style": "dash" },
+    "ul-indent": { "indent": 2 },
     "line-length": false,
-    "fenced-code-language": false,
-    "no-hard-tabs": false,
-    "blanks-around-headings": false,
-    "ul-indent": false,
     "commands-show-output": false,
+    "blanks-around-headings": false,
+    "html": false,
     "first-line-h1": false
 }
