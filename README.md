@@ -71,6 +71,7 @@ The file `epp.xsd` is just for easier test and validation as mentioned, it can b
 
 ```bash
 $ xmllint --schema epp.xsd your_file.xml
+your_file.xml validates
 ```
 
 It will then either omit an error message or the success message: `your_file.xml validates`.
