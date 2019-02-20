@@ -84,7 +84,7 @@ It will then either omit an error message or the success message: `your_file.xml
 
 - EPP Service version 2.3.X
 - Reinstated excessive import statements, since this might break interaction with the existing service (2.3.X), which has some XSD schema issues triggered by this clean up
-- The clean up will be completed and announced as **3.0**, since the XSD as a stand-alone breaks support for older schema versions and `epp.xsd` will be the only entrypoint to support the older schema versions
+- The clean up will be completed and announced as **3.0**, since the XSD as a stand-alone breaks support for older schema versions and `epp.xsd` will be the only entry-point to support the older schema versions
 - More XML cleaned up and formatted, mostly by automation
 
 <a id="25"></a>
