@@ -37,7 +37,8 @@
   <element name="requestedNsAdmin" type="dkhm:requestedNsAdmin" />
   <element name="risk_assessment" type="dkhm:risk_assessment" />
   <element name="url" type="dkhm:url" />
-  <element name="authId" type="dkhm:authId" />
+  <element name="authInfo" type="dkhm:authInfoToken" />
+  <element name="authInfoExDate" type="dkhm:authInfoExDate" />
 
   <!--
   Utility types.
