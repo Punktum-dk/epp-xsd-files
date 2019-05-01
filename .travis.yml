@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+- '6'
+
+before_install:
+  - sudo apt-get install -y libxml2-utils
+
+install:
+   - npm install -g markdownlint-cli
+
+jobs:
+  include:
+    - stage: "Documentation test"
+      name: "Markdown test"
+      script: markdownlint README.md
+    - stage: "Product test"
+      name: "XML/XSD test"
+      script: xmllint --schema epp.xsd xml/*.xml

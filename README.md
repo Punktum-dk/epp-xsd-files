@@ -1,4 +1,8 @@
+![DK Hostmaster Logo](https://www.dk-hostmaster.dk/sites/default/files/dk-logo_0.png)
+
 # XSD files for the DK Hostmaster EPP service
+
+[![Build Status](https://travis-ci.org/DK-Hostmaster/epp-xsd-files.svg?branch=master)](https://travis-ci.org/DK-Hostmaster/epp-xsd-files)
 
 ## Table of Contents
 
@@ -7,6 +11,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+  - [2.6](#26)
   - [2.5](#25)
   - [2.4](#24)
   - [2.3](#23)
@@ -23,7 +28,7 @@
 
 <!-- /MarkdownTOC -->
 
-The current actively used XSD file is indicated in the [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification), this repository might contain changes not actively used by the service. Please see the [EPP Service Specification Wiki](https://github.com/DK-Hostmaster/epp-service-specification/wiki) for exact details.
+:exclamation: The current actively used XSD file is indicated in the [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification), this repository might contain changes not actively used by the service. Please see the [EPP Service Specification Wiki](https://github.com/DK-Hostmaster/epp-service-specification/wiki) for exact details.
 
 <a id="xsd-file-references"></a>
 ## XSD file references
@@ -57,6 +62,7 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-2.3.xsd`, DK Hostmaster EPP extensions version 2.3
 - `dkhm-2.4.xsd`, DK Hostmaster EPP extensions version 2.4
 - `dkhm-2.5.xsd`, DK Hostmaster EPP extensions version 2.5
+- `dkhm-2.6.xsd`, DK Hostmaster EPP extensions version 2.6
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
@@ -65,6 +71,7 @@ The file `epp.xsd` is just for easier test and validation as mentioned, it can b
 
 ```bash
 $ xmllint --schema epp.xsd your_file.xml
+your_file.xml validates
 ```
 
 It will then either omit an error message or the success message: `your_file.xml validates`.
@@ -72,13 +79,21 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="xsd-history"></a>
 ## XSD History
 
+<a id="26"></a>
+### 2.6
+
+- EPP Service version 2.3.X
+- Reinstated excessive import statements, since this might break interaction with the existing service (2.3.X), which has some XSD schema issues triggered by this clean up
+- The clean up will be completed and announced as **3.0**, since the XSD as a stand-alone breaks support for older schema versions and `epp.xsd` will be the only entry-point to support the older schema versions
+- More XML cleaned up and formatted, mostly by automation
+
 <a id="25"></a>
 ### 2.5
 
 - EPP Service version 2.3.X
 - Clearing out some minor issues in the DK Hostmaster XSD
 - Removed excessive import statements, one should suffice
-- All XML cleaned up and formatted, mostly by automation
+- XML cleaned up and formatted, mostly by automation
 
 <a id="24"></a>
 ### 2.4
