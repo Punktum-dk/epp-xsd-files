@@ -6,7 +6,7 @@
         <domain:name>example.com</domain:name>
         <domain:chg>
           <domain:authInfo>
-            <domain:pw>DKHM1-DK-098f6bcd4621d373cade4e832627b4f6</domain:pw>
+            <domain:pw></domain:pw>
           </domain:authInfo>
         </domain:chg>
       </domain:update>
