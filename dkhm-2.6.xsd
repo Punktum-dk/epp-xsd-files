@@ -37,7 +37,6 @@
   <element name="requestedNsAdmin" type="dkhm:requestedNsAdmin" />
   <element name="risk_assessment" type="dkhm:risk_assessment" />
   <element name="url" type="dkhm:url" />
-  <element name="authInfo" type="dkhm:authInfoToken" />
   <element name="authInfoExDate" type="dkhm:authInfoExDate" />
 
   <!--
@@ -151,12 +150,7 @@
     <restriction base="token" />
   </simpleType>
 
-  <!-- custom: authId  -->
-  <simpleType name="authInfoToken">
-    <restriction base="token" />
-  </simpleType>
-
-  <!-- custom: authId expiration date -->
+  <!-- custom: authInfo token expiration date -->
   <simpleType name="authInfoExDate">
     <restriction base="dateTime" />
   </simpleType>
