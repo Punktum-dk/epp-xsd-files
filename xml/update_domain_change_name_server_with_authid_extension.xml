@@ -16,9 +16,9 @@
         </domain:rem>
       </domain:update>
     </update>
-    <extension>
+    <!-- <extension>
       <dkhm:authInfo xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-3.1">DKHM1-DK-098f6bcd4621d373cade4e832627b4f6</dkhm:authInfo>
-    </extension>
+    </extension> -->
     <clTRID>ABC-12345</clTRID>
   </command>
 </epp>
