@@ -2,7 +2,8 @@
 
 # XSD files for the DK Hostmaster EPP service
 
-[![Build Status](https://travis-ci.org/DK-Hostmaster/epp-xsd-files.svg?branch=master)](https://travis-ci.org/DK-Hostmaster/epp-xsd-files)
+![GitHub Workflow build status badge markdownlint](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/Markdownlint%20Workflow/badge.svg)
+![GitHub Workflow build status badge xmllint](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/XMLlint%20Workflow/badge.svg)
 
 ## Table of Contents
 
