@@ -1,7 +1,7 @@
 FROM debian:jessie-slim
 
-LABEL "com.github.actions.name"="Markdownlint"
-LABEL "com.github.actions.description"="Tests all Markdownfiles"
+LABEL "com.github.actions.name"="XMLLint"
+LABEL "com.github.actions.description"="Tests all XML example files"
 LABEL "com.github.actions.icon"="mic"
 LABEL "com.github.actions.color"="purple"
 
