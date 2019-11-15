@@ -7,7 +7,7 @@ LABEL "com.github.actions.color"="purple"
 
 LABEL "repository"="https://github.com/DK-Hostmaster/epp-xsd-files"
 
-RUN sudo apt-get install -y libxml2-utils
+RUN npm install -g markdownlint-cli
 
 ADD entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
