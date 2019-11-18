@@ -31,7 +31,7 @@
     <import namespace="urn:dkhm:params:xml:ns:dkhm-2.3" schemaLocation="dkhm-2.3.xsd" />
     <import namespace="urn:dkhm:params:xml:ns:dkhm-2.4" schemaLocation="dkhm-2.4.xsd" />
     <import namespace="urn:dkhm:params:xml:ns:dkhm-2.5" schemaLocation="dkhm-2.5.xsd" />
-    <import namespace="urn:dkhm:params:xml:ns:dkhm-2.5" schemaLocation="dkhm-2.6.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-2.6" schemaLocation="dkhm-2.6.xsd" />
 
     <!--
     End of schema.
