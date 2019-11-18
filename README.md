@@ -85,7 +85,7 @@ It will then either omit an error message or the success message: `your_file.xml
 ## XSD History
 
 <a id="31-_draft_"></a>
-### 3.1 _draft_ (_unreleased_)
+### 3.1 _prerelease_
 
 - EPP Service version 3.5.X
 - Introducing DK Hostmaster AuthInfo extension for EPP info domain command response
