@@ -3,7 +3,7 @@
     xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"
     xmlns:host="urn:ietf:params:xml:ns:host-1.0"
     xmlns:domain="urn:ietf:params:xml:ns:domain-1.0"
-    xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-3.0"
+    xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-2.6"
     xmlns:epp="urn:ietf:params:xml:ns:epp-1.0"
     xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
     xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
@@ -19,7 +19,19 @@
     <import namespace="urn:ietf:params:xml:ns:secDNS-1.1" schemaLocation="secDNS-1.1.xsd" />
 
     <!-- import DKHM XSD files -->
-    <import namespace="urn:dkhm:params:xml:ns:dkhm-3.0" schemaLocation="dkhm-3.0.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-1.1" schemaLocation="dkhm-1.1.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-1.2" schemaLocation="dkhm-1.2.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-1.3" schemaLocation="dkhm-1.3.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-1.4" schemaLocation="dkhm-1.4.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-1.5" schemaLocation="dkhm-1.5.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-1.6" schemaLocation="dkhm-1.6.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-2.0" schemaLocation="dkhm-2.0.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-2.1" schemaLocation="dkhm-2.1.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-2.2" schemaLocation="dkhm-2.2.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-2.3" schemaLocation="dkhm-2.3.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-2.4" schemaLocation="dkhm-2.4.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-2.5" schemaLocation="dkhm-2.5.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-2.6" schemaLocation="dkhm-2.6.xsd" />
 
     <!--
     End of schema.
