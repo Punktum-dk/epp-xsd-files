@@ -2,7 +2,8 @@
 
 # XSD files for the DK Hostmaster EPP service
 
-[![Build Status](https://travis-ci.org/DK-Hostmaster/epp-xsd-files.svg?branch=master)](https://travis-ci.org/DK-Hostmaster/epp-xsd-files)
+![GitHub Workflow build status badge markdownlint](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/Markdownlint%20Workflow/badge.svg)
+![GitHub Workflow build status badge xmllint](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/XMLlint%20Workflow/badge.svg)
 
 ## Table of Contents
 
@@ -11,6 +12,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+  - [3.0](#30)
   - [2.6](#26)
   - [2.5](#25)
   - [2.4](#24)
@@ -63,6 +65,7 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-2.4.xsd`, DK Hostmaster EPP extensions version 2.4
 - `dkhm-2.5.xsd`, DK Hostmaster EPP extensions version 2.5
 - `dkhm-2.6.xsd`, DK Hostmaster EPP extensions version 2.6
+- `dkhm-3.0.xsd`, DK Hostmaster EPP extensions version 3.0
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
@@ -78,6 +81,13 @@ It will then either omit an error message or the success message: `your_file.xml
 
 <a id="xsd-history"></a>
 ## XSD History
+
+<a id="30"></a>
+### 3.0
+
+- EPP Service version 3.4.0
+- The XSD does not contain changes as such, but removes excessive import statements, where one should suffice
+- This revision of the schema file, eliminates support for older schema versions
 
 <a id="26"></a>
 ### 2.6
