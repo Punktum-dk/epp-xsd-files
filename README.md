@@ -12,7 +12,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
-  - [3.1 _draft_](#31-_draft_)
+  - [3.1](#31)
   - [3.0](#30)
   - [2.6](#26)
   - [2.5](#25)
@@ -66,8 +66,8 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-2.4.xsd`, DK Hostmaster EPP extensions version 2.4
 - `dkhm-2.5.xsd`, DK Hostmaster EPP extensions version 2.5
 - `dkhm-2.6.xsd`, DK Hostmaster EPP extensions version 2.6
-- `dkhm-3.0.xsd`, DK Hostmaster EPP extensions version 3.0
-- `dkhm-3.1.xsd`, DK Hostmaster EPP extensions version 3.1
+- `dkhm-3.0.xsd`, DK Hostmaster EPP extensions version 3.0 (_pre-release_)
+- `dkhm-3.1.xsd`, DK Hostmaster EPP extensions version 3.1 (_pre-release_)
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
@@ -84,14 +84,14 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="xsd-history"></a>
 ## XSD History
 
-<a id="31-_draft_"></a>
-### 3.1 _prerelease_
+<a id="31"></a>
+### 3.1 _pre-release_
 
 - EPP Service version 3.5.X
 - Introducing DK Hostmaster AuthInfo extension for EPP info domain command response
 
 <a id="30"></a>
-### 3.0 _prerelease_
+### 3.0 _pre-release_
 
 - EPP Service version 3.4.0
 - The XSD does not contain changes as such, but removes excessive import statements, where one should suffice
