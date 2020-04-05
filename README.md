@@ -4,7 +4,7 @@
 
 ![Markdownlint Action status badge](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/Markdownlint%20Action/badge.svg)
 ![XMLlint Action status badge](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/XMLlint%20Action/badge.svg)
-![Spellcheck Action status badge](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/.github/workflows/spellcheck.yml/badge.svg)
+![Spellcheck Action](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/Spellcheck%20Action/badge.svg)
 
 ## Table of Contents
 
