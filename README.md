@@ -2,9 +2,9 @@
 
 # XSD files for the DK Hostmaster EPP service
 
-![GitHub Action status badge markdownlint](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/Markdownlint%20Workflow/badge.svg)
-![GitHub Action status badge xmllint](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/XMLlint%20Workflow/badge.svg)
-![GitHub Action status badge spellcheck](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/.github/workflows/spellcheck.yml/badge.svg)
+![Markdownlint Action status badge](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/Markdownlint%20Action/badge.svg)
+![XMLlint Action status badge](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/XMLlint%20Action/badge.svg)
+![Spellcheck Action status badge](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/.github/workflows/spellcheck.yml/badge.svg)
 
 ## Table of Contents
 

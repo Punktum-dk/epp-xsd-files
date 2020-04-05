@@ -14,12 +14,15 @@ clTRID
 crDate
 crID
 dateTime
+DK
+dkhm
 DNS
 domainAdvisory
 epp
 eppcom
 exDate
 GUID
+Hostmaster
 hostObj
 hostObj
 ietf
@@ -37,7 +40,6 @@ params
 pnumber
 pre
 Pre
-pw
 pw
 requestedNsAdmin
 requestor
