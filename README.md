@@ -68,7 +68,7 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-2.4.xsd`, DK Hostmaster EPP extensions version 2.4
 - `dkhm-2.5.xsd`, DK Hostmaster EPP extensions version 2.5
 - `dkhm-2.6.xsd`, DK Hostmaster EPP extensions version 2.6
-- `dkhm-3.0.xsd`, DK Hostmaster EPP extensions version 3.0 (_pre-release_)
+- `dkhm-3.0.xsd`, DK Hostmaster EPP extensions version 3.0
 - `dkhm-3.1.xsd`, DK Hostmaster EPP extensions version 3.1 (_pre-release_)
 - `dkhm-3.2.xsd`, DK Hostmaster EPP extensions version 3.2 (_pre-release_)
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
@@ -99,7 +99,7 @@ It will then either omit an error message or the success message: `your_file.xml
 - Introducing DK Hostmaster AuthInfo extension for EPP info domain command response
 
 <a id="30"></a>
-### 3.0 _pre-release_
+### 3.0
 
 - EPP Service version 3.4.0
 - The XSD does not contain changes as such, but removes excessive import statements, where one should suffice
