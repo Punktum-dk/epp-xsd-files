@@ -166,7 +166,7 @@
     <restriction base="token">
         <enumeration value="true"/>
         <enumeration value="false"/>
-    <restriction/>
+    </restriction>
   </simpleType>
 
   <!--
