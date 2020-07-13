@@ -89,7 +89,8 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="32"></a>
 ### 3.2 _pre-release_
 
-- Introducing DK Hostmaster optional extension for EPP delete domain command request
+- Introducing DK Hostmaster optional extension for EPP delete domain command request: `dkhm:delDate`
+- Introducing DK Hostmaster optional extension for automatic renewal: `dkhm:autoRenew`
 
 <a id="31"></a>
 ### 3.1 _pre-release_

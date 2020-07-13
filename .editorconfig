@@ -20,3 +20,6 @@ insert_final_newline = true
 # Preferred indentation style
 indent_style = space
 indent_size = 2
+
+[*.md]
+indent_style = space

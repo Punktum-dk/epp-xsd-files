@@ -161,6 +161,14 @@
     <restriction base="dateTime" />
   </simpleType>
 
+  <!-- custom: autoRenew  -->
+  <simpleType name="autoRenew">
+    <restriction base="token">
+        <enumeration value="true"/>
+        <enumeration value="false"/>
+    <restriction/>
+  </simpleType>
+
   <!--
     End of schema.
     -->
