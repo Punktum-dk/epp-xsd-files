@@ -1,4 +1,4 @@
-name: Markdownlint Workflow
+name: Markdownlint Action
 on: push
 
 jobs:
@@ -7,4 +7,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    - uses: ./github-action-markdownlint
+    # This step references the directory that contains the action.
+    - uses: ./.github/actions/markdownlint
