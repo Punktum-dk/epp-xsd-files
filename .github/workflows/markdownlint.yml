@@ -1,3 +1,4 @@
+  
 name: Markdownlint Action
 on: push
 
@@ -7,5 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
-    # This step references the directory that contains the action.
-    - uses: ./.github/actions/markdownlint
+    - uses: nosborn/github-action-markdown-cli@v1.1.1
+      name: Markdownlint
+      with:
+        files: .
+        config_file: ".markdownlint.json"
