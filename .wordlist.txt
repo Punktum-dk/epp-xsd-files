@@ -65,3 +65,5 @@ xmllint
 xmlns
 xsd
 XYZ
+delDate
+autoRenew
