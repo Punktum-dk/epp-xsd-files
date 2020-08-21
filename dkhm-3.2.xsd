@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-3.2"
   xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-3.2"
+  xmlns:epp="urn:ietf:params:xml:ns:epp-1.0"
   xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
   xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"
   xmlns:domain="urn:ietf:params:xml:ns:domain-1.0"
@@ -9,9 +10,11 @@
   <!--
   Import common element types.
   -->
+  <import namespace="urn:ietf:params:xml:ns:epp-1.0" schemaLocation="epp-1.0.xsd"/>
   <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
   <import namespace="urn:ietf:params:xml:ns:contact-1.0" schemaLocation="contact-1.0.xsd"/>
   <import namespace="urn:ietf:params:xml:ns:domain-1.0" schemaLocation="domain-1.0.xsd"/>
+  <import namespace="urn:ietf:params:xml:ns:dkhm-domain-3.2" schemaLocation="dkhm-domain-3.2.xsd"/>
 
   <annotation>
     <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v3.2</documentation>
@@ -39,6 +42,7 @@
   <element name="url" type="dkhm:url" />
   <element name="authInfoExDate" type="dkhm:authInfoExDate" />
   <element name="delDate" type="dkhm:delDate" />
+  <element name="command"  type="dkhm:commandType"/>
 
   <!--
   Utility types.
@@ -168,6 +172,24 @@
         <enumeration value="false"/>
     </restriction>
   </simpleType>
+
+  <!-- custom: withdraw command -->
+
+    <complexType name="commandType">
+      <sequence>
+        <element name="withdraw" type="dkhm:withdrawType"/>
+        <element name="extension" type="epp:extAnyType"
+         minOccurs="0"/>
+        <element name="clTRID" type="epp:trIDStringType"
+         minOccurs="0"/>
+      </sequence>
+    </complexType>
+
+    <complexType name="withdrawType">
+      <sequence>
+        <any namespace="##other"/>
+      </sequence>
+    </complexType>
 
   <!--
     End of schema.
