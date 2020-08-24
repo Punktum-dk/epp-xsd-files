@@ -92,6 +92,7 @@ It will then either omit an error message or the success message: `your_file.xml
 
 - Introducing DK Hostmaster optional extension for EPP delete domain command request: `dkhm:delDate`
 - Introducing DK Hostmaster optional extension for automatic renewal: `dkhm:autoRenew`
+- Introducing DK Hostmaster optional command extension for transfer back to DK Hostmaster: `withdraw`
 
 <a id="31"></a>
 ### 3.1 _pre-release_
