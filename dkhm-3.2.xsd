@@ -42,8 +42,9 @@
   <element name="url" type="dkhm:url" />
   <element name="authInfoExDate" type="dkhm:authInfoExDate" />
   <element name="delDate" type="dkhm:delDate" />
-  <element name="command"  type="dkhm:commandType"/>
-
+  <element name="command" type="dkhm:commandType" />
+  <element name="autoRenew" type="dkhm:autoRenew" />
+  
   <!--
   Utility types.
   -->
