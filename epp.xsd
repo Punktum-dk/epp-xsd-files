@@ -21,6 +21,7 @@
     <!-- import DKHM XSD files -->
     <import namespace="urn:dkhm:params:xml:ns:dkhm-3.2" schemaLocation="dkhm-3.2.xsd" />
     <import namespace="urn:dkhm:params:xml:ns:dkhm-domain-3.2" schemaLocation="dkhm-domain-3.2.xsd" />
+    <import namespace="http://www.verisign.com/epp/balance-1.0" schemaLocation="verisign-epp-balance-1.0.xsd" />
 
     <!--
     End of schema.
