@@ -67,3 +67,5 @@ xsd
 XYZ
 delDate
 autoRenew
+VeriSign
+verisign

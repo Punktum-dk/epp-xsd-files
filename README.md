@@ -48,7 +48,7 @@ by their respective authors, please refer to the RFCs for more information.
 - `host-1.0.xsd` [RFC 5732](http://datatracker.ietf.org/doc/rfc5732/)
 - `secDNS-1.0.xsd` [RFC 4310](http://datatracker.ietf.org/doc/rfc4310/)
 - `secDNS-1.1.xsd` [RFC 5910](http://datatracker.ietf.org/doc/rfc5910/)
-- `verisign-epp-balance` [Verisign EPP Balance](https://www.verisign.com/assets/epp-sdk/verisign_epp-extension_balance_v01.html)
+- `verisign-epp-balance` [VeriSign EPP Balance](https://www.verisign.com/assets/epp-sdk/verisign_epp-extension_balance_v01.html)
 
 The following files are owned and copyright by DK Hostmaster A/S under the MIT License, please see the LICENSE file.
 
