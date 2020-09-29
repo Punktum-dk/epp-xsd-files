@@ -48,6 +48,7 @@ by their respective authors, please refer to the RFCs for more information.
 - `host-1.0.xsd` [RFC 5732](http://datatracker.ietf.org/doc/rfc5732/)
 - `secDNS-1.0.xsd` [RFC 4310](http://datatracker.ietf.org/doc/rfc4310/)
 - `secDNS-1.1.xsd` [RFC 5910](http://datatracker.ietf.org/doc/rfc5910/)
+- `verisign-epp-balance` [Verisign EPP Balance](https://www.verisign.com/assets/epp-sdk/verisign_epp-extension_balance_v01.html)
 
 The following files are owned and copyright by DK Hostmaster A/S under the MIT License, please see the LICENSE file.
 
@@ -71,6 +72,7 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-3.0.xsd`, DK Hostmaster EPP extensions version 3.0
 - `dkhm-3.1.xsd`, DK Hostmaster EPP extensions version 3.1 (_pre-release_)
 - `dkhm-3.2.xsd`, DK Hostmaster EPP extensions version 3.2 (_pre-release_)
+- `dkhm-domain-3.2.xsd`, DK Hostmaster EPP Domain extension version 3.2 (_pre-release_)
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
@@ -93,6 +95,7 @@ It will then either omit an error message or the success message: `your_file.xml
 - Introducing DK Hostmaster optional extension for EPP delete domain command request: `dkhm:delDate`
 - Introducing DK Hostmaster optional extension for automatic renewal: `dkhm:autoRenew`
 - Introducing DK Hostmaster optional command extension for transfer back to DK Hostmaster: `withdraw`
+- Introducing use of the VeriSign EPP Balance: `info balance`
 
 <a id="31"></a>
 ### 3.1 _pre-release_
