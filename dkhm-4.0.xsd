@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-3.2"
-  xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-3.2"
+<schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-4.0"
+  xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.0"
   xmlns:epp="urn:ietf:params:xml:ns:epp-1.0"
   xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
   xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"
@@ -14,10 +14,10 @@
   <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
   <import namespace="urn:ietf:params:xml:ns:contact-1.0" schemaLocation="contact-1.0.xsd"/>
   <import namespace="urn:ietf:params:xml:ns:domain-1.0" schemaLocation="domain-1.0.xsd"/>
-  <import namespace="urn:ietf:params:xml:ns:dkhm-domain-3.2" schemaLocation="dkhm-domain-3.2.xsd"/>
+  <import namespace="urn:ietf:params:xml:ns:dkhm-domain-4.0" schemaLocation="dkhm-domain-4.0.xsd"/>
 
   <annotation>
-    <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v3.2</documentation>
+    <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v4.0</documentation>
   </annotation>
 
   <!--
