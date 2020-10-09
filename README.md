@@ -13,7 +13,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
-  - [3.2](#32)
+  - [4.0](#40)
   - [3.1](#31)
   - [3.0](#30)
   - [2.6](#26)
@@ -30,6 +30,7 @@
   - [1.2](#12)
   - [1.1](#11)
   - [1.0](#10)
+- [Resources and References](#references_and_resources)
 
 <!-- /MarkdownTOC -->
 
@@ -71,8 +72,8 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-2.6.xsd`, DK Hostmaster EPP extensions version 2.6
 - `dkhm-3.0.xsd`, DK Hostmaster EPP extensions version 3.0
 - `dkhm-3.1.xsd`, DK Hostmaster EPP extensions version 3.1 (_pre-release_)
-- `dkhm-3.2.xsd`, DK Hostmaster EPP extensions version 3.2 (_pre-release_)
-- `dkhm-domain-3.2.xsd`, DK Hostmaster EPP Domain extension version 3.2 (_pre-release_)
+- `dkhm-4.0.xsd`, DK Hostmaster EPP extensions version 4.0 (_pre-release_)
+- `dkhm-domain-4.0.xsd`, DK Hostmaster EPP Domain extension version 4.0 (_pre-release_)
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification][DKHMEPPSPEC] describes the use and contents of the files in more detail.
@@ -89,13 +90,15 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="xsd-history"></a>
 ## XSD History
 
-<a id="32"></a>
-### 3.2 _pre-release_
+<a id="40"></a>
+### 4.0 _pre-release_
 
+- EPP Service version 4.0.0
 - Introducing DK Hostmaster optional extension for EPP delete domain command request: `dkhm:delDate`
 - Introducing DK Hostmaster optional extension for automatic renewal: `dkhm:autoRenew`
 - Introducing DK Hostmaster optional command extension for transfer back to DK Hostmaster: `withdraw`
 - Introducing use of the VeriSign EPP Balance: `info balance`
+- Added proper Resouces and References chapter
 
 <a id="31"></a>
 ### 3.1 _pre-release_
@@ -201,6 +204,20 @@ It will then either omit an error message or the success message: `your_file.xml
 
 - EPP Service version 1.0.0
 - Released 2014-02-25
+
+<a id="references_and_resources"></a>
+## References and Resources
+
+- [RFC:4310: "Domain Name System (DNS) Security Extensions Mapping for the Extensible Provisioning Protocol (EPP)"][RFC4310]
+- [RFC:5730: Extensible Provisioning Protocol (EPP)][RFC5730]
+- [RFC:5731: "Extensible Provisioning Protocol (EPP) Domain Name Mapping"][RFC5731]
+- [RFC:5732: "Extensible Provisioning Protocol (EPP) Host Mapping"][RFC5732]
+- [RFC:5733: "Extensible Provisioning Protocol (EPP) Contact Mapping"][RFC5733]
+- [RFC:5910: "Domain Name System (DNS) Security Extensions Mapping for the Extensible Provisioning Protocol (EPP)"][RFC5910]
+- [VerriSign: "Balance Mapping for the Extensible Provisioning Protocol (EPP)"][VeriSignEppBalance]
+- [xmlsoft.org: xmllint][xmllint]
+- [DK Hostmaster EPP Service Specification][DKHMEPPSPEC]
+- [DK Hostmaster EPP Service Wiki][DKHMEPPWIKI]
 
 [RFC4310]: https://tools.ietf.org/html/rfc4310
 [RFC5730]: https://tools.ietf.org/html/rfc5730

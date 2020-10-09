@@ -69,3 +69,4 @@ delDate
 autoRenew
 VeriSign
 verisign
+authorizations
