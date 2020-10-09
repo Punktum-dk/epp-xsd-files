@@ -33,7 +33,7 @@
 
 <!-- /MarkdownTOC -->
 
-:exclamation: The current actively used XSD file is indicated in the [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification), this repository might contain changes not actively used by the service. Please see the [EPP Service Specification Wiki](https://github.com/DK-Hostmaster/epp-service-specification/wiki) for exact details.
+:exclamation: The current actively used XSD file is indicated in the [EPP service specification][DKHMEPPSPEC], this repository might contain changes not actively used by the service. Please see the [EPP Service Specification Wiki][DKHMEPPWIKI] for exact details.
 
 <a id="xsd-file-references"></a>
 ## XSD file references
@@ -41,14 +41,14 @@
 Please note that the following files have been lifted from their respective RFCs. These files are copyrighted
 by their respective authors, please refer to the RFCs for more information.
 
-- `contact-1.0.xsd` [RFC 5733](http://datatracker.ietf.org/doc/rfc5733/)
-- `domain-1.0.xsd` [RFC 5731](http://datatracker.ietf.org/doc/rfc5731/)
-- `epp-1.0.xsd` [RFC 5730](http://datatracker.ietf.org/doc/rfc5730/)
-- `eppcom-1.0.xsd` [RFC 5730](http://datatracker.ietf.org/doc/rfc5730/)
-- `host-1.0.xsd` [RFC 5732](http://datatracker.ietf.org/doc/rfc5732/)
-- `secDNS-1.0.xsd` [RFC 4310](http://datatracker.ietf.org/doc/rfc4310/)
-- `secDNS-1.1.xsd` [RFC 5910](http://datatracker.ietf.org/doc/rfc5910/)
-- `verisign-epp-balance` [VeriSign EPP Balance](https://www.verisign.com/assets/epp-sdk/verisign_epp-extension_balance_v01.html)
+- `contact-1.0.xsd` [RFC:5733][RFC5733]
+- `domain-1.0.xsd` [RFC:5731][RFC5731]
+- `epp-1.0.xsd` [RFC:5730][RFC5730]
+- `eppcom-1.0.xsd` [RFC:5730][RFC5730]
+- `host-1.0.xsd` [RFC:5732][RFC5732]
+- `secDNS-1.0.xsd` [RFC:4310][RFC4310]
+- `secDNS-1.1.xsd` [RFC:5910][RFC5910]
+- `verisign-epp-balance` [VeriSign EPP Balance][VeriSignEPPBalance]
 
 The following files are owned and copyright by DK Hostmaster A/S under the MIT License, please see the LICENSE file.
 
@@ -75,9 +75,9 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-domain-3.2.xsd`, DK Hostmaster EPP Domain extension version 3.2 (_pre-release_)
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
-The DK Hostmaster [EPP service specification](https://github.com/DK-Hostmaster/epp-service-specification) describes the use and contents of the files in more detail.
+The DK Hostmaster [EPP service specification][DKHMEPPSPEC] describes the use and contents of the files in more detail.
 
-The file `epp.xsd` is just for easier test and validation as mentioned, it can be used together with [`xmllint`](http://xmlsoft.org/xmllint.html):
+The file `epp.xsd` is just for easier test and validation as mentioned, it can be used together with [`xmllint`][xmllint]:
 
 ```bash
 $ xmllint --schema epp.xsd your_file.xml
@@ -101,7 +101,7 @@ It will then either omit an error message or the success message: `your_file.xml
 ### 3.1 _pre-release_
 
 - EPP Service version 3.5.X
-- Introducing DK Hostmaster AuthInfo extension for EPP info domain command response
+- Introducing DK Hostmaster AuthInfo expiration: `dkhm:authInfoExDate` extension for EPP info domain command response and autorizations for AuthInfo
 
 <a id="30"></a>
 ### 3.0
@@ -148,7 +148,7 @@ It will then either omit an error message or the success message: `your_file.xml
 ### 2.1
 
 - EPP Service version 2.3.X
-- **Warning!** This release includes a change to the standard XSD from [RFC:5730](https://tools.ietf.org/html/rfc5730), aligning the values for the password type. It has not been possible to get the patch applied using the XML Schema feature: `redefine` or `overwrite`. When this succeeds this change will have to be rolled-back. The change has been applied so the schema file conforms with the schema file used at DK Hostmaster A/S.
+- **Warning!** This release includes a change to the standard XSD from [RFC:5730][RFC5730], aligning the values for the password type. It has not been possible to get the patch applied using the XML Schema feature: `redefine` or `overwrite`. When this succeeds this change will have to be rolled-back. The change has been applied so the schema file conforms with the schema file used at DK Hostmaster A/S.
 
 - The DKHM Schema file has been updated to revision 2.1, the file does not contain any changes apart from the import, this file was created for a uniform communication in regard to revision numbers etc.
 
@@ -201,3 +201,14 @@ It will then either omit an error message or the success message: `your_file.xml
 
 - EPP Service version 1.0.0
 - Released 2014-02-25
+
+[RFC4310]: https://tools.ietf.org/html/rfc4310
+[RFC5730]: https://tools.ietf.org/html/rfc5730
+[RFC5731]: https://tools.ietf.org/html/rfc5731
+[RFC5732]: https://tools.ietf.org/html/rfc5732
+[RFC5733]: https://tools.ietf.org/html/rfc5733
+[RFC5910]: https://tools.ietf.org/html/rfc5910
+[VeriSignEppBalance]: https://www.verisign.com/assets/epp-sdk/verisign_epp-extension_balance_v01.html
+[xmllint]: http://xmlsoft.org/xmllint.html
+[DKHMEPPSPEC]: https://github.com/DK-Hostmaster/epp-service-specification
+[DKHMEPPWIKI]: https://github.com/DK-Hostmaster/epp-service-specification/wiki
