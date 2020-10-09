@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
   <extension>
-    <command xmlns="urn:dkhm:params:xml:ns:dkhm-3.2">
+    <command xmlns="urn:dkhm:params:xml:ns:dkhm-4.0">
       <withdraw>
-        <domain:withdraw xmlns:domain="urn:dkhm:params:xml:ns:dkhm-domain-3.2">
+        <domain:withdraw xmlns:domain="urn:dkhm:params:xml:ns:dkhm-domain-4.0">
           <domain:name>eksempel.dk</domain:name>
         </domain:withdraw>
       </withdraw>
