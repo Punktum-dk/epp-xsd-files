@@ -98,13 +98,13 @@ It will then either omit an error message or the success message: `your_file.xml
 - Introducing DK Hostmaster optional extension for automatic renewal: `dkhm:autoRenew`
 - Introducing DK Hostmaster optional command extension for transfer back to DK Hostmaster: `withdraw`
 - Introducing use of the VeriSign EPP Balance: `info balance`
-- Added proper Resouces and References chapter
+- Added proper Resources and References chapter
 
 <a id="31"></a>
 ### 3.1 _pre-release_
 
 - EPP Service version 3.5.X
-- Introducing DK Hostmaster AuthInfo expiration: `dkhm:authInfoExDate` extension for EPP info domain command response and autorizations for AuthInfo
+- Introducing DK Hostmaster AuthInfo expiration: `dkhm:authInfoExDate` extension for EPP info domain command response and authorizations for AuthInfo
 
 <a id="30"></a>
 ### 3.0
@@ -214,7 +214,7 @@ It will then either omit an error message or the success message: `your_file.xml
 - [RFC:5732: "Extensible Provisioning Protocol (EPP) Host Mapping"][RFC5732]
 - [RFC:5733: "Extensible Provisioning Protocol (EPP) Contact Mapping"][RFC5733]
 - [RFC:5910: "Domain Name System (DNS) Security Extensions Mapping for the Extensible Provisioning Protocol (EPP)"][RFC5910]
-- [VerriSign: "Balance Mapping for the Extensible Provisioning Protocol (EPP)"][VeriSignEppBalance]
+- [VeriSign: "Balance Mapping for the Extensible Provisioning Protocol (EPP)"][VeriSignEppBalance]
 - [xmlsoft.org: xmllint][xmllint]
 - [DK Hostmaster EPP Service Specification][DKHMEPPSPEC]
 - [DK Hostmaster EPP Service Wiki][DKHMEPPWIKI]

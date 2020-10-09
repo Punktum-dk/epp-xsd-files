@@ -70,3 +70,4 @@ autoRenew
 VeriSign
 verisign
 authorizations
+xmlsoft
