@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-  <schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-domain-3.2"
-          xmlns:dkhm-domain="urn:dkhm:params:xml:ns:dkhm-domain-3.2"
+  <schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-domain-4.0"
+          xmlns:dkhm-domain="urn:dkhm:params:xml:ns:dkhm-domain-4.0"
           xmlns:epp="urn:ietf:params:xml:ns:epp-1.0"
           xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
           xmlns="http://www.w3.org/2001/XMLSchema"
@@ -13,7 +13,7 @@
             schemaLocation="epp-1.0.xsd"/>
 
   <annotation>
-    <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v3.2 for domain</documentation>
+    <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v4.0 for domain</documentation>
   </annotation>
 
     <element name="withdraw" type="dkhm-domain:withdrawType"/>

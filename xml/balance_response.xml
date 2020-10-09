@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+    <response>
+        <result code="1000">
+            <msg>Command completed successfully</msg>
+        </result>
+        <resData>
+            <balance:infData xmlns:balance="http://www.verisign.com/epp/balance-1.0">
+                <balance:creditLimit>0</balance:creditLimit>
+                <balance:balance>2000.00</balance:balance>
+                <balance:availableCredit>2000.00</balance:availableCredit>
+                <balance:creditThreshold>
+                    <balance:fixed>0</balance:fixed>
+                </balance:creditThreshold>
+            </balance:infData>
+        </resData>
+        <trID>
+            <clTRID>ABC-12345</clTRID>
+            <svTRID>54322-XYZ</svTRID>
+        </trID>
+    </response>
+</epp>

@@ -67,3 +67,7 @@ xsd
 XYZ
 delDate
 autoRenew
+VeriSign
+verisign
+authorizations
+xmlsoft
