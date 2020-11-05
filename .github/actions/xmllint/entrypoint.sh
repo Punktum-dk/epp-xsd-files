@@ -4,7 +4,7 @@ echo ""
 echo "Using XMLlint on all XML example files"
 echo "--------------------------------------"
 
-xmllint --schema epp.xsd xml/*.xml
+xmllint --schema epp.xsd xml/{**,.}/*.xml 
 
 EXITCODE=$?
 
