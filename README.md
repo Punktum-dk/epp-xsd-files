@@ -13,6 +13,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+  - [4.1](#41)
   - [4.0](#40)
   - [3.1](#31)
   - [3.0](#30)
@@ -75,6 +76,8 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-3.1.xsd`, DK Hostmaster EPP extensions version 3.1 (_pre-release_)
 - `dkhm-4.0.xsd`, DK Hostmaster EPP extensions version 4.0 (_pre-release_)
 - `dkhm-domain-4.0.xsd`, DK Hostmaster EPP Domain extension version 4.0 (_pre-release_)
+- `dkhm-4.1.xsd`, DK Hostmaster EPP extensions version 4.1 (_pre-release_)
+- `dkhm-domain-4.1.xsd`, DK Hostmaster EPP Domain extension version 4.1 (_pre-release_)
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification][DKHMEPPSPEC] describes the use and contents of the files in more detail.
@@ -91,16 +94,16 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="xsd-history"></a>
 ## XSD History
 
-<a id="40"></a>
+<a id="41"></a>
 ### 4.1 _pre-release_
 
-- EPP Service version 4.1.0
+- EPP Service version 4.0.0 (_beta_)
 - Introducing use of the restore capability described in [RFC:3915]
 
 <a id="40"></a>
 ### 4.0 _pre-release_
 
-- EPP Service version 4.0.0
+- EPP Service version 4.0.0 (_beta_)
 - Introducing DK Hostmaster optional extension for EPP delete domain command request: `dkhm:delDate`
 - Introducing DK Hostmaster optional extension for automatic renewal: `dkhm:autoRenew`
 - Introducing DK Hostmaster optional command extension for transfer back to DK Hostmaster: `withdraw`
