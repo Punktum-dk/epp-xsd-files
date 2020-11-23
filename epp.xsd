@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema targetNamespace="urn:ietf:params:xml:ns:epp"
-    xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"
-    xmlns:host="urn:ietf:params:xml:ns:host-1.0"
-    xmlns:domain="urn:ietf:params:xml:ns:domain-1.0"
-    xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.0"
-    xmlns:epp="urn:ietf:params:xml:ns:epp-1.0"
-    xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
     xmlns="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
 
     <!--
@@ -18,10 +12,12 @@
     <import namespace="urn:ietf:params:xml:ns:contact-1.0" schemaLocation="contact-1.0.xsd" />
     <import namespace="urn:ietf:params:xml:ns:secDNS-1.1" schemaLocation="secDNS-1.1.xsd" />
 
-    <!-- import DKHM XSD files -->
-    <import namespace="urn:dkhm:params:xml:ns:dkhm-4.0" schemaLocation="dkhm-4.0.xsd" />
-    <import namespace="urn:dkhm:params:xml:ns:dkhm-domain-4.0" schemaLocation="dkhm-domain-4.0.xsd" />
     <import namespace="http://www.verisign.com/epp/balance-1.0" schemaLocation="verisign-epp-balance-1.0.xsd" />
+    <import namespace="urn:ietf:params:xml:ns:rgp-1.0" schemaLocation="rgp-1.0.xsd" />
+
+    <!-- import DKHM XSD files -->
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-4.1" schemaLocation="dkhm-4.1.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-domain-4.1" schemaLocation="dkhm-domain-4.1.xsd" />
 
     <!--
     End of schema.

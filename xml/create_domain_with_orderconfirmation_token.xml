@@ -16,7 +16,7 @@
 			</domain:create>
 		</create>
 		<extension>
-			<dkhm:orderconfirmationToken xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.0">testtoken</dkhm:orderconfirmationToken>
+			<dkhm:orderconfirmationToken xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.1">testtoken</dkhm:orderconfirmationToken>
 		</extension>
 		<clTRID>92724843f12a3e958588679551aa988d</clTRID>
 	</command>
