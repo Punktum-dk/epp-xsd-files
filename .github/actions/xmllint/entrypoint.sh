@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -euf -o pipefail
+set -eu -o pipefail
 
 echo ""
 echo "Using XMLlint on all XML example files"
