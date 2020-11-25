@@ -7,5 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    - uses: korelstar/xmllint-problem-matcher@v1
     # This step references the directory that contains the action.
     - uses: ./.github/actions/xmllint
