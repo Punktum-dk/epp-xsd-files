@@ -1,4 +1,4 @@
-FROM debian:jessie-slim
+FROM debian:buster-slim
 
 LABEL "com.github.actions.name"="XMLLint"
 LABEL "com.github.actions.description"="Tests all XML example files"
