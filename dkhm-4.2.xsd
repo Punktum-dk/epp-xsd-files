@@ -13,8 +13,6 @@
   <import namespace="urn:ietf:params:xml:ns:epp-1.0" schemaLocation="epp-1.0.xsd"/>
   <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
   <import namespace="urn:ietf:params:xml:ns:contact-1.0" schemaLocation="contact-1.0.xsd"/>
-  <import namespace="urn:ietf:params:xml:ns:domain-1.0" schemaLocation="domain-1.0.xsd"/>
-  <import namespace="urn:ietf:params:xml:ns:dkhm-domain-4.2" schemaLocation="dkhm-domain-4.2.xsd"/>
 
   <annotation>
     <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v4.2</documentation>
