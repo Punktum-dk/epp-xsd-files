@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+  <schema targetNamespace="urn:dkhm:params:xml:ns:dkhm-domain-4.2"
+          xmlns:dkhm-domain="urn:dkhm:params:xml:ns:dkhm-domain-4.2"
+          xmlns:epp="urn:ietf:params:xml:ns:epp-1.0"
+          xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0"
+          xmlns="http://www.w3.org/2001/XMLSchema"
+          elementFormDefault="qualified">
+
+    <import namespace="urn:ietf:params:xml:ns:eppcom-1.0"
+            schemaLocation="eppcom-1.0.xsd"/>
+    <import namespace="urn:ietf:params:xml:ns:epp-1.0"
+            schemaLocation="epp-1.0.xsd"/>
+
+  <annotation>
+    <documentation>Extensible Provisioning Protocol v1.0 provisioning schema. DKHM extension v4.2 for domain</documentation>
+  </annotation>
+
+    <element name="withdraw" type="dkhm-domain:withdrawType"/>
+
+    <complexType name="withdrawType">
+      <sequence>
+        <element name="name" type="eppcom:labelType"/>
+      </sequence>
+    </complexType>
+
+ </schema>

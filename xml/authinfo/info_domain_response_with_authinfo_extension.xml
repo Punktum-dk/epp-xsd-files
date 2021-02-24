@@ -26,12 +26,13 @@
         <domain:exDate>2005-04-03T22:00:00.0Z</domain:exDate>
         <domain:trDate>2000-04-08T09:00:00.0Z</domain:trDate>
         <domain:authInfo>
-          <domain:pw>DKHM1-DK-098f6bcd4621d373cade4e832627b4f6</domain:pw>
+          <domain:pw />
         </domain:authInfo>
       </domain:infData>
     </resData>
     <extension>
-      <dkhm:authInfoExDate xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.2">2018-11-14T09:00:00.0Z</dkhm:authInfoExDate>
+      <dkhm:authInfo op="transfer" expdate="2019-11-14T09:00:00.0Z" xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.2">DKHM1-DK-098f6bcd4621d373cade4e832627b4f6</dkhm:authInfo>
+      <dkhm:authInfo op="redel" expdate="2020-11-14T09:00:00.0Z" xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.2">DKHM2-DK-098f6bcd4621d373cade4e832627b4f6</dkhm:authInfo>
     </extension>
     <trID>
       <clTRID>ABC-12345</clTRID>
