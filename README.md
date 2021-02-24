@@ -113,13 +113,13 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="31"></a>
 ### 3.1 _pre-release_
 
-- EPP Service version 3.5.X
+- EPP Service version 4.0.0 (_beta_)
 - Introducing DK Hostmaster AuthInfo expiration: `dkhm:authInfoExDate` extension for EPP info domain command response and authorizations for AuthInfo
 
 <a id="30"></a>
 ### 3.0
 
-- EPP Service version 3.4.0
+- EPP Service version 3.4.0 and 3.5.X
 - The XSD does not contain changes as such, but removes excessive import statements, where one should suffice
 - This revision of the schema file, eliminates support for older schema versions
 
