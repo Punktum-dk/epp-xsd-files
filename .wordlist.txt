@@ -72,3 +72,4 @@ verisign
 authorizations
 xmlsoft
 rgp
+namespace
