@@ -78,8 +78,8 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-4.0.xsd`, DK Hostmaster EPP extensions version 4.0 (_pre-release_)
 - `dkhm-domain-4.0.xsd`, DK Hostmaster EPP Domain extension version 4.0 (_pre-release_)
 - `dkhm-4.1.xsd`, DK Hostmaster EPP extensions version 4.1 (_pre-release_)
-- `dkhm-domain-4.1.xsd`, DK Hostmaster EPP Domain extension version 4.2 (_pre-release_)
-- `dkhm-4.2.xsd`, DK Hostmaster EPP extensions version 4.1 (_pre-release_)
+- `dkhm-domain-4.1.xsd`, DK Hostmaster EPP Domain extension version 4.1 (_pre-release_)
+- `dkhm-4.2.xsd`, DK Hostmaster EPP extensions version 4.2 (_pre-release_)
 - `dkhm-domain-4.2.xsd`, DK Hostmaster EPP Domain extension version 4.2 (_pre-release_)
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
