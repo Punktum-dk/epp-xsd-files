@@ -31,8 +31,8 @@
       </domain:infData>
     </resData>
     <extension>
-      <dkhm:authInfo op="transfer" expdate="2019-11-14T09:00:00.0Z" xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.2">DKHM1-DK-098f6bcd4621d373cade4e832627b4f6</dkhm:authInfo>
-      <dkhm:authInfo op="redel" expdate="2020-11-14T09:00:00.0Z" xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.2">DKHM2-DK-098f6bcd4621d373cade4e832627b4f6</dkhm:authInfo>
+      <dkhm:authInfo op="transfer" expdate="2019-11-14T09:00:00.0Z" xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.3">DKHM1-DK-098f6bcd4621d373cade4e832627b4f6</dkhm:authInfo>
+      <dkhm:authInfo op="redel" expdate="2020-11-14T09:00:00.0Z" xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.3">DKHM2-DK-098f6bcd4621d373cade4e832627b4f6</dkhm:authInfo>
     </extension>
     <trID>
       <clTRID>ABC-12345</clTRID>

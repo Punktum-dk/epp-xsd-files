@@ -81,6 +81,8 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-domain-4.1.xsd`, DK Hostmaster EPP Domain extension version 4.1 (_pre-release_)
 - `dkhm-4.2.xsd`, DK Hostmaster EPP extensions version 4.2 (_pre-release_)
 - `dkhm-domain-4.2.xsd`, DK Hostmaster EPP Domain extension version 4.2 (_pre-release_)
+- `dkhm-4.3.xsd`, DK Hostmaster EPP extensions version 4.3 (_pre-release_)
+- `dkhm-domain-4.3.xsd`, DK Hostmaster EPP Domain extension version 4.3 (_pre-release_)
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification][DKHMEPPSPEC] describes the use and contents of the files in more detail.
@@ -96,6 +98,12 @@ It will then either omit an error message or the success message: `your_file.xml
 
 <a id="xsd-history"></a>
 ## XSD History
+
+<a id="43"></a>
+### 4.3 _pre-release_
+
+- EPP Service version 4.0.0 (_beta_)
+- Added proposed extension `dkhm:management` for communication of choice of management model
 
 <a id="42"></a>
 ### 4.2 _pre-release_
