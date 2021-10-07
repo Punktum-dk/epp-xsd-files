@@ -254,7 +254,7 @@ It will then either omit an error message or the success message: `your_file.xml
 [RFC:5731]: https://tools.ietf.org/html/rfc5731
 [RFC:5732]: https://tools.ietf.org/html/rfc5732
 [RFC:5733]: https://tools.ietf.org/html/rfc5733
-[RFC:5910]: https://tools.ietf.org/html/RFC:5910
+[RFC:5910]: https://tools.ietf.org/html/rfc5910
 [VeriSignEppBalance]: https://www.verisign.com/assets/epp-sdk/verisign_epp-extension_balance_v01.html
 [xmllint]: http://xmlsoft.org/xmllint.html
 [DKHMEPPSPEC]: https://github.com/DK-Hostmaster/epp-service-specification
