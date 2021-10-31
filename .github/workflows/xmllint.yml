@@ -2,11 +2,18 @@ name: XMLlint Action
 on: push
 
 jobs:
-  build:
+  xml-linters:
     name: XMLlint
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@master
-    - uses: korelstar/xmllint-problem-matcher@v1
+    - name: Checkout
+      uses: actions/checkout@master
+    - name: Enable annotations
+      uses: korelstar/xmllint-problem-matcher@v1
     # This step references the directory that contains the action.
-    - uses: ./.github/actions/xmllint
+    # - uses: ./.github/actions/xmllint
+    - name: Lint info.xml
+      uses: ChristophWurst/xmllint-action@v1
+      with:
+        xml-file: ./xml/{,**/}*.xml
+        xml-schema-file: ./epp.xsd
