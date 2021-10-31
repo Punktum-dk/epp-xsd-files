@@ -11,9 +11,12 @@ jobs:
     - name: Enable annotations
       uses: korelstar/xmllint-problem-matcher@v1
     - name: Lint XMLfiles using xmllint
-      #uses: jonasbn/xmllint-action@17419913cd0a340cbf6b17d426e3bcd700d84855
+      # Our branch (pointing to specific commits)
+      uses: jonasbn/xmllint-action@252fea911675776995d801e81f9445dbc7f79074
+      # Our original
       #uses: ChristophWurst/xmllint-action@v1
-      uses: ./.github/actions/xmllint
+      # Our local implementation
+      #uses: ./.github/actions/xmllint
       with:
         xml-file: ./xml/{,**/}*.xml
         xml-schema-file: ./epp.xsd
