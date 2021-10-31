@@ -10,11 +10,10 @@ jobs:
       uses: actions/checkout@master
     - name: Enable annotations
       uses: korelstar/xmllint-problem-matcher@v1
-    # This step references the directory that contains the action.
-    # - uses: ./.github/actions/xmllint
-    - name: Lint info.xml
-      uses: jonasbn/xmllint-action@17419913cd0a340cbf6b17d426e3bcd700d84855
+    - name: Lint XMLfiles using xmllint
+      #uses: jonasbn/xmllint-action@17419913cd0a340cbf6b17d426e3bcd700d84855
       #uses: ChristophWurst/xmllint-action@v1
+      uses: ./.github/actions/xmllint
       with:
         xml-file: ./xml/{,**/}*.xml
         xml-schema-file: ./epp.xsd
