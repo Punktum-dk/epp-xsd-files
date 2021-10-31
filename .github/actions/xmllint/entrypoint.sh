@@ -8,11 +8,12 @@ echo "--------------------------------------"
 
 shopt -s globstar
 
+#xmllint xml/{,**/}*.xml --schema myschema.xsd --noout
 command="xmllint $1 --schema $2 --noout"
 
-#xmllint --noout --schema epp.xsd xml/{,**/}*.xml
+echo "$command"
+
 # shellcheck disable=SC2086
-#xmllint $1 --schema $2 --noout
 eval $command
 
 EXITCODE=$?
