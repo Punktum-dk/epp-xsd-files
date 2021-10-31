@@ -13,7 +13,7 @@ jobs:
     # This step references the directory that contains the action.
     # - uses: ./.github/actions/xmllint
     - name: Lint info.xml
-      uses: jonasbn/xmllint-action@f4550bc28a40414a9344e44b96de27b1100ecbd3
+      uses: jonasbn/xmllint-action@17419913cd0a340cbf6b17d426e3bcd700d84855
       #uses: ChristophWurst/xmllint-action@v1
       with:
         xml-file: ./xml/{,**/}*.xml
