@@ -39,13 +39,13 @@
   <element name="risk_assessment" type="dkhm:risk_assessment" />
   <element name="url" type="dkhm:url" />
   <element name="authInfoExDate" type="dkhm:authInfoExDate" />
-  <!--<element name="authInfo" type="dkhm:authInfoType" />-->
   <element name="authInfo" type="dkhm:authInfo" />
   <element name="delDate" type="dkhm:delDate" />
   <element name="command" type="dkhm:commandType" />
   <element name="autoRenew" type="dkhm:autoRenew" />
   <element name="management" type="dkhm:management" />
   <element name="VID" type="dkhm:VID" />
+  <element name="IDControlStatus" type="dkhm:IDControlStatus" />
 
   <!--
   Utility types.
@@ -186,7 +186,7 @@
     <restriction base="dateTime" />
   </simpleType>
 
-  <!-- custom: autoRenew  -->
+  <!-- custom: autoRenew boolean -->
   <simpleType name="autoRenew">
     <restriction base="token">
         <enumeration value="true"/>
@@ -219,11 +219,18 @@
     </restriction>
   </simpleType>
 
-  <!-- custom: VID  -->
+  <!-- custom: VID boolean -->
   <simpleType name="VID">
     <restriction base="token">
         <enumeration value="true"/>
         <enumeration value="false"/>
+    </restriction>
+  </simpleType>
+
+  <!-- custom: IDControlStatus enumeration -->
+  <simpleType name="IDControlStatus">
+    <restriction base="token">
+      <enumeration value="IDControlNotRequired" />
     </restriction>
   </simpleType>
 
