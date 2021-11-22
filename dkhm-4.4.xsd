@@ -219,7 +219,7 @@
     </restriction>
   </simpleType>
 
-  <!-- custom: autoRenew  -->
+  <!-- custom: VID  -->
   <simpleType name="VID">
     <restriction base="token">
         <enumeration value="true"/>
