@@ -101,27 +101,27 @@ It will then either omit an error message or the success message: `your_file.xml
 ## XSD History
 
 <a id="43"></a>
-### 4.3 _pre-release_
+### 4.3
 
-- EPP Service version 4.0.0 (_beta_)
+- EPP Service version 4.0.0
 - Added proposed extension `dkhm:management` for communication of choice of management model
 
 <a id="42"></a>
-### 4.2 _pre-release_
+### 4.2
 
-- EPP Service version 4.0.0 (_beta_)
+- EPP Service version 4.0.0
 - Addressing a minor issue of XML invalid namespace references [#20](https://github.com/DK-Hostmaster/epp-xsd-files/issues/20)
 
 <a id="41"></a>
-### 4.1 _pre-release_
+### 4.1
 
-- EPP Service version 4.0.0 (_beta_)
+- EPP Service version 4.0.0
 - Introducing use of the restore capability described in [RFC:3915]
 
 <a id="40"></a>
-### 4.0 _pre-release_
+### 4.0
 
-- EPP Service version 4.0.0 (_beta_)
+- EPP Service version 4.0.0
 - Introducing DK Hostmaster optional extension for EPP delete domain command request: `dkhm:delDate`
 - Introducing DK Hostmaster optional extension for automatic renewal: `dkhm:autoRenew`
 - Introducing DK Hostmaster optional command extension for transfer back to DK Hostmaster: `withdraw`
@@ -129,9 +129,9 @@ It will then either omit an error message or the success message: `your_file.xml
 - Added proper Resources and References chapter
 
 <a id="31"></a>
-### 3.1 _pre-release_
+### 3.1
 
-- EPP Service version 4.0.0 (_beta_)
+- EPP Service version 4.0.0
 - Introducing DK Hostmaster AuthInfo expiration: `dkhm:authInfoExDate` extension for EPP info domain command response and authorizations for AuthInfo
 
 <a id="30"></a>
@@ -254,7 +254,7 @@ It will then either omit an error message or the success message: `your_file.xml
 [RFC:5731]: https://tools.ietf.org/html/rfc5731
 [RFC:5732]: https://tools.ietf.org/html/rfc5732
 [RFC:5733]: https://tools.ietf.org/html/rfc5733
-[RFC:5910]: https://tools.ietf.org/html/RFC:5910
+[RFC:5910]: https://tools.ietf.org/html/rfc5910
 [VeriSignEppBalance]: https://www.verisign.com/assets/epp-sdk/verisign_epp-extension_balance_v01.html
 [xmllint]: http://xmlsoft.org/xmllint.html
 [DKHMEPPSPEC]: https://github.com/DK-Hostmaster/epp-service-specification
