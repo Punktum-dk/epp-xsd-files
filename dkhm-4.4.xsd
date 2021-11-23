@@ -45,7 +45,7 @@
   <element name="autoRenew" type="dkhm:autoRenew" />
   <element name="management" type="dkhm:management" />
   <element name="VID" type="dkhm:VID" />
-  <element name="IDControlStatus" type="dkhm:IDControlStatus" />
+  <element name="idControlStatus" type="dkhm:idControlStatus" />
 
   <!--
   Utility types.
@@ -228,9 +228,16 @@
   </simpleType>
 
   <!-- custom: IDControlStatus enumeration -->
-  <simpleType name="IDControlStatus">
+  <simpleType name="idControlStatus">
     <restriction base="token">
-      <enumeration value="IDControlNotRequired" />
+      <enumeration value="rejectedManualIDControl" />
+      <enumeration value="expiredNemIDControl" />
+      <enumeration value="requiredManualIDControl" />
+      <enumeration value="requiredNemIDControl" />
+      <enumeration value="unrequiredIDControl" />
+      <enumeration value="completedNemIDControl" />
+      <enumeration value="expiredManualIDControl" />
+      <enumeration value="completedManualIDControl" />
     </restriction>
   </simpleType>
 
