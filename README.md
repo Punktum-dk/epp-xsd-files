@@ -13,6 +13,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+  - [4.4](#44)
   - [4.3](#43)
   - [4.2](#42)
   - [4.1](#41)
@@ -75,15 +76,17 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-2.5.xsd`, DK Hostmaster EPP extensions version 2.5
 - `dkhm-2.6.xsd`, DK Hostmaster EPP extensions version 2.6
 - `dkhm-3.0.xsd`, DK Hostmaster EPP extensions version 3.0
-- `dkhm-3.1.xsd`, DK Hostmaster EPP extensions version 3.1 (_pre-release_)
-- `dkhm-4.0.xsd`, DK Hostmaster EPP extensions version 4.0 (_pre-release_)
-- `dkhm-domain-4.0.xsd`, DK Hostmaster EPP Domain extension version 4.0 (_pre-release_)
-- `dkhm-4.1.xsd`, DK Hostmaster EPP extensions version 4.1 (_pre-release_)
-- `dkhm-domain-4.1.xsd`, DK Hostmaster EPP Domain extension version 4.1 (_pre-release_)
-- `dkhm-4.2.xsd`, DK Hostmaster EPP extensions version 4.2 (_pre-release_)
-- `dkhm-domain-4.2.xsd`, DK Hostmaster EPP Domain extension version 4.2 (_pre-release_)
-- `dkhm-4.3.xsd`, DK Hostmaster EPP extensions version 4.3 (_pre-release_)
-- `dkhm-domain-4.3.xsd`, DK Hostmaster EPP Domain extension version 4.3 (_pre-release_)
+- `dkhm-3.1.xsd`, DK Hostmaster EPP extensions version 3.1
+- `dkhm-4.0.xsd`, DK Hostmaster EPP extensions version 4.0
+- `dkhm-domain-4.0.xsd`, DK Hostmaster EPP Domain extension version 4.0
+- `dkhm-4.1.xsd`, DK Hostmaster EPP extensions version 4.1
+- `dkhm-domain-4.1.xsd`, DK Hostmaster EPP Domain extension version 4.1
+- `dkhm-4.2.xsd`, DK Hostmaster EPP extensions version 4.2
+- `dkhm-domain-4.2.xsd`, DK Hostmaster EPP Domain extension version 4.2
+- `dkhm-4.3.xsd`, DK Hostmaster EPP extensions version 4.3
+- `dkhm-domain-4.3.xsd`, DK Hostmaster EPP Domain extension version 4.3
+- `dkhm-4.4.xsd`, DK Hostmaster EPP extensions version 4.4
+- `dkhm-domain-4.4.xsd`, DK Hostmaster EPP Domain extension version 4.4
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 
 The DK Hostmaster [EPP service specification][DKHMEPPSPEC] describes the use and contents of the files in more detail.
@@ -99,6 +102,13 @@ It will then either omit an error message or the success message: `your_file.xml
 
 <a id="xsd-history"></a>
 ## XSD History
+
+<a id="44"></a>
+### 4.4
+
+- EPP Service version 4.X.0
+- Added extension `dkhm:VID` for communication of choice of VID, a registry lock service for registrant managed domain names
+- Added extension `dkhm:IDControlStatus` for communication state of ID-control for a given user
 
 <a id="43"></a>
 ### 4.3
