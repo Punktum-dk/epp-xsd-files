@@ -17,6 +17,7 @@
 		</create>
 		<extension>
 			<dkhm:orderconfirmationToken xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.4">testtoken</dkhm:orderconfirmationToken>
+			<dkhm:management xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.4">registrar</dkhm:management>
 		</extension>
 		<clTRID>92724843f12a3e958588679551aa988d</clTRID>
 	</command>

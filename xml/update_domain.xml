@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+	<command>
+		<update>
+			<domain:update xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+				<domain:name>eksempel.dk</domain:name>
+				<domain:add/>
+				<domain:rem/>
+				<domain:chg/>
+			</domain:update>
+		</update>
+		<clTRID>c6a678333c526109dea562b42a678398</clTRID>
+	</command>
+</epp>

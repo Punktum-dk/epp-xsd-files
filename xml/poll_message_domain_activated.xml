@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <response>
+    <result code="1301">
+      <msg>Command completed successfully; ack to dequeue</msg>
+    </result>
+    <msgQ count="5" id="12345">
+      <qDate>2000-06-08T22:00:00.0Z</qDate>
+      <msg>Domain activated: eksempel.dk</msg>
+    </msgQ>
+    <resData>
+      <domain:infData xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>dk-hostmaster.dk</domain:name>
+        <domain:roid>DK_HOSTMASTER_DK-DK</domain:roid>
+        <domain:status s="serverDeleteProhibited"/>
+        <domain:status s="serverUpdateProhibited"/>
+        <domain:status s="serverTransferProhibited"/>
+        <domain:registrant>DKHM1-DK</domain:registrant>
+        <domain:contact type="admin">DKHM1-DK</domain:contact>
+        <domain:ns>
+          <domain:hostObj>auth01.ns.dk-hostmaster.dk</domain:hostObj>
+          <domain:hostObj>auth02.ns.dk-hostmaster.dk</domain:hostObj>
+          <domain:hostObj>p.nic.dk</domain:hostObj>
+        </domain:ns>
+        <domain:host>gr2.dk-hostmaster.dk</domain:host>
+        <domain:host>venteliste1.dk-hostmaster.dk</domain:host>
+        <domain:host>venteliste2.dk-hostmaster.dk</domain:host>
+        <domain:host>gr1.dk-hostmaster.dk</domain:host>
+        <domain:host>ns.dk-hostmaster.dk</domain:host>
+        <domain:host>ns2.dk-hostmaster.dk</domain:host>
+        <domain:host>ns1.dk-hostmaster.dk</domain:host>
+        <domain:host>parat1.dk-hostmaster.dk</domain:host>
+        <domain:host>parat2.dk-hostmaster.dk</domain:host>
+        <domain:host>auth02.ns.dk-hostmaster.dk</domain:host>
+        <domain:host>auth01.ns.dk-hostmaster.dk</domain:host>
+        <domain:host>blocked1.ns.dk-hostmaster.dk</domain:host>
+        <domain:host>blocked2.ns.dk-hostmaster.dk</domain:host>
+        <domain:host>ipchange.ns.dk-hostmaster.dk</domain:host>
+        <domain:clID>DKHM1-DK</domain:clID>
+        <domain:crID>DKHM1-DK</domain:crID>
+        <domain:crDate>1998-01-19T00:00:00.0Z</domain:crDate>
+        <domain:exDate>2022-03-31T00:00:00.0Z</domain:exDate>
+      </domain:infData>
+    </resData>
+    <trID>
+      <clTRID>ABC-12345</clTRID>
+      <svTRID>54321-XYZ</svTRID>
+    </trID>
+  </response>
+</epp>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <create>
+      <contact:create
+       xmlns:contact="urn:ietf:params:xml:ns:contact-1.0">
+        <contact:id>auto</contact:id>
+        <contact:postalInfo type="loc">
+          <contact:name>John Doe</contact:name>
+          <contact:addr>
+            <contact:street>Test Street</contact:street>
+            <contact:city>Copenhagen</contact:city>
+            <contact:pc>1457</contact:pc>
+            <contact:cc>DK</contact:cc>
+          </contact:addr>
+        </contact:postalInfo>
+        <contact:voice>+45.42031337</contact:voice>
+        <contact:email>test@example.org</contact:email>
+        <contact:authInfo>
+          <contact:pw>AL9HM3L5XU</contact:pw>
+        </contact:authInfo>
+      </contact:create>
+    </create>
+    <extension>
+      <dkhm:userType xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.4">individual</dkhm:userType>
+    </extension>
+    <clTRID>5bcd4919d9651</clTRID>
+  </command>
+</epp>
