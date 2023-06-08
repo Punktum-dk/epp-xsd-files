@@ -231,11 +231,11 @@
   <simpleType name="idControlStatus">
     <restriction base="token">
       <enumeration value="rejectedManualIDControl" />
-      <enumeration value="expiredNemIDControl" />
+      <enumeration value="expiredEIDControl" />
       <enumeration value="requiredManualIDControl" />
-      <enumeration value="requiredNemIDControl" />
+      <enumeration value="requiredEIDControl" />
       <enumeration value="unrequiredIDControl" />
-      <enumeration value="completedNemIDControl" />
+      <enumeration value="completedEIDControl" />
       <enumeration value="expiredManualIDControl" />
       <enumeration value="completedManualIDControl" />
     </restriction>
