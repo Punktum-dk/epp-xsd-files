@@ -229,7 +229,7 @@ It will then either omit an error message or the success message: `your_file.xml
 ### 1.2
 
 - EPP Service version 1.1.X
-- Introduction of `dkhm:orderConfirmation` for create domain and support of [Pre-activation Service](#pre-activation-service)
+- Introduction of `dkhm:orderConfirmation` for create domain and support of Pre-activation Service (deprecated)
 
 <a id="11"></a>
 ### 1.1
