@@ -44,8 +44,7 @@
   <element name="command" type="dkhm:commandType" />
   <element name="autoRenew" type="dkhm:autoRenew" />
   <element name="management" type="dkhm:management" />
-  <element name="VID" type="dkhm:VID" />
-  <element name="idControlStatus" type="dkhm:idControlStatus" />
+    <element name="idControlStatus" type="dkhm:idControlStatus" />
 
   <!--
   Utility types.
@@ -216,14 +215,6 @@
     <restriction base="token">
       <enumeration value="registrar" />
       <enumeration value="registrant" />
-    </restriction>
-  </simpleType>
-
-  <!-- custom: VID boolean -->
-  <simpleType name="VID">
-    <restriction base="token">
-        <enumeration value="true"/>
-        <enumeration value="false"/>
     </restriction>
   </simpleType>
 
