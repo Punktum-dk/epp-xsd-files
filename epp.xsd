@@ -16,7 +16,7 @@
     <import namespace="urn:ietf:params:xml:ns:rgp-1.0" schemaLocation="rgp-1.0.xsd" />
 
     <!-- import DKHM XSD files -->
-    <import namespace="urn:dkhm:params:xml:ns:dkhm-4.3" schemaLocation="dkhm-4.3.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-4.3" schemaLocation="dkhm-4.4.xsd" />
     <import namespace="urn:dkhm:params:xml:ns:dkhm-domain-4.3" schemaLocation="dkhm-domain-4.3.xsd" />
 
     <!--
