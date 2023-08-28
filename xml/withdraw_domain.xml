@@ -3,7 +3,7 @@
   <extension>
     <command xmlns="urn:dkhm:params:xml:ns:dkhm-4.4">
       <withdraw>
-        <domain:withdraw xmlns:domain="urn:dkhm:params:xml:ns:dkhm-domain-4.3">
+        <domain:withdraw xmlns:domain="urn:dkhm:params:xml:ns:dkhm-domain-4.4">
           <domain:name>eksempel.dk</domain:name>
         </domain:withdraw>
       </withdraw>
