@@ -34,8 +34,7 @@
   <element name="command" type="dkhm:commandType"/>
   <element name="autoRenew" type="dkhm:autoRenew"/>
   <element name="management" type="dkhm:management"/>
-  <element name="VID" type="dkhm:VID"/>
-  <element name="idControlStatus" type="dkhm:idControlStatus"/>
+  <element name="vid" type="dkhm:vid"/>
   <!--
   Utility types.
   -->
@@ -174,7 +173,6 @@
       <any namespace="##other"/>
     </sequence>
   </complexType>
-  <!-- custom: risk assessment enumeration -->
   <simpleType name="management">
     <restriction base="token">
       <enumeration value="registrar"/>
@@ -186,19 +184,6 @@
     <restriction base="token">
       <enumeration value="true"/>
       <enumeration value="false"/>
-    </restriction>
-  </simpleType>
-  <!-- custom: IDControlStatus enumeration -->
-  <simpleType name="idControlStatus">
-    <restriction base="token">
-      <enumeration value="rejectedManualIDControl"/>
-      <enumeration value="expiredEIDControl"/>
-      <enumeration value="requiredManualIDControl"/>
-      <enumeration value="requiredEIDControl"/>
-      <enumeration value="unrequiredIDControl"/>
-      <enumeration value="completedEIDControl"/>
-      <enumeration value="expiredManualIDControl"/>
-      <enumeration value="completedManualIDControl"/>
     </restriction>
   </simpleType>
   <!--
