@@ -106,9 +106,8 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="44"></a>
 ### 4.4
 
-- EPP Service version 4.X.0
+- EPP Service version 4.11.0
 - Added extension `dkhm:VID` for communication of choice of VID, a registry lock service for registrant managed domain names
-- Added extension `dkhm:idControlStatus` for communication state of ID-control for a given user
 
 <a id="43"></a>
 ### 4.3
