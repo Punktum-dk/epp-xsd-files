@@ -107,7 +107,7 @@ It will then either omit an error message or the success message: `your_file.xml
 ### 4.4
 
 - EPP Service version 4.11.0
-- Added extension `dkhm:VID` for communication of choice of VID, a registry lock service for registrant managed domain names
+- Added extension `dkhm:vid` for communication of choice of VID, a registry lock service for registrant managed domain names
 
 <a id="43"></a>
 ### 4.3
