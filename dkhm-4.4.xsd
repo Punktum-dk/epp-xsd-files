@@ -179,8 +179,8 @@
       <enumeration value="registrant"/>
     </restriction>
   </simpleType>
-  <!-- custom: VID boolean -->
-  <simpleType name="VID">
+  <!-- custom: vid boolean -->
+  <simpleType name="vid">
     <restriction base="token">
       <enumeration value="true"/>
       <enumeration value="false"/>
