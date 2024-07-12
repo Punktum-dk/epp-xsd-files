@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <update>
+      <contact:update xmlns:contact="urn:ietf:params:xml:ns:contact-1.0">
+        <contact:id>USER22-DK</contact:id>
+        <contact:chg/>
+      </contact:update>
+    </update>
+    <extension>
+      <dkhm:userType xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">individual</dkhm:userType>
+      <dkhm:contact_verification xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">
+        <dkhm:responsible>registrar</dkhm:responsible>
+        <dkhm:verification_status>completed</dkhm:verification_status>
+      </dkhm:contact_verification>
+    </extension>
+    <clTRID>1e66aeebf62a8d3b52fe6bb08886eed7</clTRID>
+  </command>
+</epp>

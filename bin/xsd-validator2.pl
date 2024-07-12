@@ -6,8 +6,8 @@ use XML::Validate::Xerces;
 use Try::Tiny;
 use Data::Dumper; # dumper
 
-my $xml_file = $ARGV[0];
-my $xsd_file = $ARGV[1];
+die "Syntax: $0  <xml-file>  <xsd-file>\n"  unless @ARGV>=2;
+my($xml_file, $xsd_file) = @ARGV;
 
 open FIN, '<', $xml_file
     or die "Unable to open file: $xml_file - $!";

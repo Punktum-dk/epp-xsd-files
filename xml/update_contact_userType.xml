@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <update>
+      <contact:update xmlns:contact="urn:ietf:params:xml:ns:contact-1.0">
+        <contact:id>USER1-DK</contact:id>
+        <contact:chg/>
+      </contact:update>
+    </update>
+    <extension>
+      <dkhm:userType xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">individual</dkhm:userType>
+    </extension>
+    <clTRID>712989a21cd65a27f698a6465a26e917</clTRID>
+  </command>
+</epp>

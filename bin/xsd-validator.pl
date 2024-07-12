@@ -7,13 +7,8 @@ use XML::Twig;
 use Try::Tiny;
 use Data::Dumper; # dumper
 
-my $xml_file = $ARGV[0];
-my $xsd_file = $ARGV[1];
-
-# open FIN, '<', $xml_file
-#     or die "Unable to open file: $xml_file - $!";
-# my $xml = join '', <FIN>;
-# close FIN;
+die "Syntax: $0  <xml-file>  <xsd-file>\n"  unless @ARGV>=2;
+my($xml_file, $xsd_file) = @ARGV;
 
 my $xml = XML::LibXML->load_xml(
     location => $xml_file,
@@ -41,11 +36,11 @@ sub validate_xml_against_xsd {
     } catch {
         my $error = ref $_ ? $_->message : $_;
 
-        print STDERR Dumper {
+        print STDERR Data::Dumper->new([{
             epp_error_message => 'XSD Validation failed '. $error,
             epp_status_code   => 2001,
             failed_xml => toStringPretty($xml),
-        };
+        }])->Sortkeys(1)->Dump;
 
         die;
     };

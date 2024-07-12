@@ -13,6 +13,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+  - [4.5](#44)
   - [4.4](#44)
   - [4.3](#43)
   - [4.2](#42)
@@ -88,6 +89,7 @@ The following files are owned and copyright by DK Hostmaster A/S under the MIT L
 - `dkhm-4.4.xsd`, DK Hostmaster EPP extensions version 4.4
 - `dkhm-domain-4.4.xsd`, DK Hostmaster EPP Domain extension version 4.4
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
+- `dkhm-4.5.xsd`, DK Hostmaster EPP extensions version 4.5
 
 The DK Hostmaster [EPP service specification][DKHMEPPSPEC] describes the use and contents of the files in more detail.
 
@@ -102,6 +104,12 @@ It will then either omit an error message or the success message: `your_file.xml
 
 <a id="xsd-history"></a>
 ## XSD History
+
+<a id="45"></a>
+### 4.5
+
+- EPP Service version 4.11.0
+- Added extension `dkhm:contact_verification` for communication of choice of user verification (verification responsible, verification status, verification expire date)
 
 <a id="44"></a>
 ### 4.4

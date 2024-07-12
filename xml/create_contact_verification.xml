@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <create>
+      <contact:create xmlns:contact="urn:ietf:params:xml:ns:contact-1.0">
+        <contact:id>auto</contact:id>
+        <contact:postalInfo type="loc">
+          <contact:name>Test Test</contact:name>
+          <contact:addr>
+            <contact:street>Some Street</contact:street>
+            <contact:city>København S</contact:city>
+            <contact:sp/>
+            <contact:pc>2300</contact:pc>
+            <contact:cc>DK</contact:cc>
+          </contact:addr>
+        </contact:postalInfo>
+        <contact:voice>+45.12345678</contact:voice>
+        <contact:email>epp-test@uniejo.dk</contact:email>
+        <contact:authInfo>
+          <contact:pw/>
+        </contact:authInfo>
+      </contact:create>
+    </create>
+    <extension>
+      <dkhm:userType xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">individual</dkhm:userType>
+      <dkhm:contact_verification xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">
+        <dkhm:responsible>registrar</dkhm:responsible>
+        <dkhm:verification_status>completed</dkhm:verification_status>
+      </dkhm:contact_verification>
+    </extension>
+    <clTRID>bcee428f7b55d68b4449f0f07c6354e8</clTRID>
+  </command>
+</epp>

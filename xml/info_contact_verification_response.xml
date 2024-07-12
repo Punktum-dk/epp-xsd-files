@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1000">
+      <msg>Command completed successfully</msg>    </result>
+    <resData>
+      <contact:infData xmlns:contact="urn:ietf:params:xml:ns:contact-1.0">
+        <contact:id>USER123-DK</contact:id>
+        <contact:roid>USER123-DK</contact:roid>
+        <contact:status s="linked"/>
+        <contact:status s="serverDeleteProhibited"/>
+        <contact:status s="serverTransferProhibited"/>
+        <contact:postalInfo type="loc">
+          <contact:name>John Doe</contact:name>
+          <contact:addr>
+            <contact:street>Some Street</contact:street>
+            <contact:city>København S</contact:city>
+            <contact:pc>2300</contact:pc>
+            <contact:cc>DK</contact:cc>          </contact:addr>      </contact:postalInfo>
+        <contact:voice>+45.12345678</contact:voice>
+        <contact:email>epp-test@example.dk</contact:email>
+        <contact:clID>XXX-XXXXXX</contact:clID>
+        <contact:crID>USER321-DK</contact:crID>
+        <contact:crDate>2024-05-10T12:54:07.0Z</contact:crDate>  </contact:infData>    </resData>
+    <extension>
+      <dkhm:contact_validated xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">1</dkhm:contact_validated>
+      <dkhm:userType xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">individual</dkhm:userType>
+      <dkhm:contact_verification xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">
+        <dkhm:responsible>registrar</dkhm:responsible>
+        <dkhm:verification_status>required</dkhm:verification_status>
+      </dkhm:contact_verification></extension>
+    <trID>
+      <clTRID>fa6953397b8831107247851463bdb85d</clTRID>
+      <svTRID>5973F6D0-4049-11EF-9D22-CFC065FB0E81</svTRID>    </trID></response>
+</epp>

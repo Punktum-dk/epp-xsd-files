@@ -31,7 +31,7 @@
       </domain:infData>
     </resData>
     <extension>
-      <dkhm:authInfoExDate xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.4">2018-11-14T09:00:00.0Z</dkhm:authInfoExDate>
+      <dkhm:authInfoExDate xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">2018-11-14T09:00:00.0Z</dkhm:authInfoExDate>
     </extension>
     <trID>
       <clTRID>ABC-12345</clTRID>
