@@ -109,7 +109,7 @@ It will then either omit an error message or the success message: `your_file.xml
 ### 4.5
 
 - EPP Service version 4.11.0
-- Added extension `dkhm:contact_verification` for communication of choice of user verification (verification responsible, verification status, verification expire date)
+- Added extension `dkhm:contact_verification` for communication of choice of user verification (verification responsible, verification expire date, verified id/email/phone )
 
 <a id="44"></a>
 ### 4.4

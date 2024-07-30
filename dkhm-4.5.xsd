@@ -191,7 +191,9 @@
   <complexType name="contact_verificationType">
     <sequence>
       <element name="responsible" type="dkhm:responsibleType" minOccurs="0"/>
-      <element name="verification_status" type="dkhm:verification_statusType" minOccurs="0"/>
+      <element name="verified_id" type="dkhm:verification_statusType" minOccurs="0"/>
+      <element name="verified_email" type="dkhm:verification_statusType" minOccurs="0"/>
+      <element name="verified_phone" type="dkhm:verification_statusType" minOccurs="0"/>
       <element name="expire_date" type="dkhm:expire_dateType" minOccurs="0"/>
     </sequence>
   </complexType>
