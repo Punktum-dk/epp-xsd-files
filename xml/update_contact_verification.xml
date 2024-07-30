@@ -12,9 +12,9 @@
       <dkhm:userType xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">individual</dkhm:userType>
       <dkhm:contact_verification xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">
         <dkhm:responsible>registrar</dkhm:responsible>
-        <dkhm:verified_id>completed</dkhm:verified_id>
-        <dkhm:verified_email>completed</dkhm:verified_email>
-        <dkhm:verified_phone>completed</dkhm:verified_phone>
+        <dkhm:verified_id>true</dkhm:verified_id>
+        <dkhm:verified_email>true</dkhm:verified_email>
+        <dkhm:verified_phone>true</dkhm:verified_phone>
       </dkhm:contact_verification>
     </extension>
     <clTRID>1e66aeebf62a8d3b52fe6bb08886eed7</clTRID>

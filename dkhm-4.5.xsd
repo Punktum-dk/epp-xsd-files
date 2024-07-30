@@ -191,9 +191,9 @@
   <complexType name="contact_verificationType">
     <sequence>
       <element name="responsible" type="dkhm:responsibleType" minOccurs="0"/>
-      <element name="verified_id" type="dkhm:verification_statusType" minOccurs="0"/>
-      <element name="verified_email" type="dkhm:verification_statusType" minOccurs="0"/>
-      <element name="verified_phone" type="dkhm:verification_statusType" minOccurs="0"/>
+      <element name="verified_id" type="boolean" minOccurs="0"/>
+      <element name="verified_email" type="boolean" minOccurs="0"/>
+      <element name="verified_phone" type="boolean" minOccurs="0"/>
       <element name="expire_date" type="dkhm:expire_dateType" minOccurs="0"/>
     </sequence>
   </complexType>
@@ -202,16 +202,6 @@
     <restriction base="token">
       <enumeration value="registrar"/>
       <enumeration value="registry"/>
-    </restriction>
-  </simpleType>
-  <!-- custom: verification_status enumeration -->
-  <simpleType name="verification_statusType">
-    <restriction base="token">
-      <enumeration value="notRequired"/>
-      <enumeration value="required"/>
-      <enumeration value="expired"/>
-      <enumeration value="completed"/>
-      <enumeration value="rejected"/>
     </restriction>
   </simpleType>
   <simpleType name="expire_dateType">
