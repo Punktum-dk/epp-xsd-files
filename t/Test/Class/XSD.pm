@@ -36,7 +36,7 @@ sub xml_files : Tests {
 sub test_xml_xsd {
     my($self, $xml_file, $xsd_file) = @_;
     $xsd_file //= 'epp.xsd';
-    my $should_fail = $xml_file =~ /fail/;
+    my $should_fail = $xml_file =~ m#/fail/#;
     my $test = sprintf('Testing XSD "%s" on XML "%s"%s', $xsd_file, $xml_file, $should_fail ? ' (should fail)' : '');
 #   note $test;
     my($valid, $message) = (0, "-");

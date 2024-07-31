@@ -191,10 +191,9 @@
   <complexType name="contact_verificationType">
     <sequence>
       <element name="responsible" type="dkhm:responsibleType" minOccurs="0"/>
-      <element name="verified_id" type="boolean" minOccurs="0"/>
-      <element name="verified_email" type="boolean" minOccurs="0"/>
-      <element name="verified_phone" type="boolean" minOccurs="0"/>
-      <element name="expire_date" type="dkhm:expire_dateType" minOccurs="0"/>
+      <element name="verified_id" type="dkhm:verifiedType" minOccurs="0"/>
+      <element name="verified_email" type="dkhm:verifiedType" minOccurs="0"/>
+      <element name="verified_phone" type="dkhm:verifiedType" minOccurs="0"/>
     </sequence>
   </complexType>
   <!-- custom: responsible enumeration -->
@@ -204,9 +203,15 @@
       <enumeration value="registry"/>
     </restriction>
   </simpleType>
-  <simpleType name="expire_dateType">
-    <restriction base="dateTime"/>
-  </simpleType>
+  <complexType name="verifiedType">
+    <simpleContent>
+      <extension base="boolean">
+        <attribute name="status" type="token" use="optional"/>
+        <attribute name="expdate" type="dateTime" use="optional"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+  <!-- custom authInfoType -->
   <!--
     End of schema.
   -->
