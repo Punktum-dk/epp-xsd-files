@@ -1,6 +1,6 @@
-![DK Hostmaster Logo](https://www.dk-hostmaster.dk/sites/default/files/dk-logo_0.png)
+![Punktum dk Logo](https://www.dk-hostmaster.dk/sites/default/files/dk-logo_0.png)
 
-# XSD files for the DK Hostmaster EPP service
+# XSD files for the Punktum dk EPP service
 
 ![Markdownlint Action status badge](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/Markdownlint%20Action/badge.svg)
 ![XMLlint Action status badge](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/XMLlint%20Action/badge.svg)
@@ -57,41 +57,41 @@ by their respective authors, please refer to the RFCs for more information.
 - `verisign-epp-balance` [VeriSign EPP Balance][VeriSignEPPBalance]
 - `rgp-1.0.xsd` [RFC:3915]
 
-The following files are owned and copyright by DK Hostmaster A/S under the MIT License, please see the LICENSE file.
+The following files are owned and copyright by Punktum dk A/S under the MIT License, please see the LICENSE file.
 
 <a id="xsd-files"></a>
 ## XSD files
 
-- `dkhm-1.0.xsd`, DK Hostmaster EPP extensions version 1.0
-- `dkhm-1.1.xsd`, DK Hostmaster EPP extensions version 1.1
-- `dkhm-1.2.xsd`, DK Hostmaster EPP extensions version 1.2
-- `dkhm-1.3.xsd`, DK Hostmaster EPP extensions version 1.3
-- `dkhm-1.4.xsd`, DK Hostmaster EPP extensions version 1.4
-- `dkhm-1.5.xsd`, DK Hostmaster EPP extensions version 1.5
-- `dkhm-1.6.xsd`, DK Hostmaster EPP extensions version 1.6
-- `dkhm-2.0.xsd`, DK Hostmaster EPP extensions version 2.0
-- `dkhm-2.1.xsd`, DK Hostmaster EPP extensions version 2.1
-- `dkhm-2.2.xsd`, DK Hostmaster EPP extensions version 2.2
-- `dkhm-2.3.xsd`, DK Hostmaster EPP extensions version 2.3
-- `dkhm-2.4.xsd`, DK Hostmaster EPP extensions version 2.4
-- `dkhm-2.5.xsd`, DK Hostmaster EPP extensions version 2.5
-- `dkhm-2.6.xsd`, DK Hostmaster EPP extensions version 2.6
-- `dkhm-3.0.xsd`, DK Hostmaster EPP extensions version 3.0
-- `dkhm-3.1.xsd`, DK Hostmaster EPP extensions version 3.1
-- `dkhm-4.0.xsd`, DK Hostmaster EPP extensions version 4.0
-- `dkhm-domain-4.0.xsd`, DK Hostmaster EPP Domain extension version 4.0
-- `dkhm-4.1.xsd`, DK Hostmaster EPP extensions version 4.1
-- `dkhm-domain-4.1.xsd`, DK Hostmaster EPP Domain extension version 4.1
-- `dkhm-4.2.xsd`, DK Hostmaster EPP extensions version 4.2
-- `dkhm-domain-4.2.xsd`, DK Hostmaster EPP Domain extension version 4.2
-- `dkhm-4.3.xsd`, DK Hostmaster EPP extensions version 4.3
-- `dkhm-domain-4.3.xsd`, DK Hostmaster EPP Domain extension version 4.3
-- `dkhm-4.4.xsd`, DK Hostmaster EPP extensions version 4.4
-- `dkhm-domain-4.4.xsd`, DK Hostmaster EPP Domain extension version 4.4
+- `dkhm-1.0.xsd`, Punktum dk EPP extensions version 1.0
+- `dkhm-1.1.xsd`, Punktum dk EPP extensions version 1.1
+- `dkhm-1.2.xsd`, Punktum dk EPP extensions version 1.2
+- `dkhm-1.3.xsd`, Punktum dk EPP extensions version 1.3
+- `dkhm-1.4.xsd`, Punktum dk EPP extensions version 1.4
+- `dkhm-1.5.xsd`, Punktum dk EPP extensions version 1.5
+- `dkhm-1.6.xsd`, Punktum dk EPP extensions version 1.6
+- `dkhm-2.0.xsd`, Punktum dk EPP extensions version 2.0
+- `dkhm-2.1.xsd`, Punktum dk EPP extensions version 2.1
+- `dkhm-2.2.xsd`, Punktum dk EPP extensions version 2.2
+- `dkhm-2.3.xsd`, Punktum dk EPP extensions version 2.3
+- `dkhm-2.4.xsd`, Punktum dk EPP extensions version 2.4
+- `dkhm-2.5.xsd`, Punktum dk EPP extensions version 2.5
+- `dkhm-2.6.xsd`, Punktum dk EPP extensions version 2.6
+- `dkhm-3.0.xsd`, Punktum dk EPP extensions version 3.0
+- `dkhm-3.1.xsd`, Punktum dk EPP extensions version 3.1
+- `dkhm-4.0.xsd`, Punktum dk EPP extensions version 4.0
+- `dkhm-domain-4.0.xsd`, Punktum dk EPP Domain extension version 4.0
+- `dkhm-4.1.xsd`, Punktum dk EPP extensions version 4.1
+- `dkhm-domain-4.1.xsd`, Punktum dk EPP Domain extension version 4.1
+- `dkhm-4.2.xsd`, Punktum dk EPP extensions version 4.2
+- `dkhm-domain-4.2.xsd`, Punktum dk EPP Domain extension version 4.2
+- `dkhm-4.3.xsd`, Punktum dk EPP extensions version 4.3
+- `dkhm-domain-4.3.xsd`, Punktum dk EPP Domain extension version 4.3
+- `dkhm-4.4.xsd`, Punktum dk EPP extensions version 4.4
+- `dkhm-domain-4.4.xsd`, Punktum dk EPP Domain extension version 4.4
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
-- `dkhm-4.5.xsd`, DK Hostmaster EPP extensions version 4.5
+- `dkhm-4.5.xsd`, Punktum dk EPP extensions version 4.5
 
-The DK Hostmaster [EPP service specification][DKHMEPPSPEC] describes the use and contents of the files in more detail.
+The Punktum dk [EPP service specification][DKHMEPPSPEC] describes the use and contents of the files in more detail.
 
 The file `epp.xsd` is just for easier test and validation as mentioned, it can be used together with [`xmllint`][xmllint]:
 
@@ -139,9 +139,9 @@ It will then either omit an error message or the success message: `your_file.xml
 ### 4.0
 
 - EPP Service version 4.0.0
-- Introducing DK Hostmaster optional extension for EPP delete domain command request: `dkhm:delDate`
-- Introducing DK Hostmaster optional extension for automatic renewal: `dkhm:autoRenew`
-- Introducing DK Hostmaster optional command extension for transfer back to DK Hostmaster: `withdraw`
+- Introducing Punktum dk optional extension for EPP delete domain command request: `dkhm:delDate`
+- Introducing Punktum dk optional extension for automatic renewal: `dkhm:autoRenew`
+- Introducing Punktum dk optional command extension for transfer back to Punktum dk: `withdraw`
 - Introducing use of the VeriSign EPP Balance: `info balance`
 - Added proper Resources and References chapter
 
@@ -149,7 +149,7 @@ It will then either omit an error message or the success message: `your_file.xml
 ### 3.1
 
 - EPP Service version 4.0.0
-- Introducing DK Hostmaster AuthInfo expiration: `dkhm:authInfoExDate` extension for EPP info domain command response and authorizations for AuthInfo
+- Introducing Punktum dk AuthInfo expiration: `dkhm:authInfoExDate` extension for EPP info domain command response and authorizations for AuthInfo
 
 <a id="30"></a>
 ### 3.0
@@ -170,7 +170,7 @@ It will then either omit an error message or the success message: `your_file.xml
 ### 2.5
 
 - EPP Service version 2.3.X
-- Clearing out some minor issues in the DK Hostmaster XSD
+- Clearing out some minor issues in the Punktum dk XSD
 - Removed excessive import statements, one should suffice
 - XML cleaned up and formatted, mostly by automation
 
@@ -196,7 +196,7 @@ It will then either omit an error message or the success message: `your_file.xml
 ### 2.1
 
 - EPP Service version 2.3.X
-- **Warning!** This release includes a change to the standard XSD from [RFC:5730], aligning the values for the password type. It has not been possible to get the patch applied using the XML Schema feature: `redefine` or `overwrite`. When this succeeds this change will have to be rolled-back. The change has been applied so the schema file conforms with the schema file used at DK Hostmaster A/S.
+- **Warning!** This release includes a change to the standard XSD from [RFC:5730], aligning the values for the password type. It has not been possible to get the patch applied using the XML Schema feature: `redefine` or `overwrite`. When this succeeds this change will have to be rolled-back. The change has been applied so the schema file conforms with the schema file used at Punktum dk A/S.
 
 - The DKHM Schema file has been updated to revision 2.1, the file does not contain any changes apart from the import, this file was created for a uniform communication in regard to revision numbers etc.
 
@@ -262,8 +262,8 @@ It will then either omit an error message or the success message: `your_file.xml
 - [RFC:5910: "Domain Name System (DNS) Security Extensions Mapping for the Extensible Provisioning Protocol (EPP)"][RFC:5910]
 - [VeriSign: "Balance Mapping for the Extensible Provisioning Protocol (EPP)"][VeriSignEppBalance]
 - [xmlsoft.org: xmllint][xmllint]
-- [DK Hostmaster EPP Service Specification][DKHMEPPSPEC]
-- [DK Hostmaster EPP Service Wiki][DKHMEPPWIKI]
+- [Punktum dk EPP Service Specification][DKHMEPPSPEC]
+- [Punktum dk EPP Service Wiki][DKHMEPPWIKI]
 
 [RFC:3915]: https://tools.ietf.org/html/rfc3915
 [RFC:4310]: https://tools.ietf.org/html/rfc4310
