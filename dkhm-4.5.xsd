@@ -207,7 +207,7 @@
     <simpleContent>
       <extension base="boolean">
         <attribute name="status" type="token" use="optional"/>
-        <attribute name="responsible" type="token" use="optional"/>
+        <attribute name="responsible" type="dkhm:responsibleType" use="optional"/>
         <attribute name="expdate" type="dateTime" use="optional"/>
       </extension>
     </simpleContent>
