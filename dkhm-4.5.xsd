@@ -206,12 +206,22 @@
   <complexType name="verifiedType">
     <simpleContent>
       <extension base="boolean">
-        <attribute name="status" type="token" use="optional"/>
+        <attribute name="status" type="dkhm:verifiedstatusType" use="optional"/>
         <attribute name="responsible" type="dkhm:responsibleType" use="optional"/>
         <attribute name="expdate" type="dateTime" use="optional"/>
       </extension>
     </simpleContent>
   </complexType>
+  <!-- custom: verified status enumeration -->
+  <simpleType name="verifiedstatusType">
+    <restriction base="token">
+      <enumeration value="completed"/>
+      <enumeration value="notRequired"/>
+      <enumeration value="rejected"/>
+      <enumeration value="pending"/>
+      <enumeration value="expired"/>
+    </restriction>
+  </simpleType>
   <!-- custom authInfoType -->
   <!--
     End of schema.
