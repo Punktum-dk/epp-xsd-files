@@ -30,7 +30,6 @@
         <dkhm:responsible>registrar</dkhm:responsible>
         <dkhm:verified_id status="expired">false</dkhm:verified_id>
         <dkhm:verified_email>true</dkhm:verified_email>
-        <dkhm:verified_phone>true</dkhm:verified_phone>
       </dkhm:contact_verification></extension>
     <trID>
       <clTRID>fa6953397b8831107247851463bdb85d</clTRID>
