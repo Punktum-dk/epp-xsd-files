@@ -35,6 +35,7 @@
   <element name="autoRenew" type="dkhm:autoRenew"/>
   <element name="management" type="dkhm:management"/>
   <element name="vid" type="dkhm:vid"/>
+  <element name="sole_proprietorship" type="dkhm:sole_proprietorship"/>
   <element name="contact_verification" type="dkhm:contact_verificationType"/>
   <!--
   Utility types.
@@ -187,13 +188,19 @@
       <enumeration value="false"/>
     </restriction>
   </simpleType>
+  <!-- custom: sole_proprietorship boolean -->
+  <simpleType name="sole_proprietorship">
+    <restriction base="token">
+      <enumeration value="true"/>
+      <enumeration value="false"/>
+    </restriction>
+  </simpleType>
   <!-- custom: contact_verification -->
   <complexType name="contact_verificationType">
     <sequence>
       <element name="responsible" type="dkhm:responsibleType" minOccurs="0"/>
       <element name="verified_id" type="dkhm:verifiedType" minOccurs="0"/>
       <element name="verified_email" type="dkhm:verifiedType" minOccurs="0"/>
-      <element name="verified_phone" type="dkhm:verifiedType" minOccurs="0"/>
     </sequence>
   </complexType>
   <!-- custom: responsible enumeration -->
