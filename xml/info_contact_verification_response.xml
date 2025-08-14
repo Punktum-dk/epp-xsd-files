@@ -30,7 +30,6 @@
         <dkhm:responsible>registrar</dkhm:responsible>
         <dkhm:verified_id status="pending" responsible="registrar" expdate="2025-10-17T14:16:35.0Z">false</dkhm:verified_id>
         <dkhm:verified_email>true</dkhm:verified_email>
-        <dkhm:verified_phone>true</dkhm:verified_phone>
       </dkhm:contact_verification>
     </extension>
     <trID>
