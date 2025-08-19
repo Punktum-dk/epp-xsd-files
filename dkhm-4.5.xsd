@@ -172,7 +172,12 @@
   </complexType>
   <complexType name="withdrawType">
     <sequence>
-      <any namespace="##other"/>
+      <element name="withdraw" type="dkhm:domainWithdrawType"/>
+    </sequence>
+  </complexType>
+  <complexType name="domainWithdrawType">
+    <sequence>
+      <element name="name" type="eppcom:labelType"/>
     </sequence>
   </complexType>
   <simpleType name="management">
