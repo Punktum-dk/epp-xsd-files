@@ -13,7 +13,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
-  - [4.5](#44)
+  - [4.5](#45)
   - [4.4](#44)
   - [4.3](#43)
   - [4.2](#42)
@@ -108,8 +108,10 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="45"></a>
 ### 4.5
 
-- EPP Service version 4.11.0
-- Added extension `dkhm:contact_verification` for communication of choice of user verification (responsible, verified id/email/phone with expire date and status )
+- EPP Service version 5.1.0
+- Added extension `dkhm:contact_verification` for communication of choice of user verification (responsible, verified id/email with expire date and status )
+- Added extension `dkhm:sole_proprietorship` for use in contact create, contact update, and contact info
+- The `withdraw` has been moved from dkhm-domain namespace to dkhm
 
 <a id="44"></a>
 ### 4.4
