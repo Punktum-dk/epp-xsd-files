@@ -36,7 +36,7 @@
   <element name="management" type="dkhm:management"/>
   <element name="vid" type="dkhm:vid"/>
   <element name="sole_proprietorship" type="dkhm:sole_proprietorship"/>
-  <element name="contact_verification" type="dkhm:contact_verificationType"/>
+  <element name="contact_verification" type="dkhm:contact_verification"/>
   <!--
   Utility types.
   -->
@@ -196,7 +196,7 @@
     </restriction>
   </simpleType>
   <!-- custom: contact_verification -->
-  <complexType name="contact_verificationType">
+  <complexType name="contact_verification">
     <sequence>
       <element name="responsible" type="dkhm:responsibleType" minOccurs="0"/>
       <element name="verified_id" type="dkhm:verifiedType" minOccurs="0"/>
