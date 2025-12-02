@@ -14,7 +14,8 @@
         <dkhm:responsible>registrar</dkhm:responsible>
         <dkhm:verified_id>true</dkhm:verified_id>
         <dkhm:verified_email>true</dkhm:verified_email>
-        <dkhm:verified_phone>true</dkhm:verified_phone>
+        <dkhm:confirm_email expdate="2026-01-14T08:00:00">em@il.tld</dkhm:confirm_email>
+        <dkhm:confirm_secondary_email expdate="2025-11-28T22:59:59.0Z" responsible="registry" status="pending">test</dkhm:confirm_secondary_email>
       </dkhm:contact_verification>
     </extension>
     <clTRID>1e66aeebf62a8d3b52fe6bb08886eed7</clTRID>
