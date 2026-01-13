@@ -13,7 +13,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
-  - [4.5](#44)
+  - [4.5](#45)
   - [4.4](#44)
   - [4.3](#43)
   - [4.2](#42)
