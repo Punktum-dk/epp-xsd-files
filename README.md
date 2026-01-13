@@ -108,8 +108,9 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="45"></a>
 ### 4.5
 
-- EPP Service version 4.11.0
-- Added extension `dkhm:contact_verification` for communication of choice of user verification (responsible, verified id/email/phone with expire date and status )
+- Introduced in EPP service version 5.2.0
+- Adding extension `dkhm:contact_verification` complex type containing information regarding the contact verification process and status, including who is responsible for performing the verification process (registrar/registry), which type and verification process (identity/e-mail) and status of the verification process.
+- Adding extension `dkhm:sole_proprietorship` simple type containing information if the contact is a sole proprietorship company and therefore needs to have contact email hidden from public available WHOIS information.
 
 <a id="44"></a>
 ### 4.4
