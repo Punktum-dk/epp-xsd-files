@@ -172,7 +172,12 @@
   </complexType>
   <complexType name="withdrawType">
     <sequence>
-      <any namespace="##other"/>
+      <element name="withdraw" type="dkhm:domainWithdrawType"/>
+    </sequence>
+  </complexType>
+  <complexType name="domainWithdrawType">
+    <sequence>
+      <element name="name" type="eppcom:labelType"/>
     </sequence>
   </complexType>
   <simpleType name="management">
@@ -201,6 +206,8 @@
       <element name="responsible" type="dkhm:responsibleType" minOccurs="0"/>
       <element name="verified_id" type="dkhm:verifiedType" minOccurs="0"/>
       <element name="verified_email" type="dkhm:verifiedType" minOccurs="0"/>
+      <element name="confirm_email" type="dkhm:emailType" minOccurs="0"/>
+      <element name="confirm_secondary_email" type="dkhm:emailType" minOccurs="0"/>
     </sequence>
   </complexType>
   <!-- custom: responsible enumeration -->
@@ -229,6 +236,15 @@
       <enumeration value="expired"/>
     </restriction>
   </simpleType>
+  <complexType name="emailType">
+    <simpleContent>
+      <extension base="eppcom:minTokenType">
+        <attribute name="status" type="eppcom:minTokenType" use="optional"/>
+        <attribute name="expdate" type="dateTime" use="optional"/>
+        <attribute name="responsible" type="eppcom:minTokenType" use="optional"/>
+      </extension>
+    </simpleContent>
+  </complexType>
   <!-- custom authInfoType -->
   <!--
     End of schema.

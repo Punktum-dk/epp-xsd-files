@@ -111,6 +111,7 @@ It will then either omit an error message or the success message: `your_file.xml
 - Introduced in EPP service version 5.2.0
 - Adding extension `dkhm:contact_verification` complex type containing information regarding the contact verification process and status, including who is responsible for performing the verification process (registrar/registry), which type and verification process (identity/e-mail) and status of the verification process.
 - Adding extension `dkhm:sole_proprietorship` simple type containing information if the contact is a sole proprietorship company and therefore needs to have contact email hidden from public available WHOIS information.
+- The `withdraw` has been moved from dkhm-domain namespace to dkhm
 
 <a id="44"></a>
 ### 4.4
