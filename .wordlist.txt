@@ -70,6 +70,7 @@ UUID
 VeriSign
 verisign
 VID
+WHOIS
 xml
 xmllint
 xmlns
