@@ -18,6 +18,7 @@
     <!-- import DKHM XSD files -->
     <import namespace="urn:dkhm:params:xml:ns:dkhm-4.4" schemaLocation="dkhm-4.4.xsd" />
     <import namespace="urn:dkhm:params:xml:ns:dkhm-4.5" schemaLocation="dkhm-4.5.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-4.6" schemaLocation="dkhm-4.6.xsd" />
     <import namespace="urn:dkhm:params:xml:ns:dkhm-domain-4.4" schemaLocation="dkhm-domain-4.4.xsd" />
 
     <!--
