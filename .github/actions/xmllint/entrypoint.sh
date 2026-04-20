@@ -8,7 +8,7 @@ echo "--------------------------------------"
 
 shopt -s globstar
 
-xmllint --noout --schema epp.xsd xml/{,**/}*.xml
+FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true xmllint --noout --schema epp.xsd xml/{,**/}*.xml
 
 EXITCODE=$?
 
