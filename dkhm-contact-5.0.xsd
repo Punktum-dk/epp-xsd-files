@@ -3,7 +3,7 @@
   <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
   <import namespace="urn:ietf:params:xml:ns:contact-1.0" schemaLocation="contact-1.0.xsd"/>
   <annotation>
-    <documentation>DKHM contact extension v5.0. Draft, tracked in EPP-1965.</documentation>
+    <documentation>DKHM contact extension v5.0. DRAFT: unreleased and subject to change without notice.</documentation>
   </annotation>
   <!-- Command extension to contact:create (RFC 5733 section 3.2.1). -->
   <element name="create" type="dkhm-contact:createType"/>

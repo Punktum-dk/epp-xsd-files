@@ -8,6 +8,6 @@
   <import namespace="urn:dkhm:params:xml:ns:dkhm-domain-5.0" schemaLocation="dkhm-domain-5.0.xsd"/>
   <import namespace="urn:dkhm:params:xml:ns:dkhm-host-5.0" schemaLocation="dkhm-host-5.0.xsd"/>
   <annotation>
-    <documentation>DKHM extensions v5.0. Draft, tracked in EPP-1965.</documentation>
+    <documentation>DKHM extensions v5.0. DRAFT: unreleased and subject to change without notice.</documentation>
   </annotation>
 </schema>
