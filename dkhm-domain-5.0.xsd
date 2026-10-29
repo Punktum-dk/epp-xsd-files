@@ -8,15 +8,22 @@
   <element name="create" type="dkhm-domain:createType"/>
   <!-- Command extension to domain:update (RFC 5731 section 3.2.5). -->
   <element name="update" type="dkhm-domain:updateType"/>
+  <!-- Command extension to domain:transfer (RFC 5731 section 3.2.4). -->
+  <element name="transfer" type="dkhm-domain:transferType"/>
   <!-- Response extension to domain:create (RFC 5731 section 3.2.1). -->
   <element name="creData" type="dkhm-domain:creDataType"/>
   <!-- Response extension to domain:info (RFC 5731 section 3.1.2). -->
   <element name="infData" type="dkhm-domain:infDataType"/>
   <complexType name="createType">
     <sequence>
-      <element name="orderConfirmationToken" type="token" minOccurs="0"/>
+      <element name="orderConfirmationToken" type="token"/>
       <element name="autoRenew" type="boolean" minOccurs="0"/>
       <element name="vid" type="boolean" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <complexType name="transferType">
+    <sequence>
+      <element name="orderConfirmationToken" type="token"/>
     </sequence>
   </complexType>
   <complexType name="updateType">

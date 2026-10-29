@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <command>
+    <transfer op="request">
+      <domain:transfer xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>dk-hostmaster-test-906.dk</domain:name>
+        <domain:authInfo>
+          <domain:pw>USER1-DK-098f6bcd4621d373cade4e832627b4f6</domain:pw>
+        </domain:authInfo>
+      </domain:transfer>
+    </transfer>
+    <extension>
+      <dkhm-domain:transfer xmlns:dkhm-domain="urn:dkhm:params:xml:ns:dkhm-domain-5.0">
+        <dkhm-domain:orderConfirmationToken>testtoken</dkhm-domain:orderConfirmationToken>
+      </dkhm-domain:transfer>
+    </extension>
+    <clTRID>92724843f12a3e958588679551aa988d</clTRID>
+  </command>
+</epp>

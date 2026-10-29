@@ -119,7 +119,8 @@ It will then either omit an error message or the success message: `your_file.xml
   - Adding `dkhm-contact:publicStatus` in `infData` (EPP-1957), with `publicAddress`, `publicPhone` and `publicEmail`.
   - Moved from 4.5 into the wrappers `create`, `update` and `infData`: `userType`, `ean`, `cvr`, `pNumber`, `mobilePhone`, `secondaryEmail`, `management`, `soleProprietorship`, `contactValidated` and `contactVerification`. The names are camel case, attributes are `expDate`, and the legacy `userType` values `C`, `P`, `A` and `I` are gone.
   - `mobilePhone` has no `x` attribute (PM-714 is undecided for `voice` and `fax`, which belong to RFC 5733).
-- Domain (`dkhm-domain-5.0`), with the wrappers `create`, `update`, `creData` and `infData`:
+- Domain (`dkhm-domain-5.0`), with the wrappers `create`, `transfer`, `update`, `creData` and `infData`:
+  - `orderConfirmationToken` is required in `create` and in the new `transfer` wrapper (PM-1481). The XSD cannot require the wrapper itself, so the service must reject a command without it.
   - Moved from 4.5: `orderConfirmationToken`, `autoRenew`, `vid`, `registrantValidated`, `domainAdvisory`, `trackingNo`, `authInfo` (attribute `expdate` is now `expDate`) and `riskAssessment` (values are now lower camel case).
   - Adding `suspensionDate` in `infData` (PM-1633) and `waitingListCount` in `infData` (EPP-1688).
   - Adding `riskAssessment` in `creData` (PM-1364), so the create response no longer needs a poll message for it.
