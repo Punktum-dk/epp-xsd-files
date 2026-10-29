@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1001">
+      <msg>Command completed successfully; action pending</msg>
+    </result>
+    <resData>
+      <domain:creData xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>dk-hostmaster-test-906.dk</domain:name>
+        <domain:crDate>2026-10-29T10:00:00.0Z</domain:crDate>
+      </domain:creData>
+    </resData>
+    <extension>
+      <dkhm-domain:creData xmlns:dkhm-domain="urn:dkhm:params:xml:ns:dkhm-domain-5.0">
+        <dkhm-domain:trackingNo>1234567</dkhm-domain:trackingNo>
+        <dkhm-domain:riskAssessment>green</dkhm-domain:riskAssessment>
+      </dkhm-domain:creData>
+    </extension>
+    <trID>
+      <clTRID>92724843f12a3e958588679551aa988d</clTRID>
+      <svTRID>54322-XYZ</svTRID>
+    </trID>
+  </response>
+</epp>

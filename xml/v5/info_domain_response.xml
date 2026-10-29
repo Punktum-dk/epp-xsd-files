@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1000">
+      <msg>Command completed successfully</msg>
+    </result>
+    <resData>
+      <domain:infData xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>example.dk</domain:name>
+        <domain:roid>EXAMPLE_DK-DK</domain:roid>
+        <domain:status s="ok"/>
+        <domain:registrant>USER1-DK</domain:registrant>
+        <domain:clID>REG-123456</domain:clID>
+        <domain:crDate>2020-04-03T22:00:00.0Z</domain:crDate>
+        <domain:exDate>2027-04-03T22:00:00.0Z</domain:exDate>
+      </domain:infData>
+    </resData>
+    <extension>
+      <dkhm-domain:infData xmlns:dkhm-domain="urn:dkhm:params:xml:ns:dkhm-domain-5.0">
+        <dkhm-domain:registrantValidated>true</dkhm-domain:registrantValidated>
+        <dkhm-domain:autoRenew>false</dkhm-domain:autoRenew>
+        <dkhm-domain:vid>false</dkhm-domain:vid>
+        <dkhm-domain:domainAdvisory domain="example.dk" advisory="pendingDeletionDate" date="2027-05-08T00:00:00.0Z"/>
+        <dkhm-domain:authInfo op="transfer" expDate="2026-11-14T09:00:00.0Z">USER1-DK-098f6bcd4621d373cade4e832627b4f6</dkhm-domain:authInfo>
+        <dkhm-domain:authInfo op="redel" expDate="2026-12-14T09:00:00.0Z">DKHM2-DK-098f6bcd4621d373cade4e832627b4f6</dkhm-domain:authInfo>
+        <dkhm-domain:suspensionDate>2027-04-06T00:00:00.0Z</dkhm-domain:suspensionDate>
+        <dkhm-domain:waitingListCount>0</dkhm-domain:waitingListCount>
+      </dkhm-domain:infData>
+    </extension>
+    <trID>
+      <clTRID>ABC-12345</clTRID>
+      <svTRID>54322-XYZ</svTRID>
+    </trID>
+  </response>
+</epp>

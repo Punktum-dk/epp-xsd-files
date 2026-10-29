@@ -1,4 +1,4 @@
-FROM debian:buster-slim
+FROM debian:bookworm-slim
 
 LABEL "com.github.actions.name"="XMLLint"
 LABEL "com.github.actions.description"="Tests all XML example files"

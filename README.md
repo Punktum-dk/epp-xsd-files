@@ -4,7 +4,6 @@
 
 ![Markdownlint Action status badge](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/Markdownlint%20Action/badge.svg)
 ![XMLlint Action status badge](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/XMLlint%20Action/badge.svg)
-![Spellcheck Action](https://github.com/DK-Hostmaster/epp-xsd-files/workflows/Spellcheck%20Action/badge.svg)
 
 ## Table of Contents
 
@@ -13,6 +12,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+  - [5.0 (draft)](#50-draft)
   - [4.5](#45)
   - [4.4](#44)
   - [4.3](#43)
@@ -90,6 +90,10 @@ The following files are owned and copyright by Punktum dk A/S under the MIT Lice
 - `dkhm-domain-4.4.xsd`, Punktum dk EPP Domain extension version 4.4
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 - `dkhm-4.5.xsd`, Punktum dk EPP extensions version 4.5
+- `dkhm-5.0.xsd`, Punktum dk EPP extensions version 5.0 (draft), a collection of the files below
+- `dkhm-contact-5.0.xsd`, Punktum dk EPP Contact extension version 5.0 (draft)
+- `dkhm-domain-5.0.xsd`, Punktum dk EPP Domain extension version 5.0 (draft)
+- `dkhm-host-5.0.xsd`, Punktum dk EPP Host extension version 5.0 (draft)
 
 The Punktum dk [EPP service specification][DKHMEPPSPEC] describes the use and contents of the files in more detail.
 
@@ -104,6 +108,25 @@ It will then either omit an error message or the success message: `your_file.xml
 
 <a id="xsd-history"></a>
 ## XSD History
+
+<a id="50-draft"></a>
+### 5.0 (draft)
+
+- Work in progress, tracked in EPP-1965. Version 4.6 is skipped, 5.0 follows 4.5 directly, and the change is a clean break from 4.x.
+- Extensions are grouped by EPP object, one namespace per object, starting with `dkhm-contact-5.0`.
+- Contact (`dkhm-contact-5.0`):
+  - Adding `dkhm-contact:updateAddress` in `infData` (EPP-1944), with the attributes `status` (`pending`, `completed` or `expired`) and `expDate`. It replaces the 4.6 draft `dkhm:update_address`.
+  - Adding `dkhm-contact:publicStatus` in `infData` (EPP-1957), with `publicAddress`, `publicPhone` and `publicEmail`.
+  - Moved from 4.5 into the wrappers `create`, `update` and `infData`: `userType`, `ean`, `cvr`, `pNumber`, `mobilePhone`, `secondaryEmail`, `management`, `soleProprietorship`, `contactValidated` and `contactVerification`. The names are camel case, attributes are `expDate`, and the legacy `userType` values `C`, `P`, `A` and `I` are gone.
+  - `mobilePhone` has no `x` attribute (PM-714 is undecided for `voice` and `fax`, which belong to RFC 5733).
+- Domain (`dkhm-domain-5.0`), with the wrappers `create`, `transfer`, `update`, `creData` and `infData`:
+  - `orderConfirmationToken` is required in `create` and in the new `transfer` wrapper (PM-1481). The XSD cannot require the wrapper itself, so the service must reject a command without it.
+  - Moved from 4.5: `orderConfirmationToken`, `autoRenew`, `vid`, `registrantValidated`, `domainAdvisory`, `trackingNo`, `authInfo` (attribute `expdate` is now `expDate`) and `riskAssessment` (values are now lower camel case).
+  - Adding `suspensionDate` in `infData` (PM-1633) and `waitingListCount` in `infData` (EPP-1688).
+  - Adding `riskAssessment` in `creData` (PM-1364), so the create response no longer needs a poll message for it.
+  - Booleans are `xs:boolean`, so `true`, `false`, `1` and `0` are valid.
+- Host (`dkhm-host-5.0`): `requestedNsAdmin` in `create` and `update`.
+- Removed: the `withdraw` command, and (pending confirmation in PM-1621, PM-1480 and PM-1481) `domain_confirmed`, `url`, `authInfoExDate` and `delDate`.
 
 <a id="45"></a>
 ### 4.5

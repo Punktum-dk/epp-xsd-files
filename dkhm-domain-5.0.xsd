@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:dkhm-domain="urn:dkhm:params:xml:ns:dkhm-domain-5.0" xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0" targetNamespace="urn:dkhm:params:xml:ns:dkhm-domain-5.0" elementFormDefault="qualified">
+  <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
+  <annotation>
+    <documentation>DKHM domain extension v5.0. Draft, tracked in EPP-1965.</documentation>
+  </annotation>
+  <!-- Command extension to domain:create (RFC 5731 section 3.2.1). -->
+  <element name="create" type="dkhm-domain:createType"/>
+  <!-- Command extension to domain:update (RFC 5731 section 3.2.5). -->
+  <element name="update" type="dkhm-domain:updateType"/>
+  <!-- Command extension to domain:transfer (RFC 5731 section 3.2.4). -->
+  <element name="transfer" type="dkhm-domain:transferType"/>
+  <!-- Response extension to domain:create (RFC 5731 section 3.2.1). -->
+  <element name="creData" type="dkhm-domain:creDataType"/>
+  <!-- Response extension to domain:info (RFC 5731 section 3.1.2). -->
+  <element name="infData" type="dkhm-domain:infDataType"/>
+  <complexType name="createType">
+    <sequence>
+      <element name="orderConfirmationToken" type="token"/>
+      <element name="autoRenew" type="boolean" minOccurs="0"/>
+      <element name="vid" type="boolean" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <complexType name="transferType">
+    <sequence>
+      <element name="orderConfirmationToken" type="token"/>
+    </sequence>
+  </complexType>
+  <complexType name="updateType">
+    <sequence>
+      <element name="autoRenew" type="boolean" minOccurs="0"/>
+      <element name="vid" type="boolean" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <complexType name="creDataType">
+    <sequence>
+      <element name="domainAdvisory" type="dkhm-domain:domainAdvisoryType" minOccurs="0" maxOccurs="unbounded"/>
+      <element name="trackingNo" type="token" minOccurs="0"/>
+      <!-- PM-1364: risk assessment in the create response instead of a poll message. -->
+      <element name="riskAssessment" type="dkhm-domain:riskAssessmentType" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <complexType name="infDataType">
+    <sequence>
+      <element name="registrantValidated" type="boolean" minOccurs="0"/>
+      <element name="autoRenew" type="boolean" minOccurs="0"/>
+      <element name="vid" type="boolean" minOccurs="0"/>
+      <element name="domainAdvisory" type="dkhm-domain:domainAdvisoryType" minOccurs="0" maxOccurs="unbounded"/>
+      <element name="authInfo" type="dkhm-domain:authInfoType" minOccurs="0" maxOccurs="2"/>
+      <!-- PM-1633: the actual suspension date, which no longer follows exDate. -->
+      <element name="suspensionDate" type="dateTime" minOccurs="0"/>
+      <!-- EPP-1688: number of positions on the waiting list, 0 if there is none. -->
+      <element name="waitingListCount" type="nonNegativeInteger" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <complexType name="domainAdvisoryType">
+    <attribute name="domain" type="eppcom:labelType" use="required"/>
+    <attribute name="advisory" type="token" use="required"/>
+    <attribute name="date" type="dateTime" use="optional"/>
+  </complexType>
+  <!-- AuthInfo token with its purpose and expiration. -->
+  <complexType name="authInfoType">
+    <simpleContent>
+      <extension base="token">
+        <attribute name="op" type="dkhm-domain:authInfoOpType" use="required"/>
+        <attribute name="expDate" type="dateTime" use="required"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+  <simpleType name="authInfoOpType">
+    <restriction base="token">
+      <enumeration value="transfer"/>
+      <enumeration value="redel"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="riskAssessmentType">
+    <restriction base="token">
+      <enumeration value="green"/>
+      <enumeration value="blue"/>
+      <enumeration value="yellow"/>
+      <enumeration value="red"/>
+      <enumeration value="notAvailable"/>
+    </restriction>
+  </simpleType>
+</schema>
