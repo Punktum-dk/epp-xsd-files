@@ -1,4 +1,4 @@
-![Punktum dk Logo](https://www.dk-hostmaster.dk/sites/default/files/dk-logo_0.png)
+<img src="assets/punktum-dk-logo.svg" alt="Punktum dk logo" width="160">
 
 # XSD files for the Punktum dk EPP service
 
