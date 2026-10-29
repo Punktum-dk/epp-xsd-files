@@ -23,7 +23,11 @@
         <contact:clID>XXX-XXXXXX</contact:clID>
         <contact:crID>USER321-DK</contact:crID>
         <contact:crDate>2024-05-10T12:54:07.0Z</contact:crDate>  </contact:infData>    </resData>
-    <extension><dkhm-contact:infData xmlns:dkhm-contact="urn:dkhm:params:xml:ns:dkhm-contact-5.0"><dkhm-contact:updateAddress status="pending" expDate="2026-03-27T22:59:59.0Z"/></dkhm-contact:infData></extension>
+    <extension><dkhm-contact:infData xmlns:dkhm-contact="urn:dkhm:params:xml:ns:dkhm-contact-5.0"><dkhm-contact:updateAddress status="pending" expDate="2026-03-27T22:59:59.0Z"/><dkhm-contact:publicStatus>
+        <dkhm-contact:publicAddress>true</dkhm-contact:publicAddress>
+        <dkhm-contact:publicPhone>false</dkhm-contact:publicPhone>
+        <dkhm-contact:publicEmail>false</dkhm-contact:publicEmail>
+      </dkhm-contact:publicStatus></dkhm-contact:infData></extension>
     <trID>
       <clTRID>fa6953397b8831107247851463bdb85d</clTRID>
       <svTRID>5973F6D0-4049-11EF-9D22-CFC065FB0E81</svTRID>    </trID></response>

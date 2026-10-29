@@ -92,6 +92,8 @@ The following files are owned and copyright by Punktum dk A/S under the MIT Lice
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 - `dkhm-4.5.xsd`, Punktum dk EPP extensions version 4.5
 - `dkhm-contact-5.0.xsd`, Punktum dk EPP Contact extension version 5.0 (draft)
+- `dkhm-domain-5.0.xsd`, Punktum dk EPP Domain extension version 5.0 (draft)
+- `dkhm-host-5.0.xsd`, Punktum dk EPP Host extension version 5.0 (draft)
 
 The Punktum dk [EPP service specification][DKHMEPPSPEC] describes the use and contents of the files in more detail.
 
@@ -112,7 +114,17 @@ It will then either omit an error message or the success message: `your_file.xml
 
 - Work in progress, tracked in EPP-1965. Version 4.6 is skipped, 5.0 follows 4.5 directly, and the change is a clean break from 4.x.
 - Extensions are grouped by EPP object, one namespace per object, starting with `dkhm-contact-5.0`.
-- Adding `dkhm-contact:updateAddress` in the contact info response (`dkhm-contact:infData`), with the attributes `status` (`pending`, `completed` or `expired`) and `expDate`. It replaces the 4.6 draft `dkhm:update_address`.
+- Contact (`dkhm-contact-5.0`):
+  - Adding `dkhm-contact:updateAddress` in `infData` (EPP-1944), with the attributes `status` (`pending`, `completed` or `expired`) and `expDate`. It replaces the 4.6 draft `dkhm:update_address`.
+  - Adding `dkhm-contact:publicStatus` in `infData` (EPP-1957), with `publicAddress`, `publicPhone` and `publicEmail`.
+  - Not complete: the 4.5 contact elements have not been moved yet.
+- Domain (`dkhm-domain-5.0`), with the wrappers `create`, `update`, `creData` and `infData`:
+  - Moved from 4.5: `orderConfirmationToken`, `autoRenew`, `vid`, `registrantValidated`, `domainAdvisory`, `trackingNo`, `authInfo` (attribute `expdate` is now `expDate`) and `riskAssessment` (values are now lower camel case).
+  - Adding `suspensionDate` in `infData` (PM-1633) and `waitingListCount` in `infData` (EPP-1688).
+  - Adding `riskAssessment` in `creData` (PM-1364), so the create response no longer needs a poll message for it.
+  - Booleans are `xs:boolean`, so `true`, `false`, `1` and `0` are valid.
+- Host (`dkhm-host-5.0`): `requestedNsAdmin` in `create` and `update`.
+- Removed: the `withdraw` command, and (pending confirmation in PM-1621, PM-1480 and PM-1481) `domain_confirmed`, `url`, `authInfoExDate` and `delDate`.
 
 <a id="45"></a>
 ### 4.5

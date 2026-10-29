@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <command>
+    <update>
+      <domain:update xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>dk-hostmaster-test-906.dk</domain:name>
+      </domain:update>
+    </update>
+    <extension>
+      <dkhm-domain:update xmlns:dkhm-domain="urn:dkhm:params:xml:ns:dkhm-domain-5.0">
+        <dkhm-domain:autoRenew>true</dkhm-domain:autoRenew>
+      </dkhm-domain:update>
+    </extension>
+    <clTRID>92724843f12a3e958588679551aa988d</clTRID>
+  </command>
+</epp>

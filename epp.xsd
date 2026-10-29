@@ -20,6 +20,8 @@
     <import namespace="urn:dkhm:params:xml:ns:dkhm-4.5" schemaLocation="dkhm-4.5.xsd" />
     <import namespace="urn:dkhm:params:xml:ns:dkhm-domain-4.4" schemaLocation="dkhm-domain-4.4.xsd" />
     <import namespace="urn:dkhm:params:xml:ns:dkhm-contact-5.0" schemaLocation="dkhm-contact-5.0.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-domain-5.0" schemaLocation="dkhm-domain-5.0.xsd" />
+    <import namespace="urn:dkhm:params:xml:ns:dkhm-host-5.0" schemaLocation="dkhm-host-5.0.xsd" />
 
     <!--
     End of schema.
