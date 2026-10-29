@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:dkhm-contact="urn:dkhm:params:xml:ns:dkhm-contact-5.0" targetNamespace="urn:dkhm:params:xml:ns:dkhm-contact-5.0" elementFormDefault="qualified">
+  <annotation>
+    <documentation>DKHM contact extension v5.0. Draft: only the EPP-1944 update_address part.</documentation>
+  </annotation>
+  <!-- Response extension to contact:info (RFC 5733 section 3.1.2). -->
+  <element name="infData" type="dkhm-contact:infDataType"/>
+  <complexType name="infDataType">
+    <sequence>
+      <element name="updateAddress" type="dkhm-contact:updateAddressType" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <!-- Open or closed request for the registrar to update the address of a registrar-managed registrant. -->
+  <complexType name="updateAddressType">
+    <attribute name="status" type="dkhm-contact:updateAddressStatusType" use="required"/>
+    <attribute name="expDate" type="dateTime" use="optional"/>
+  </complexType>
+  <simpleType name="updateAddressStatusType">
+    <restriction base="token">
+      <enumeration value="pending"/>
+      <enumeration value="completed"/>
+      <enumeration value="expired"/>
+    </restriction>
+  </simpleType>
+</schema>

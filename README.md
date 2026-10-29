@@ -13,6 +13,7 @@
 - [XSD file references](#xsd-file-references)
 - [XSD files](#xsd-files)
 - [XSD History](#xsd-history)
+  - [5.0 (draft)](#50-draft)
   - [4.5](#45)
   - [4.4](#44)
   - [4.3](#43)
@@ -90,6 +91,7 @@ The following files are owned and copyright by Punktum dk A/S under the MIT Lice
 - `dkhm-domain-4.4.xsd`, Punktum dk EPP Domain extension version 4.4
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 - `dkhm-4.5.xsd`, Punktum dk EPP extensions version 4.5
+- `dkhm-contact-5.0.xsd`, Punktum dk EPP Contact extension version 5.0 (draft)
 
 The Punktum dk [EPP service specification][DKHMEPPSPEC] describes the use and contents of the files in more detail.
 
@@ -104,6 +106,13 @@ It will then either omit an error message or the success message: `your_file.xml
 
 <a id="xsd-history"></a>
 ## XSD History
+
+<a id="50-draft"></a>
+### 5.0 (draft)
+
+- Work in progress, tracked in EPP-1965. Version 4.6 is skipped, 5.0 follows 4.5 directly, and the change is a clean break from 4.x.
+- Extensions are grouped by EPP object, one namespace per object, starting with `dkhm-contact-5.0`.
+- Adding `dkhm-contact:updateAddress` in the contact info response (`dkhm-contact:infData`), with the attributes `status` (`pending`, `completed` or `expired`) and `expDate`. It replaces the 4.6 draft `dkhm:update_address`.
 
 <a id="45"></a>
 ### 4.5
