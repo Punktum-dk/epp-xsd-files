@@ -1,28 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:dkhm-contact="urn:dkhm:params:xml:ns:dkhm-contact-5.0" targetNamespace="urn:dkhm:params:xml:ns:dkhm-contact-5.0" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:dkhm-contact="urn:dkhm:params:xml:ns:dkhm-contact-5.0" xmlns:contact="urn:ietf:params:xml:ns:contact-1.0" xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0" targetNamespace="urn:dkhm:params:xml:ns:dkhm-contact-5.0" elementFormDefault="qualified">
+  <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
+  <import namespace="urn:ietf:params:xml:ns:contact-1.0" schemaLocation="contact-1.0.xsd"/>
   <annotation>
-    <documentation>DKHM contact extension v5.0. Draft, tracked in EPP-1965. Not complete yet.</documentation>
+    <documentation>DKHM contact extension v5.0. Draft, tracked in EPP-1965.</documentation>
   </annotation>
+  <!-- Command extension to contact:create (RFC 5733 section 3.2.1). -->
+  <element name="create" type="dkhm-contact:createType"/>
+  <!-- Command extension to contact:update (RFC 5733 section 3.2.5). -->
+  <element name="update" type="dkhm-contact:updateType"/>
   <!-- Response extension to contact:info (RFC 5733 section 3.1.2). -->
   <element name="infData" type="dkhm-contact:infDataType"/>
+  <complexType name="createType">
+    <sequence>
+      <element name="userType" type="dkhm-contact:userType" minOccurs="0"/>
+      <element name="ean" type="dkhm-contact:eanType" minOccurs="0"/>
+      <element name="cvr" type="dkhm-contact:cvrType" minOccurs="0"/>
+      <element name="pNumber" type="dkhm-contact:pNumberType" minOccurs="0"/>
+      <element name="mobilePhone" type="contact:e164StringType" minOccurs="0"/>
+      <element name="secondaryEmail" type="eppcom:minTokenType" minOccurs="0"/>
+      <element name="management" type="dkhm-contact:managementType" minOccurs="0"/>
+      <element name="soleProprietorship" type="boolean" minOccurs="0"/>
+      <element name="contactVerification" type="dkhm-contact:contactVerificationType" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <complexType name="updateType">
+    <sequence>
+      <element name="userType" type="dkhm-contact:userType" minOccurs="0"/>
+      <element name="ean" type="dkhm-contact:eanType" minOccurs="0"/>
+      <element name="cvr" type="dkhm-contact:cvrType" minOccurs="0"/>
+      <element name="mobilePhone" type="contact:e164StringType" minOccurs="0"/>
+      <element name="secondaryEmail" type="eppcom:minTokenType" minOccurs="0"/>
+      <element name="soleProprietorship" type="boolean" minOccurs="0"/>
+      <element name="contactVerification" type="dkhm-contact:contactVerificationType" minOccurs="0"/>
+    </sequence>
+  </complexType>
   <complexType name="infDataType">
     <sequence>
+      <element name="userType" type="dkhm-contact:userType" minOccurs="0"/>
+      <element name="ean" type="dkhm-contact:eanType" minOccurs="0"/>
+      <element name="cvr" type="dkhm-contact:cvrType" minOccurs="0"/>
+      <element name="pNumber" type="dkhm-contact:pNumberType" minOccurs="0"/>
+      <element name="mobilePhone" type="contact:e164StringType" minOccurs="0"/>
+      <element name="secondaryEmail" type="eppcom:minTokenType" minOccurs="0"/>
+      <element name="management" type="dkhm-contact:managementType" minOccurs="0"/>
+      <element name="soleProprietorship" type="boolean" minOccurs="0"/>
+      <element name="contactValidated" type="boolean" minOccurs="0"/>
+      <element name="contactVerification" type="dkhm-contact:contactVerificationType" minOccurs="0"/>
+      <!-- EPP-1944: request for the registrar to update the address of a registrar-managed registrant. -->
       <element name="updateAddress" type="dkhm-contact:updateAddressType" minOccurs="0"/>
       <!-- EPP-1957: which details of a registrar-managed registrant are public. -->
       <element name="publicStatus" type="dkhm-contact:publicStatusType" minOccurs="0"/>
     </sequence>
   </complexType>
+  <!-- The legacy single-letter values C, P, A and I of dkhm 4.x are not valid in 5.0. -->
+  <simpleType name="userType">
+    <restriction base="token">
+      <enumeration value="company"/>
+      <enumeration value="publicOrganization"/>
+      <enumeration value="association"/>
+      <enumeration value="individual"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="eanType">
+    <restriction base="token">
+      <maxLength value="30"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="cvrType">
+    <restriction base="token">
+      <maxLength value="50"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="pNumberType">
+    <restriction base="token">
+      <maxLength value="10"/>
+    </restriction>
+  </simpleType>
+  <simpleType name="managementType">
+    <restriction base="token">
+      <enumeration value="registrar"/>
+      <enumeration value="registrant"/>
+    </restriction>
+  </simpleType>
+  <complexType name="contactVerificationType">
+    <sequence>
+      <element name="responsible" type="dkhm-contact:responsibleType" minOccurs="0"/>
+      <element name="verifiedId" type="dkhm-contact:verifiedType" minOccurs="0"/>
+      <element name="verifiedEmail" type="dkhm-contact:verifiedType" minOccurs="0"/>
+      <element name="confirmEmail" type="dkhm-contact:confirmEmailType" minOccurs="0"/>
+      <element name="confirmSecondaryEmail" type="dkhm-contact:confirmEmailType" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <simpleType name="responsibleType">
+    <restriction base="token">
+      <enumeration value="registrar"/>
+      <enumeration value="registry"/>
+    </restriction>
+  </simpleType>
+  <complexType name="verifiedType">
+    <simpleContent>
+      <extension base="boolean">
+        <attribute name="status" type="dkhm-contact:verificationStatusType" use="optional"/>
+        <attribute name="responsible" type="dkhm-contact:responsibleType" use="optional"/>
+        <attribute name="expDate" type="dateTime" use="optional"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+  <complexType name="confirmEmailType">
+    <simpleContent>
+      <extension base="eppcom:minTokenType">
+        <attribute name="status" type="dkhm-contact:verificationStatusType" use="optional"/>
+        <attribute name="responsible" type="dkhm-contact:responsibleType" use="optional"/>
+        <attribute name="expDate" type="dateTime" use="optional"/>
+      </extension>
+    </simpleContent>
+  </complexType>
+  <simpleType name="verificationStatusType">
+    <restriction base="token">
+      <enumeration value="completed"/>
+      <enumeration value="notRequired"/>
+      <enumeration value="rejected"/>
+      <enumeration value="pending"/>
+      <enumeration value="expired"/>
+    </restriction>
+  </simpleType>
   <!-- Open or closed request for the registrar to update the address of a registrar-managed registrant. -->
   <complexType name="updateAddressType">
     <attribute name="status" type="dkhm-contact:updateAddressStatusType" use="required"/>
     <attribute name="expDate" type="dateTime" use="optional"/>
-  </complexType>
-  <complexType name="publicStatusType">
-    <sequence>
-      <element name="publicAddress" type="boolean"/>
-      <element name="publicPhone" type="boolean"/>
-      <element name="publicEmail" type="boolean"/>
-    </sequence>
   </complexType>
   <simpleType name="updateAddressStatusType">
     <restriction base="token">
@@ -31,4 +137,11 @@
       <enumeration value="expired"/>
     </restriction>
   </simpleType>
+  <complexType name="publicStatusType">
+    <sequence>
+      <element name="publicAddress" type="boolean"/>
+      <element name="publicPhone" type="boolean"/>
+      <element name="publicEmail" type="boolean"/>
+    </sequence>
+  </complexType>
 </schema>

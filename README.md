@@ -117,7 +117,8 @@ It will then either omit an error message or the success message: `your_file.xml
 - Contact (`dkhm-contact-5.0`):
   - Adding `dkhm-contact:updateAddress` in `infData` (EPP-1944), with the attributes `status` (`pending`, `completed` or `expired`) and `expDate`. It replaces the 4.6 draft `dkhm:update_address`.
   - Adding `dkhm-contact:publicStatus` in `infData` (EPP-1957), with `publicAddress`, `publicPhone` and `publicEmail`.
-  - Not complete: the 4.5 contact elements have not been moved yet.
+  - Moved from 4.5 into the wrappers `create`, `update` and `infData`: `userType`, `ean`, `cvr`, `pNumber`, `mobilePhone`, `secondaryEmail`, `management`, `soleProprietorship`, `contactValidated` and `contactVerification`. The names are camel case, attributes are `expDate`, and the legacy `userType` values `C`, `P`, `A` and `I` are gone.
+  - `mobilePhone` has no `x` attribute (PM-714 is undecided for `voice` and `fax`, which belong to RFC 5733).
 - Domain (`dkhm-domain-5.0`), with the wrappers `create`, `update`, `creData` and `infData`:
   - Moved from 4.5: `orderConfirmationToken`, `autoRenew`, `vid`, `registrantValidated`, `domainAdvisory`, `trackingNo`, `authInfo` (attribute `expdate` is now `expDate`) and `riskAssessment` (values are now lower camel case).
   - Adding `suspensionDate` in `infData` (PM-1633) and `waitingListCount` in `infData` (EPP-1688).
