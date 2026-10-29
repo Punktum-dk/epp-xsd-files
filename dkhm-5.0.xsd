@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:dkhm:params:xml:ns:dkhm-5.0" elementFormDefault="qualified">
   <!--
+  DRAFT: this schema is a draft of dkhm 5.0. It is not released, not live in any
+  environment, and it may change without notice. Do not implement against it yet.
+  -->
+  <!--
   Aggregate of the DKHM 5.0 extensions, one schema and namespace per EPP object.
   The namespace of this file is only a version marker, it declares no elements.
   -->
@@ -8,6 +12,6 @@
   <import namespace="urn:dkhm:params:xml:ns:dkhm-domain-5.0" schemaLocation="dkhm-domain-5.0.xsd"/>
   <import namespace="urn:dkhm:params:xml:ns:dkhm-host-5.0" schemaLocation="dkhm-host-5.0.xsd"/>
   <annotation>
-    <documentation>DKHM extensions v5.0. Draft, tracked in EPP-1965.</documentation>
+    <documentation>DRAFT. DKHM extensions v5.0. Not released, tracked in EPP-1965.</documentation>
   </annotation>
 </schema>

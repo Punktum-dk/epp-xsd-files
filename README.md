@@ -113,6 +113,7 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="50-draft"></a>
 ### 5.0 (draft)
 
+- This version is a draft. It is not released and may change without notice.
 - Work in progress, tracked in EPP-1965. Version 4.6 is skipped, 5.0 follows 4.5 directly, and the change is a clean break from 4.x.
 - Extensions are grouped by EPP object, one namespace per object, starting with `dkhm-contact-5.0`.
 - Contact (`dkhm-contact-5.0`):

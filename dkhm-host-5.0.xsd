@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:dkhm-host="urn:dkhm:params:xml:ns:dkhm-host-5.0" xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0" targetNamespace="urn:dkhm:params:xml:ns:dkhm-host-5.0" elementFormDefault="qualified">
+  <!--
+  DRAFT: this schema is a draft of dkhm 5.0. It is not released, not live in any
+  environment, and it may change without notice. Do not implement against it yet.
+  -->
   <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
   <annotation>
-    <documentation>DKHM host extension v5.0. Draft, tracked in EPP-1965.</documentation>
+    <documentation>DRAFT. DKHM host extension v5.0. Not released, tracked in EPP-1965.</documentation>
   </annotation>
   <!-- Command extension to host:create (RFC 5732 section 3.2.1). -->
   <element name="create" type="dkhm-host:createType"/>
