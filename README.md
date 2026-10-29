@@ -112,7 +112,7 @@ It will then either omit an error message or the success message: `your_file.xml
 <a id="50-draft"></a>
 ### 5.0 (draft)
 
-- Work in progress, tracked in EPP-1965. Version 4.6 is skipped, 5.0 follows 4.5 directly, and the change is a clean break from 4.x.
+- Work in progress. Version 4.6 is skipped, 5.0 follows 4.5 directly, and the change is a clean break from 4.x.
 - Extensions are grouped by EPP object, one namespace per object, starting with `dkhm-contact-5.0`.
 - Contact (`dkhm-contact-5.0`):
   - Adding `dkhm-contact:updateAddress` in `infData` (EPP-1944), with the attributes `status` (`pending`, `completed` or `expired`) and `expDate`. It replaces the 4.6 draft `dkhm:update_address`.
