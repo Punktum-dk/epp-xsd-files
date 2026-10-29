@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:dkhm:params:xml:ns:dkhm-5.0" elementFormDefault="qualified">
+  <!--
+  Aggregate of the DKHM 5.0 extensions, one schema and namespace per EPP object.
+  The namespace of this file is only a version marker, it declares no elements.
+  -->
+  <import namespace="urn:dkhm:params:xml:ns:dkhm-contact-5.0" schemaLocation="dkhm-contact-5.0.xsd"/>
+  <import namespace="urn:dkhm:params:xml:ns:dkhm-domain-5.0" schemaLocation="dkhm-domain-5.0.xsd"/>
+  <import namespace="urn:dkhm:params:xml:ns:dkhm-host-5.0" schemaLocation="dkhm-host-5.0.xsd"/>
+  <annotation>
+    <documentation>DKHM extensions v5.0. Draft, tracked in EPP-1965.</documentation>
+  </annotation>
+</schema>

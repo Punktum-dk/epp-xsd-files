@@ -90,6 +90,7 @@ The following files are owned and copyright by Punktum dk A/S under the MIT Lice
 - `dkhm-domain-4.4.xsd`, Punktum dk EPP Domain extension version 4.4
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 - `dkhm-4.5.xsd`, Punktum dk EPP extensions version 4.5
+- `dkhm-5.0.xsd`, Punktum dk EPP extensions version 5.0 (draft), a collection of the files below
 - `dkhm-contact-5.0.xsd`, Punktum dk EPP Contact extension version 5.0 (draft)
 - `dkhm-domain-5.0.xsd`, Punktum dk EPP Domain extension version 5.0 (draft)
 - `dkhm-host-5.0.xsd`, Punktum dk EPP Host extension version 5.0 (draft)
