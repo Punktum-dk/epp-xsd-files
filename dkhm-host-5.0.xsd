@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:dkhm-host="urn:dkhm:params:xml:ns:dkhm-host-5.0" xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0" targetNamespace="urn:dkhm:params:xml:ns:dkhm-host-5.0" elementFormDefault="qualified">
+  <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
+  <annotation>
+    <documentation>DKHM host extension v5.0. Draft, tracked in EPP-1965.</documentation>
+  </annotation>
+  <!-- Command extension to host:create (RFC 5732 section 3.2.1). -->
+  <element name="create" type="dkhm-host:createType"/>
+  <!-- Command extension to host:update (RFC 5732 section 3.2.5). -->
+  <element name="update" type="dkhm-host:updateType"/>
+  <complexType name="createType">
+    <sequence>
+      <element name="requestedNsAdmin" type="eppcom:clIDType" minOccurs="0"/>
+    </sequence>
+  </complexType>
+  <complexType name="updateType">
+    <sequence>
+      <element name="requestedNsAdmin" type="eppcom:clIDType" minOccurs="0"/>
+    </sequence>
+  </complexType>
+</schema>

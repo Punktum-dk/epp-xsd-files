@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <command>
+    <create>
+      <contact:create xmlns:contact="urn:ietf:params:xml:ns:contact-1.0">
+        <contact:id>auto</contact:id>
+        <contact:postalInfo type="loc">
+          <contact:name>Test Test</contact:name>
+          <contact:addr>
+            <contact:street>Some Street</contact:street>
+            <contact:city>København S</contact:city>
+            <contact:sp/>
+            <contact:pc>2300</contact:pc>
+            <contact:cc>DK</contact:cc>
+          </contact:addr>
+        </contact:postalInfo>
+        <contact:voice>+45.12345678</contact:voice>
+        <contact:email>epp-test@uniejo.dk</contact:email>
+        <contact:authInfo>
+          <contact:pw/>
+        </contact:authInfo>
+      </contact:create>
+    </create>
+    <extension>
+      <dkhm-contact:create xmlns:dkhm-contact="urn:dkhm:params:xml:ns:dkhm-contact-5.0">
+        <dkhm-contact:userType>individual</dkhm-contact:userType>
+        <dkhm-contact:mobilePhone>+45.12345678</dkhm-contact:mobilePhone>
+        <dkhm-contact:secondaryEmail>second@example.dk</dkhm-contact:secondaryEmail>
+        <dkhm-contact:management>registrar</dkhm-contact:management>
+        <dkhm-contact:soleProprietorship>true</dkhm-contact:soleProprietorship>
+        <dkhm-contact:contactVerification>
+          <dkhm-contact:responsible>registrar</dkhm-contact:responsible>
+          <dkhm-contact:verifiedId>true</dkhm-contact:verifiedId>
+          <dkhm-contact:verifiedEmail>true</dkhm-contact:verifiedEmail>
+        </dkhm-contact:contactVerification>
+      </dkhm-contact:create>
+    </extension>
+    <clTRID>bcee428f7b55d68b4449f0f07c6354e8</clTRID>
+  </command>
+</epp>
