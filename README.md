@@ -119,21 +119,13 @@ It will then either omit an error message or the success message: `your_file.xml
   - Adding `dotdk-contact:publicStatus` in `infData` (EPP-1957), with `publicAddress`, `publicPhone` and `publicEmail`.
   - Moved from 4.5 into the wrappers `create`, `update` and `infData`: `userType`, `ean`, `cvr`, `pNumber`, `mobilePhone`, `secondaryEmail`, `management`, `soleProprietorship`, `contactValidated` and `contactVerification`. The names are camel case, attributes are `expDate`, and the legacy `userType` values `C`, `P`, `A` and `I` are gone.
   - `mobilePhone` has no `x` attribute (PM-714 is undecided for `voice` and `fax`, which belong to RFC 5733).
-  - `public_organization` is now the `userType` value `publicOrganization`.
-  - Each element can occur at most once (XSD default `maxOccurs="1"`), so a second `userType` in `create` is invalid (`xml/v5/fail/create_contact_duplicate_userType.xml`).
-  - `pNumber` is in `create` and `infData` only, as it can be set when the contact is created but not changed.
-  - The dotdk extension has no address. The address and name stay in `contact:postalInfo` of RFC 5733.
-  - The 4.x `contact` element is dropped, with no replacement.
-  - Open: overlap between `publicStatus` and `contact:disclose` (RFC 5733), and whether `fax` should be removed.
 - Domain (`dotdk-domain-5.0`), with the wrappers `create`, `transfer`, `update`, `creData` and `infData`:
   - `orderConfirmationToken` is required in `create` and in the new `transfer` wrapper (PM-1481). The XSD cannot require the wrapper itself, so the service must reject a command without it.
   - Moved from 4.5: `orderConfirmationToken`, `autoRenew`, `vid`, `registrantValidated`, `domainAdvisory`, `trackingNo`, `authInfo` (attribute `expdate` is now `expDate`) and `riskAssessment` (values are now lower camel case).
   - Adding `suspensionDate` in `infData` (PM-1633) and `waitingListCount` in `infData` (EPP-1688).
   - Adding `riskAssessment` in `creData` (PM-1364), so the create response no longer needs a poll message for it.
-  - `riskAssessment` is only in `creData` and `registrantValidated` only in `infData`. Whether to add them to `infData` and `creData` is open.
-  - `authInfo` is allowed twice in `infData` (one per `op`), but the XSD does not stop two with the same `op` (open).
   - Booleans are `xs:boolean`, so `true`, `false`, `1` and `0` are valid.
-- Host (`dotdk-host-5.0`): `requestedNsAdmin` in `create` and `update`. The 4.x host `contact` element is removed. There is no `infData`, so a pending `requestedNsAdmin` cannot be seen in host info (open).
+- Host (`dotdk-host-5.0`): `requestedNsAdmin` in `create` and `update`.
 - Removed: the `withdraw` command, and (pending confirmation in PM-1621, PM-1480 and PM-1481) `domain_confirmed`, `url`, `authInfoExDate` and `delDate`.
 
 <a id="45"></a>
