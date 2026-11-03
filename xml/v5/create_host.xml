@@ -8,9 +8,9 @@
       </host:create>
     </create>
     <extension>
-      <dkhm-host:create xmlns:dkhm-host="urn:dkhm:params:xml:ns:dkhm-host-5.0">
-        <dkhm-host:requestedNsAdmin>USER1-DK</dkhm-host:requestedNsAdmin>
-      </dkhm-host:create>
+      <dotdk-host:create xmlns:dotdk-host="urn:dotdk:params:xml:ns:dotdk-host-5.0">
+        <dotdk-host:requestedNsAdmin>USER1-DK</dotdk-host:requestedNsAdmin>
+      </dotdk-host:create>
     </extension>
     <clTRID>ABC-12345</clTRID>
   </command>

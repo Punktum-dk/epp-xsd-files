@@ -16,16 +16,16 @@
       </domain:infData>
     </resData>
     <extension>
-      <dkhm-domain:infData xmlns:dkhm-domain="urn:dkhm:params:xml:ns:dkhm-domain-5.0">
-        <dkhm-domain:registrantValidated>true</dkhm-domain:registrantValidated>
-        <dkhm-domain:autoRenew>false</dkhm-domain:autoRenew>
-        <dkhm-domain:vid>false</dkhm-domain:vid>
-        <dkhm-domain:domainAdvisory domain="example.dk" advisory="pendingDeletionDate" date="2027-05-08T00:00:00.0Z"/>
-        <dkhm-domain:authInfo op="transfer" expDate="2026-11-14T09:00:00.0Z">USER1-DK-098f6bcd4621d373cade4e832627b4f6</dkhm-domain:authInfo>
-        <dkhm-domain:authInfo op="redel" expDate="2026-12-14T09:00:00.0Z">DKHM2-DK-098f6bcd4621d373cade4e832627b4f6</dkhm-domain:authInfo>
-        <dkhm-domain:suspensionDate>2027-04-06T00:00:00.0Z</dkhm-domain:suspensionDate>
-        <dkhm-domain:waitingListCount>0</dkhm-domain:waitingListCount>
-      </dkhm-domain:infData>
+      <dotdk-domain:infData xmlns:dotdk-domain="urn:dotdk:params:xml:ns:dotdk-domain-5.0">
+        <dotdk-domain:registrantValidated>true</dotdk-domain:registrantValidated>
+        <dotdk-domain:autoRenew>false</dotdk-domain:autoRenew>
+        <dotdk-domain:vid>false</dotdk-domain:vid>
+        <dotdk-domain:domainAdvisory domain="example.dk" advisory="pendingDeletionDate" date="2027-05-08T00:00:00.0Z"/>
+        <dotdk-domain:authInfo op="transfer" expDate="2026-11-14T09:00:00.0Z">USER1-DK-098f6bcd4621d373cade4e832627b4f6</dotdk-domain:authInfo>
+        <dotdk-domain:authInfo op="redel" expDate="2026-12-14T09:00:00.0Z">DKHM2-DK-098f6bcd4621d373cade4e832627b4f6</dotdk-domain:authInfo>
+        <dotdk-domain:suspensionDate>2027-04-06T00:00:00.0Z</dotdk-domain:suspensionDate>
+        <dotdk-domain:waitingListCount>0</dotdk-domain:waitingListCount>
+      </dotdk-domain:infData>
     </extension>
     <trID>
       <clTRID>ABC-12345</clTRID>

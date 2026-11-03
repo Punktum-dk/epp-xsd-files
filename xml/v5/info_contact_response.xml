@@ -24,16 +24,16 @@
         <contact:crID>USER321-DK</contact:crID>
         <contact:crDate>2024-05-10T12:54:07.0Z</contact:crDate>  </contact:infData>    </resData>
     <extension>
-      <dkhm-contact:infData xmlns:dkhm-contact="urn:dkhm:params:xml:ns:dkhm-contact-5.0">
-        <dkhm-contact:userType>individual</dkhm-contact:userType>
-        <dkhm-contact:soleProprietorship>false</dkhm-contact:soleProprietorship>
-        <dkhm-contact:contactValidated>true</dkhm-contact:contactValidated>
-        <dkhm-contact:contactVerification>
-          <dkhm-contact:responsible>registrar</dkhm-contact:responsible>
-          <dkhm-contact:verifiedId status="pending" responsible="registrar" expDate="2025-10-17T14:16:35.0Z">false</dkhm-contact:verifiedId>
-          <dkhm-contact:verifiedEmail>true</dkhm-contact:verifiedEmail>
-        </dkhm-contact:contactVerification>
-      </dkhm-contact:infData>
+      <dotdk-contact:infData xmlns:dotdk-contact="urn:dotdk:params:xml:ns:dotdk-contact-5.0">
+        <dotdk-contact:userType>individual</dotdk-contact:userType>
+        <dotdk-contact:soleProprietorship>false</dotdk-contact:soleProprietorship>
+        <dotdk-contact:contactValidated>true</dotdk-contact:contactValidated>
+        <dotdk-contact:contactVerification>
+          <dotdk-contact:responsible>registrar</dotdk-contact:responsible>
+          <dotdk-contact:verifiedId status="pending" responsible="registrar" expDate="2025-10-17T14:16:35.0Z">false</dotdk-contact:verifiedId>
+          <dotdk-contact:verifiedEmail>true</dotdk-contact:verifiedEmail>
+        </dotdk-contact:contactVerification>
+      </dotdk-contact:infData>
     </extension>
     <trID>
       <clTRID>fa6953397b8831107247851463bdb85d</clTRID>

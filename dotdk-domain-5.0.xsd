@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:dkhm-domain="urn:dkhm:params:xml:ns:dkhm-domain-5.0" xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0" targetNamespace="urn:dkhm:params:xml:ns:dkhm-domain-5.0" elementFormDefault="qualified">
+<schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:dotdk-domain="urn:dotdk:params:xml:ns:dotdk-domain-5.0" xmlns:eppcom="urn:ietf:params:xml:ns:eppcom-1.0" targetNamespace="urn:dotdk:params:xml:ns:dotdk-domain-5.0" elementFormDefault="qualified">
   <import namespace="urn:ietf:params:xml:ns:eppcom-1.0" schemaLocation="eppcom-1.0.xsd"/>
   <annotation>
-    <documentation>DKHM domain extension v5.0. DRAFT: unreleased and subject to change without notice.</documentation>
+    <documentation>dotdk domain extension v5.0. DRAFT: unreleased and subject to change without notice.</documentation>
   </annotation>
   <!-- Command extension to domain:create (RFC 5731 section 3.2.1). -->
-  <element name="create" type="dkhm-domain:createType"/>
+  <element name="create" type="dotdk-domain:createType"/>
   <!-- Command extension to domain:update (RFC 5731 section 3.2.5). -->
-  <element name="update" type="dkhm-domain:updateType"/>
+  <element name="update" type="dotdk-domain:updateType"/>
   <!-- Command extension to domain:transfer (RFC 5731 section 3.2.4). -->
-  <element name="transfer" type="dkhm-domain:transferType"/>
+  <element name="transfer" type="dotdk-domain:transferType"/>
   <!-- Response extension to domain:create (RFC 5731 section 3.2.1). -->
-  <element name="creData" type="dkhm-domain:creDataType"/>
+  <element name="creData" type="dotdk-domain:creDataType"/>
   <!-- Response extension to domain:info (RFC 5731 section 3.1.2). -->
-  <element name="infData" type="dkhm-domain:infDataType"/>
+  <element name="infData" type="dotdk-domain:infDataType"/>
   <complexType name="createType">
     <sequence>
       <element name="orderConfirmationToken" type="token"/>
@@ -34,10 +34,10 @@
   </complexType>
   <complexType name="creDataType">
     <sequence>
-      <element name="domainAdvisory" type="dkhm-domain:domainAdvisoryType" minOccurs="0" maxOccurs="unbounded"/>
+      <element name="domainAdvisory" type="dotdk-domain:domainAdvisoryType" minOccurs="0" maxOccurs="unbounded"/>
       <element name="trackingNo" type="token" minOccurs="0"/>
       <!-- PM-1364: risk assessment in the create response instead of a poll message. -->
-      <element name="riskAssessment" type="dkhm-domain:riskAssessmentType" minOccurs="0"/>
+      <element name="riskAssessment" type="dotdk-domain:riskAssessmentType" minOccurs="0"/>
     </sequence>
   </complexType>
   <complexType name="infDataType">
@@ -45,8 +45,8 @@
       <element name="registrantValidated" type="boolean" minOccurs="0"/>
       <element name="autoRenew" type="boolean" minOccurs="0"/>
       <element name="vid" type="boolean" minOccurs="0"/>
-      <element name="domainAdvisory" type="dkhm-domain:domainAdvisoryType" minOccurs="0" maxOccurs="unbounded"/>
-      <element name="authInfo" type="dkhm-domain:authInfoType" minOccurs="0" maxOccurs="2"/>
+      <element name="domainAdvisory" type="dotdk-domain:domainAdvisoryType" minOccurs="0" maxOccurs="unbounded"/>
+      <element name="authInfo" type="dotdk-domain:authInfoType" minOccurs="0" maxOccurs="2"/>
       <!-- PM-1633: the actual suspension date, which no longer follows exDate. -->
       <element name="suspensionDate" type="dateTime" minOccurs="0"/>
       <!-- EPP-1688: number of positions on the waiting list, 0 if there is none. -->
@@ -62,7 +62,7 @@
   <complexType name="authInfoType">
     <simpleContent>
       <extension base="token">
-        <attribute name="op" type="dkhm-domain:authInfoOpType" use="required"/>
+        <attribute name="op" type="dotdk-domain:authInfoOpType" use="required"/>
         <attribute name="expDate" type="dateTime" use="required"/>
       </extension>
     </simpleContent>

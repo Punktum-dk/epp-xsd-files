@@ -7,9 +7,9 @@
       </host:update>
     </update>
     <extension>
-      <dkhm-host:update xmlns:dkhm-host="urn:dkhm:params:xml:ns:dkhm-host-5.0">
-        <dkhm-host:requestedNsAdmin>USER1-DK</dkhm-host:requestedNsAdmin>
-      </dkhm-host:update>
+      <dotdk-host:update xmlns:dotdk-host="urn:dotdk:params:xml:ns:dotdk-host-5.0">
+        <dotdk-host:requestedNsAdmin>USER1-DK</dotdk-host:requestedNsAdmin>
+      </dotdk-host:update>
     </extension>
     <clTRID>ABC-12345</clTRID>
   </command>
