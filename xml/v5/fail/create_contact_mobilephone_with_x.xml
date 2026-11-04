@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Rejected by the XSD: dotdk-contact:mobilePhone has no x attribute (v4 mobilephone is a contact:e164Type). Converted from a valid v4 example. -->
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <command>
+    <create>
+      <contact:create xmlns:contact="urn:ietf:params:xml:ns:contact-1.0">
+        <contact:id>auto</contact:id>
+        <contact:postalInfo type="loc">
+          <contact:name>Test Test</contact:name>
+          <contact:addr>
+            <contact:street>Some Street</contact:street>
+            <contact:city>København S</contact:city>
+            <contact:sp/>
+            <contact:pc>2300</contact:pc>
+            <contact:cc>DK</contact:cc>
+          </contact:addr>
+        </contact:postalInfo>
+        <contact:voice>+45.12345678</contact:voice>
+        <contact:email>epp-test@uniejo.dk</contact:email>
+        <contact:authInfo>
+          <contact:pw/>
+        </contact:authInfo>
+      </contact:create>
+    </create>
+    <extension>
+      <dotdk-contact:create xmlns:dotdk-contact="urn:dotdk:params:xml:ns:dotdk-contact-5.0">
+        <dotdk-contact:userType>individual</dotdk-contact:userType>
+        <dotdk-contact:mobilePhone x="1234">+45.12345678</dotdk-contact:mobilePhone>
+        <dotdk-contact:secondaryEmail>second@example.dk</dotdk-contact:secondaryEmail>
+        <dotdk-contact:management>registrar</dotdk-contact:management>
+        <dotdk-contact:soleProprietorship>true</dotdk-contact:soleProprietorship>
+        <dotdk-contact:contactVerification>
+          <dotdk-contact:responsible>registrar</dotdk-contact:responsible>
+          <dotdk-contact:verifiedId>true</dotdk-contact:verifiedId>
+          <dotdk-contact:verifiedEmail>true</dotdk-contact:verifiedEmail>
+        </dotdk-contact:contactVerification>
+      </dotdk-contact:create>
+    </extension>
+    <clTRID>bcee428f7b55d68b4449f0f07c6354e8</clTRID>
+  </command>
+</epp>

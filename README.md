@@ -130,7 +130,7 @@ Most examples exist in both `xml/v4` and `xml/v5` with the same name. Two script
 - Work in progress. Version 4.6 is skipped, 5.0 follows 4.5 directly, and the change is a clean break from 4.x.
 - Extensions are grouped by EPP object, one namespace per object, starting with `dotdk-contact-5.0`.
 - The names are `dotdk` and not `dkhm`, so the namespaces are `urn:dotdk:params:xml:ns:dotdk-contact-5.0` and so on. 4.x is unchanged.
-- Examples are in `xml/v5`, and the ones in `xml/v5/fail` must be rejected by the XSD.
+- Examples are in `xml/v5`, and the ones in `xml/v5/fail` must be rejected by the XSD. [`xml/v5/fail/README.md`](xml/v5/fail/README.md) describes why each of them must fail.
 - Contact (`dotdk-contact-5.0`):
   - Adding `dotdk-contact:updateAddress` in `infData` (EPP-1944), with the attributes `status` (`pending`, `completed` or `expired`) and `expDate`. It replaces the 4.6 draft `update_address`.
   - Adding `dotdk-contact:publicStatus` in `infData` (EPP-1957), with `publicAddress`, `publicPhone` and `publicEmail`.
