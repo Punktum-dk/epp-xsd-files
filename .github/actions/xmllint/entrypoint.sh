@@ -8,9 +8,19 @@ echo "--------------------------------------"
 
 shopt -s globstar
 
-xmllint --noout --schema epp.xsd xml/{,**/}*.xml
+EXITCODE=0
 
-EXITCODE=$?
+# Examples under a fail/ directory must be rejected by the XSD, all others must validate.
+for file in xml/{,**/}*.xml; do
+    if [[ "$file" == */fail/* ]]; then
+        if xmllint --noout --schema epp.xsd "$file" > /dev/null 2>&1; then
+            echo "$file validates but is expected to fail"
+            EXITCODE=1
+        fi
+    else
+        xmllint --noout --schema epp.xsd "$file" || EXITCODE=1
+    fi
+done
 
 test $EXITCODE -eq 0 && echo "Everything looks good" || echo "XML does not comply with XSD specification"
 
