@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1301">
+      <msg>Command completed successfully; ack to dequeue</msg>
+    </result>
+    <msgQ count="1" id="6873564">
+      <qDate>2026-09-07T08:05:30.0Z</qDate>
+      <msg>punktum.dk has been suspended, as the domain was cancelled</msg>
+    </msgQ>
+    <resData>
+      <domain:infData xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>punktum.dk</domain:name>
+        <domain:roid>PUNKTUM_DK-DK</domain:roid>
+        <domain:status s="pendingDelete"/>
+        <domain:status s="serverDeleteProhibited"/>
+        <domain:status s="serverHold"/>
+        <domain:status s="serverRenewProhibited"/>
+        <domain:status s="serverTransferProhibited"/>
+        <domain:status s="serverUpdateProhibited"/>
+        <domain:registrant>DKHM1-DK</domain:registrant>
+        <domain:ns>
+          <domain:hostObj>ns1.punktum.dk</domain:hostObj>
+          <domain:hostObj>ns2.punktum.dk</domain:hostObj>
+        </domain:ns>
+        <domain:clID>REG-666666</domain:clID>
+        <domain:crDate>1997-03-10T23:00:00.0Z</domain:crDate>
+        <domain:upDate>2026-03-26T16:42:54.0Z</domain:upDate>
+        <domain:exDate>2026-03-31T21:59:59.0Z</domain:exDate>
+      </domain:infData>
+    </resData>
+    <extension>
+      <rgp:infData xmlns:rgp="urn:ietf:params:xml:ns:rgp-1.0" xsi:schemaLocation="urn:ietf:params:xml:ns:rgp-1.0 rgp-1.0.xsd">
+        <rgp:rgpStatus s="redemptionPeriod"/>
+      </rgp:infData>
+      <dkhm:domainAdvisory xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5" domain="punktum.dk" advisory="pendingDeletionDate" date="2026-09-07T22:00:00.0Z"/>
+      <dkhm:registrant_validated xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">1</dkhm:registrant_validated>
+      <dkhm:autoRenew xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">true</dkhm:autoRenew>
+      <dkhm:vid xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">false</dkhm:vid>
+    </extension>
+    <trID>
+      <clTRID>8fb32820efd258a592cee944ee403ab8</clTRID>
+      <svTRID>5AE114DA-2633-19FF-E065-000000000202</svTRID>
+    </trID>
+  </response>
+</epp>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1000">
+      <msg>Command completed successfully</msg>
+    </result>
+    <resData>
+      <domain:chkData xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:cd>
+          <domain:name avail="0">waiting-list.dk</domain:name>
+          <domain:reason>Offered for pos. on waiting list</domain:reason>
+        </domain:cd>
+      </domain:chkData>
+    </resData>
+    <trID>
+      <clTRID>4dd63066e8dc43b5bb5071004386e9d6</clTRID>
+      <svTRID>46C2B78A-6BAC-11F0-A0E8-E8DFF89BC595</svTRID>
+    </trID>
+  </response>
+</epp>

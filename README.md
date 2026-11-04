@@ -116,6 +116,11 @@ All examples are validated against `epp.xsd`. Examples in a `fail` folder, such 
 
 Run the checks with `prove t/runtests.t` or `.github/actions/xmllint/entrypoint.sh`. To skip examples that use a namespace `epp.xsd` does not load, for example after an import is removed, pass `--skip-unknown-ns` (with `prove`: `prove t/runtests.t :: --skip-unknown-ns`) or set `XSD_SKIP_UNKNOWN_NS=1`.
 
+Most examples exist in both `xml/v4` and `xml/v5` with the same name. Two scripts help keep them in step:
+
+- `bin/convert-example.pl --to v5 xml/v4/file.xml > xml/v5/file.xml` converts an example between the `dkhm` 4.5 extensions and the `dotdk` 5.0 extensions (`--to v4` the other way)
+- `bin/import-spec-examples.pl` copies the examples it lists from the [EPP service specification][DKHMEPPSPEC] (`../epp-service-specification`, `origin/master` by default) into `xml/rfc` and `xml/v4`, and converts the v4 ones to `xml/v5`
+
 <a id="xsd-history"></a>
 ## XSD History
 

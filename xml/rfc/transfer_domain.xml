@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <transfer op="request">
+      <domain:transfer xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>eksempel.dk</domain:name>
+        <domain:authInfo>
+          <domain:pw>OWN-TRANSFER-a84ecadf4efcc82e38c1799697c6525b</domain:pw>
+        </domain:authInfo>
+      </domain:transfer>
+    </transfer>
+    <clTRID>c6c12b2190420ecb8dc98153fb496f57</clTRID>
+  </command>
+</epp>

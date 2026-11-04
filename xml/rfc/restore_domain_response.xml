@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1000">
+      <msg>Command completed successfully</msg>
+    </result>
+    <trID>
+      <clTRID>bcfd3fa74ed98b3f64774d120dc5a7d5</clTRID>
+      <svTRID>E7F5D19E-828D-11F0-B455-ABF709D3D6BD</svTRID>
+    </trID>
+  </response>
+</epp>

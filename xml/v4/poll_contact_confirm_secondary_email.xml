@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1301">
+      <msg>Command completed successfully; ack to dequeue</msg>
+    </result>
+    <msgQ count="3" id="6824360">
+      <qDate>2026-03-11T10:32:08.0Z</qDate>
+      <msg>DKHM1-DK has to confirm new secondary email, registrar@punktum.dk, to complete the update - registry</msg>
+    </msgQ>
+    <resData>
+      <contact:infData xmlns:contact="urn:ietf:params:xml:ns:contact-1.0">
+        <contact:id>DKHM1-DK</contact:id>
+        <contact:roid>DKHM1-DK</contact:roid>
+        <contact:status s="serverDeleteProhibited"/>
+        <contact:status s="serverTransferProhibited"/>
+        <contact:postalInfo type="loc">
+          <contact:name>Punktum dk A/S</contact:name>
+          <contact:addr>
+            <contact:street>Ørestads Boulevard 108, 11.</contact:street>
+            <contact:city>København S</contact:city>
+            <contact:pc>2300</contact:pc>
+            <contact:cc>DK</contact:cc>
+          </contact:addr>
+        </contact:postalInfo>
+        <contact:voice>+45.33646060</contact:voice>
+        <contact:email>vitester@punktum.dk</contact:email>
+        <contact:clID>REG-666666</contact:clID>
+        <contact:crID>REG-666666</contact:crID>
+        <contact:crDate>2026-03-11T10:30:21.0Z</contact:crDate>
+        <contact:upID>REG-666666</contact:upID>
+        <contact:upDate>2026-03-11T10:32:08.0Z</contact:upDate>
+      </contact:infData>
+    </resData>
+    <extension>
+      <dkhm:contact_validated xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">1</dkhm:contact_validated>
+      <dkhm:mobilephone xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">+45.22777004</dkhm:mobilephone>
+      <dkhm:CVR xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">24210375</dkhm:CVR>
+      <dkhm:userType xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">company</dkhm:userType>
+      <dkhm:sole_proprietorship xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">false</dkhm:sole_proprietorship>
+      <dkhm:contact_verification xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">
+        <dkhm:responsible>registry</dkhm:responsible>
+        <dkhm:verified_id status="completed">true</dkhm:verified_id>
+        <dkhm:verified_email status="completed">true</dkhm:verified_email>
+        <dkhm:confirm_secondary_email expdate="2026-03-13T22:59:59.0Z" responsible="registry" status="pending">registrar@punktum.dk</dkhm:confirm_secondary_email>
+      </dkhm:contact_verification>
+    </extension>
+    <trID>
+      <clTRID>ABC-123</clTRID>
+      <svTRID>4CBE2574-453F-A6D7-E065-000000000202</svTRID>
+    </trID>
+  </response>
+</epp>

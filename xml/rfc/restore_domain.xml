@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <update>
+      <domain:update xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>eksempel.dk</domain:name>
+        <domain:add/>
+        <domain:rem/>
+        <domain:chg/>
+      </domain:update>
+    </update>
+    <extension>
+      <rgp:update xmlns:rgp="urn:ietf:params:xml:ns:rgp-1.0">
+        <rgp:restore op="report">
+          <rgp:report>
+            <rgp:preData/>
+            <rgp:postData/>
+            <rgp:delTime>1900-01-01T00:00:00.0Z</rgp:delTime>
+            <rgp:resTime>1900-01-01T00:00:00.0Z</rgp:resTime>
+            <rgp:resReason/>
+            <rgp:statement/>
+          </rgp:report>
+        </rgp:restore>
+      </rgp:update>
+    </extension>
+    <clTRID>bcfd3fa74ed98b3f64774d120dc5a7d5</clTRID>
+  </command>
+</epp>

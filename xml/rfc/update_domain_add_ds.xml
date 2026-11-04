@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <update>
+      <domain:update xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>eksempel.dk</domain:name>
+        <domain:add/>
+        <domain:rem/>
+        <domain:chg/>
+      </domain:update>
+    </update>
+    <extension>
+      <secDNS:update xmlns:secDNS="urn:ietf:params:xml:ns:secDNS-1.1">
+        <secDNS:rem>
+          <secDNS:all>true</secDNS:all>
+        </secDNS:rem>
+        <secDNS:add>
+          <secDNS:dsData>
+            <secDNS:keyTag>52378</secDNS:keyTag>
+            <secDNS:alg>13</secDNS:alg>
+            <secDNS:digestType>4</secDNS:digestType>
+            <secDNS:digest>ed3ef3e1787f797a538abf130fd90d7499713976f7da7c05e51826554560fd42bba5e66dbd2f573a75d77eb0b05124c4</secDNS:digest>
+          </secDNS:dsData>
+        </secDNS:add>
+      </secDNS:update>
+    </extension>
+    <clTRID>67909497e93493916776f7814e7e2431</clTRID>
+  </command>
+</epp>

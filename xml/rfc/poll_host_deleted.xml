@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1301">
+      <msg>Command completed successfully; ack to dequeue</msg>
+    </result>
+    <msgQ count="158" id="6805106">
+      <qDate>2026-01-10T11:26:40.0Z</qDate>
+      <msg>The name server ns1.test.dk has been deleted</msg>
+    </msgQ>
+    <resData>
+      <host:infData xmlns:host="urn:ietf:params:xml:ns:host-1.0">
+        <host:name>ns1.test.dk</host:name>
+        <host:roid>NS1_TEST_DK-DK</host:roid>
+        <host:status s="ok"/>
+        <host:clID>DKHM1-DK</host:clID>
+        <host:crID>DKHM1-DK</host:crID>
+        <host:crDate>2013-11-06T07:37:01.0Z</host:crDate>
+      </host:infData>
+    </resData>
+    <trID>
+      <clTRID>0af6ad7a3a611e1bca89e1f5a61951ce</clTRID>
+      <svTRID>DD5B6F88-8F2E-11F1-A2AC-C56C229A15CC</svTRID>
+    </trID>
+  </response>
+</epp>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <update>
+      <domain:update xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>eksempel.dk</domain:name>
+        <domain:add/>
+        <domain:rem/>
+        <domain:chg>
+          <domain:registrant>DKHM1-DK</domain:registrant>
+        </domain:chg>
+      </domain:update>
+    </update>
+    <extension>
+      <dkhm:orderconfirmationToken xmlns:dkhm="urn:dkhm:params:xml:ns:dkhm-4.5">1753707224</dkhm:orderconfirmationToken>
+    </extension>
+    <clTRID>3865a5fa134cd896455a909ebb2958d7</clTRID>
+  </command>
+</epp>

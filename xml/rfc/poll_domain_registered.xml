@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1301">
+      <msg>Command completed successfully; ack to dequeue</msg>
+    </result>
+    <msgQ count="66" id="6801533">
+      <qDate>2026-01-15T03:05:44.0Z</qDate>
+      <msg>test.dk has been registered and activated</msg>
+    </msgQ>
+    <resData>
+      <domain:panData xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name paResult="1">test.dk</domain:name>
+        <domain:paTRID>
+          <clTRID>e3d66d8d-279c-4c84-bbfd-ddbfe547e9c6</clTRID>
+          <svTRID>A794105A-8F21-11F1-910D-05474682B364</svTRID>
+        </domain:paTRID>
+        <domain:paDate>2026-01-15T03:05:44.0Z</domain:paDate>
+      </domain:panData>
+    </resData>
+    <trID>
+      <clTRID>e9f93bca097d46358e86365bb92fe3ec</clTRID>
+      <svTRID>16A9520A-E711-C100-E065-000000000202</svTRID>
+    </trID>
+  </response>
+</epp>

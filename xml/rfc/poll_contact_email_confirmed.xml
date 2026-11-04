@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1301">
+      <msg>Command completed successfully; ack to dequeue</msg>
+    </result>
+    <msgQ count="452" id="6816761">
+      <qDate>2026-01-07T19:51:30.0Z</qDate>
+      <msg>DKHM1-DK has confirmed the new primary email, test123@punktum.dk - registry</msg>
+    </msgQ>
+    <resData>
+      <contact:panData xmlns:contact="urn:ietf:params:xml:ns:contact-1.0">
+        <contact:id paResult="1">DKHM1-DK</contact:id>
+        <contact:paTRID>
+          <clTRID>55229dce-3409-4e2e-be58-c2132ac071d6</clTRID>
+          <svTRID>E896C620-EC01-11F0-A321-AC9246E169D7</svTRID>
+        </contact:paTRID>
+        <contact:paDate>2026-01-07T19:45:30.0Z</contact:paDate>
+      </contact:panData>
+    </resData>
+    <trID>
+      <clTRID>f753cd75d4144beff4e820447dbde993</clTRID>
+      <svTRID>47CEF78F-2033-3EE9-E065-000000000202</svTRID>
+    </trID>
+  </response>
+</epp>
