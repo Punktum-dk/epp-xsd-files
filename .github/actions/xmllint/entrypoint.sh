@@ -11,12 +11,12 @@ if ! command -v xmllint > /dev/null 2>&1; then
     exit 1
 fi
 
-shopt -s globstar
+shopt -s globstar nullglob
 
 EXITCODE=0
 
 # Examples under a fail/ directory must be rejected by the XSD, all others must validate.
-for file in xml/{,**/}*.xml; do
+for file in xml/**/*.xml; do
     if [[ "$file" == */fail/* ]]; then
         if xmllint --noout --schema epp.xsd "$file" > /dev/null 2>&1; then
             echo "$file validates but is expected to fail"
