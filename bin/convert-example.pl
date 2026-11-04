@@ -31,7 +31,8 @@ my %V5 = map { $_ => "urn:dotdk:params:xml:ns:dotdk-$_-5.0" } qw(contact domain 
 # v4 element => [v5 element, map of v4 value to v5 value]
 my %bool     = ('1' => 'true', '0' => 'false', 'true' => 'true', 'false' => 'false');
 my %usertype = (C => 'company', P => 'publicOrganization', A => 'association', I => 'individual',
-                map { $_ => $_ } qw(company publicOrganization association individual));
+                company => 'company', public_organization => 'publicOrganization',
+                association => 'association', individual => 'individual');
 my %risk     = (GREEN => 'green', BLUE => 'blue', YELLOW => 'yellow', RED => 'red', 'N/A' => 'notAvailable');
 my %map = (
     contact => {
@@ -169,7 +170,8 @@ sub convert_v5_element {
         $value = $value eq 'true' ? '1' : '0' if $v4_numeric_bool{ $el->localname };
     }
     elsif ($values && !exists $values->{$value}) {    # keep a value v4 also accepts
-        my %v4_value = reverse %$values;
+        my %v4_value;    # v4 value for each v5 value, the longest spelling wins (public_organization over P)
+        $v4_value{ $values->{$_} } = $_ for sort { length $a <=> length $b } keys %$values;
         $value = $v4_value{$value} // die "No v4 value for " . $el->nodeName . " '$value'\n";
     }
     $new->appendText($value) if length $value;
