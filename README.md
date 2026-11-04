@@ -114,6 +114,8 @@ Example files are in `xml/`, grouped by version:
 
 All examples are validated against `epp.xsd`. Examples in a `fail` folder, such as `xml/v5/fail`, must be rejected by the XSD.
 
+Run the checks with `prove t/runtests.t` or `.github/actions/xmllint/entrypoint.sh`. To skip examples that use a namespace `epp.xsd` does not load, for example after an import is removed, pass `--skip-unknown-ns` (with `prove`: `prove t/runtests.t :: --skip-unknown-ns`) or set `XSD_SKIP_UNKNOWN_NS=1`.
+
 <a id="xsd-history"></a>
 ## XSD History
 

@@ -10,6 +10,12 @@ use File::Basename 'dirname';
 use File::Spec;
 
 use Env qw($MOJO_MODE);
+use Getopt::Long;
+
+# --skip-unknown-ns (or XSD_SKIP_UNKNOWN_NS=1) skips examples using namespaces epp.xsd does not load.
+# With prove: prove t/runtests.t :: --skip-unknown-ns
+GetOptions('skip-unknown-ns' => sub { $ENV{XSD_SKIP_UNKNOWN_NS} = 1 })
+    or die "Usage: $0 [--skip-unknown-ns]\n";
 
 use Test::Class::XSD;
 
