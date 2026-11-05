@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Rejected by the XSD: trackingNo is only allowed in dotdk-domain:creData, not in infData. Converted from a valid v4 example. -->
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1000">
+      <msg>Command completed successfully</msg>
+    </result>
+    <resData>
+      <domain:infData xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>eksempel.dk</domain:name>
+        <domain:roid>EKSEMPEL_DK-DK</domain:roid>
+        <domain:clID>DKHM1-DK</domain:clID>
+      </domain:infData>
+    </resData>
+    <extension>
+      <dotdk-domain:infData xmlns:dotdk-domain="urn:dotdk:params:xml:ns:dotdk-domain-5.0">
+        <dotdk-domain:domainAdvisory advisory="offeredOnWaitingList" domain="eksempel.dk"/>
+        <dotdk-domain:trackingNo>1234567</dotdk-domain:trackingNo>
+      </dotdk-domain:infData>
+    </extension>
+    <trID>
+      <clTRID>5a8afa3ead777c161cefffa861431ad7</clTRID>
+      <svTRID>39040BB8-858C-11F0-9D4C-AD5DAB9DAA48</svTRID>
+    </trID>
+  </response>
+</epp>

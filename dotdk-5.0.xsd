@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:dotdk:params:xml:ns:dotdk-5.0" elementFormDefault="qualified">
+  <!--
+  Aggregate of the dotdk 5.0 extensions, one schema and namespace per EPP object.
+  The namespace of this file is only a version marker, it declares no elements.
+  -->
+  <import namespace="urn:dotdk:params:xml:ns:dotdk-contact-5.0" schemaLocation="dotdk-contact-5.0.xsd"/>
+  <import namespace="urn:dotdk:params:xml:ns:dotdk-domain-5.0" schemaLocation="dotdk-domain-5.0.xsd"/>
+  <import namespace="urn:dotdk:params:xml:ns:dotdk-host-5.0" schemaLocation="dotdk-host-5.0.xsd"/>
+  <annotation>
+    <documentation>dotdk extensions v5.0. DRAFT: unreleased and subject to change without notice.</documentation>
+  </annotation>
+</schema>

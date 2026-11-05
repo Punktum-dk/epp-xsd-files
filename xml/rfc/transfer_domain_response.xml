@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1000">
+      <msg>Command completed successfully</msg>
+    </result>
+    <resData>
+      <domain:trnData xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>eksempel.dk</domain:name>
+        <domain:trStatus>clientApproved</domain:trStatus>
+        <domain:reID>REG-12345</domain:reID>
+        <domain:reDate>2025-09-01T07:38:22.0Z</domain:reDate>
+        <domain:acID>OWNER1-DK</domain:acID>
+        <domain:acDate>2025-09-01T07:38:27.0Z</domain:acDate>
+      </domain:trnData>
+    </resData>
+    <trID>
+      <clTRID>c6c12b2190420ecb8dc98153fb496f57</clTRID>
+      <svTRID>A7093CAC-8706-11F0-9C20-FBF0BC8FD8EA</svTRID>
+    </trID>
+  </response>
+</epp>

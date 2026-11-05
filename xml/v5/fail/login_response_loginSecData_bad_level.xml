@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <response>
+    <result code="1000">
+      <msg lang="en">Command completed successfully</msg>
+    </result>
+    <extension>
+      <loginSec:loginSecData xmlns:loginSec="urn:ietf:params:xml:ns:epp:loginSec-1.0">
+        <loginSec:event type="password" level="info">Password expires soon</loginSec:event>
+        <loginSec:event type="tlsProtocol" name="TLSv1.0" level="warning">Deprecated TLS protocol</loginSec:event>
+      </loginSec:loginSecData>
+    </extension>
+    <trID>
+      <clTRID>ABC-12345</clTRID>
+      <svTRID>54322-XYZ</svTRID>
+    </trID>
+  </response>
+</epp>

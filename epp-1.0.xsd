@@ -195,8 +195,8 @@
   </complexType>
   <simpleType name="pwType">
     <restriction base="token">
-      <minLength value="8"/>
-      <maxLength value="64"/>
+      <minLength value="6"/>
+      <maxLength value="16"/>
     </restriction>
   </simpleType>
   <complexType name="loginSvcType">

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1000">
+      <msg>Command completed successfully</msg>
+    </result>
+    <resData>
+      <domain:infData xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>eksempel.dk</domain:name>
+        <domain:roid>EKSEMPEL_DK-DK</domain:roid>
+        <domain:status s="pendingDelete"/>
+        <domain:status s="serverDeleteProhibited"/>
+        <domain:status s="serverRenewProhibited"/>
+        <domain:status s="serverTransferProhibited"/>
+        <domain:status s="serverUpdateProhibited"/>
+        <domain:registrant>DKHM1-DK</domain:registrant>
+        <domain:ns>
+          <domain:hostObj>auth01.ns.dk-hostmaster.dk</domain:hostObj>
+          <domain:hostObj>auth02.ns.dk-hostmaster.dk</domain:hostObj>
+        </domain:ns>
+        <domain:clID>REG-123456</domain:clID>
+        <domain:crDate>2026-02-11T09:21:02.0Z</domain:crDate>
+        <domain:upDate>2026-05-05T10:33:28.0Z</domain:upDate>
+        <domain:exDate>2027-02-10T22:59:59.0Z</domain:exDate>
+      </domain:infData>
+    </resData>
+    <extension>
+      <rgp:infData xmlns:rgp="urn:ietf:params:xml:ns:rgp-1.0" xsi:schemaLocation="urn:ietf:params:xml:ns:rgp-1.0 rgp-1.0.xsd">
+        <rgp:rgpStatus s="redemptionPeriod"/>
+      </rgp:infData>
+      <dotdk-domain:infData xmlns:dotdk-domain="urn:dotdk:params:xml:ns:dotdk-domain-5.0">
+        <dotdk-domain:registrantValidated>true</dotdk-domain:registrantValidated>
+        <dotdk-domain:autoRenew>true</dotdk-domain:autoRenew>
+        <dotdk-domain:vid>false</dotdk-domain:vid>
+        <dotdk-domain:domainAdvisory advisory="pendingDeletionDate" date="2027-03-12T23:00:00.0Z" domain="eksempel.dk"/>
+      </dotdk-domain:infData>
+    </extension>
+    <trID>
+      <clTRID>29c28883d6e3be3e236f668214b28e88</clTRID>
+      <svTRID>7CCB85D8-A11F-11F1-8112-DE40DBF9025F</svTRID>
+    </trID>
+  </response>
+</epp>

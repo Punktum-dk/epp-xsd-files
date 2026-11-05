@@ -16,10 +16,10 @@
       </domain:create>
     </create>
     <extension>
-      <dkhm-domain:create xmlns:dkhm-domain="urn:dkhm:params:xml:ns:dkhm-domain-5.0">
-        <dkhm-domain:orderConfirmationToken>testtoken</dkhm-domain:orderConfirmationToken>
-        <dkhm-domain:autoRenew>false</dkhm-domain:autoRenew>
-      </dkhm-domain:create>
+      <dotdk-domain:create xmlns:dotdk-domain="urn:dotdk:params:xml:ns:dotdk-domain-5.0">
+        <dotdk-domain:orderConfirmationToken>testtoken</dotdk-domain:orderConfirmationToken>
+        <dotdk-domain:autoRenew>false</dotdk-domain:autoRenew>
+      </dotdk-domain:create>
     </extension>
     <clTRID>92724843f12a3e958588679551aa988d</clTRID>
   </command>

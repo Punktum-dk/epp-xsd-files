@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <login>
+      <clID>ClientX</clID>
+      <pw>[LOGIN-SECURITY]</pw>
+      <options>
+        <version>1.0</version>
+        <lang>en</lang>
+      </options>
+      <svcs>
+        <objURI>urn:ietf:params:xml:ns:domain-1.0</objURI>
+        <objURI>urn:ietf:params:xml:ns:contact-1.0</objURI>
+        <objURI>urn:ietf:params:xml:ns:host-1.0</objURI>
+        <svcExtension>
+          <extURI>urn:ietf:params:xml:ns:epp:loginSec-1.0</extURI>
+        </svcExtension>
+      </svcs>
+    </login>
+    <extension>
+      <loginSec:loginSec xmlns:loginSec="urn:ietf:params:xml:ns:epp:loginSec-1.0">
+        <loginSec:pw>short</loginSec:pw>
+      </loginSec:loginSec>
+    </extension>
+    <clTRID>ABC-12345</clTRID>
+  </command>
+</epp>

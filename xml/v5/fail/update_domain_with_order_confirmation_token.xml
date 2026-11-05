@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Rejected by the XSD: orderConfirmationToken is not allowed in dotdk-domain:update, v4 sends it when changing the registrant. Converted from a valid v4 example. -->
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0">
+  <command>
+    <update>
+      <domain:update xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>eksempel.dk</domain:name>
+        <domain:add/>
+        <domain:rem/>
+        <domain:chg>
+          <domain:registrant>DKHM1-DK</domain:registrant>
+        </domain:chg>
+      </domain:update>
+    </update>
+    <extension>
+      <dotdk-domain:update xmlns:dotdk-domain="urn:dotdk:params:xml:ns:dotdk-domain-5.0">
+        <dotdk-domain:orderConfirmationToken>1753707224</dotdk-domain:orderConfirmationToken>
+      </dotdk-domain:update>
+    </extension>
+    <clTRID>3865a5fa134cd896455a909ebb2958d7</clTRID>
+  </command>
+</epp>

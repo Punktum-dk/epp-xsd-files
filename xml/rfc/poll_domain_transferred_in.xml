@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1301">
+      <msg>Command completed successfully; ack to dequeue</msg>
+    </result>
+    <msgQ count="104" id="6809226">
+      <qDate>2026-03-24T11:36:25.0Z</qDate>
+      <msg>test.dk has been added to your portfolio</msg>
+    </msgQ>
+    <resData>
+      <domain:trnData xmlns:domain="urn:ietf:params:xml:ns:domain-1.0">
+        <domain:name>test.dk</domain:name>
+        <domain:trStatus>clientApproved</domain:trStatus>
+        <domain:reID>REG-855170</domain:reID>
+        <domain:reDate>2026-03-24T11:36:19.0Z</domain:reDate>
+        <domain:acID>DKHM1-DK</domain:acID>
+        <domain:acDate>2026-03-24T11:36:25.0Z</domain:acDate>
+      </domain:trnData>
+    </resData>
+    <trID>
+      <clTRID>30ed395866db4759a5cad0070ddf6d3a</clTRID>
+      <svTRID>8FB8A6A3-4C51-776D-E065-000000000202</svTRID>
+    </trID>
+  </response>
+</epp>

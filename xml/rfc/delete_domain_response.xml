@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1001">
+      <msg>Command completed successfully; action pending</msg>
+    </result>
+    <trID>
+      <clTRID>f8cb214a177b3d9cf272bf9855999beb</clTRID>
+      <svTRID>644E6BAC-6C8B-11F0-A1BD-9D4129D85F0B</svTRID>
+    </trID>
+  </response>
+</epp>

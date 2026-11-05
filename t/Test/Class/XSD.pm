@@ -25,6 +25,8 @@ use Term::ANSIColor;
 use English; # $PROCESS_ID
 use Sub::Override;
 use JSON;
+use File::Basename qw(dirname);
+use File::Spec;
 
 sub xml_files : Tests {
     my $self = shift;
@@ -39,6 +41,14 @@ sub test_xml_xsd {
     my $should_fail = $xml_file =~ m#/fail/#;
     my $test = sprintf('Testing XSD "%s" on XML "%s"%s', $xsd_file, $xml_file, $should_fail ? ' (should fail)' : '');
 #   note $test;
+    if ($ENV{XSD_SKIP_UNKNOWN_NS}) {
+        my @unknown = unknown_namespaces($xml_file, $xsd_file);
+        if (@unknown) {
+            SKIP: { skip(sprintf('%s: namespace not loaded by %s: %s', $test, $xsd_file, join(', ', @unknown)), 1) }
+            return;
+        }
+    }
+
     my($valid, $message) = (0, "-");
     my($xml, $schema);
     try {
@@ -55,6 +65,39 @@ sub test_xml_xsd {
     $valid = ! $valid   if $should_fail;
 
     ok($valid, sprintf('%s: %s', $test, $message));
+}
+
+# Namespaces declared in $xml_file that are not loaded through the import/include tree of $xsd_file.
+# A file that cannot be parsed returns nothing, so it is not skipped and the test reports the error.
+my %schema_namespaces;
+my %ignored_namespaces = map { $_ => 1 } (
+    'http://www.w3.org/2001/XMLSchema-instance',
+    'http://www.w3.org/XML/1998/namespace',
+);
+
+sub unknown_namespaces {
+    my($xml_file, $xsd_file) = @_;
+    my $known = $schema_namespaces{$xsd_file} //= schema_namespaces($xsd_file);
+    my $doc = eval { XML::LibXML->load_xml(location => $xml_file) } or return;
+    my %declared = map { $_->declaredURI => 1 } $doc->findnodes('//namespace::*');
+    return sort grep { !$known->{$_} && !$ignored_namespaces{$_} } keys %declared;
+}
+
+sub schema_namespaces {
+    my($xsd_file, $seen, $known) = @_;
+    $seen  //= {};
+    $known //= {};
+    my $path = File::Spec->rel2abs($xsd_file);
+    return $known if $seen->{$path}++;
+
+    my $root = XML::LibXML->load_xml(location => $path)->documentElement;
+    my $target = $root->getAttribute('targetNamespace');
+    $known->{$target} = 1 if defined $target && length $target;
+    for my $node ($root->findnodes('*[local-name()="import" or local-name()="include"]')) {
+        my $location = $node->getAttribute('schemaLocation') // next;
+        schema_namespaces(File::Spec->catfile(dirname($path), $location), $seen, $known);
+    }
+    return $known;
 }
 
 sub toStringPretty {

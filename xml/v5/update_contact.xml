@@ -9,17 +9,17 @@
       </contact:update>
     </update>
     <extension>
-      <dkhm-contact:update xmlns:dkhm-contact="urn:dkhm:params:xml:ns:dkhm-contact-5.0">
-        <dkhm-contact:userType>individual</dkhm-contact:userType>
-        <dkhm-contact:ean>5798000000001</dkhm-contact:ean>
-        <dkhm-contact:contactVerification>
-          <dkhm-contact:responsible>registrar</dkhm-contact:responsible>
-          <dkhm-contact:verifiedId>true</dkhm-contact:verifiedId>
-          <dkhm-contact:verifiedEmail>true</dkhm-contact:verifiedEmail>
-          <dkhm-contact:confirmEmail expDate="2026-01-14T08:00:00Z">em@il.tld</dkhm-contact:confirmEmail>
-          <dkhm-contact:confirmSecondaryEmail expDate="2025-11-28T22:59:59.0Z" responsible="registry" status="pending">test</dkhm-contact:confirmSecondaryEmail>
-        </dkhm-contact:contactVerification>
-      </dkhm-contact:update>
+      <dotdk-contact:update xmlns:dotdk-contact="urn:dotdk:params:xml:ns:dotdk-contact-5.0">
+        <dotdk-contact:userType>individual</dotdk-contact:userType>
+        <dotdk-contact:ean>5798000000001</dotdk-contact:ean>
+        <dotdk-contact:contactVerification>
+          <dotdk-contact:responsible>registrar</dotdk-contact:responsible>
+          <dotdk-contact:verifiedId>true</dotdk-contact:verifiedId>
+          <dotdk-contact:verifiedEmail>true</dotdk-contact:verifiedEmail>
+          <dotdk-contact:confirmEmail expDate="2026-01-14T08:00:00Z">em@il.tld</dotdk-contact:confirmEmail>
+          <dotdk-contact:confirmSecondaryEmail expDate="2025-11-28T22:59:59.0Z" responsible="registry" status="pending">test</dotdk-contact:confirmSecondaryEmail>
+        </dotdk-contact:contactVerification>
+      </dotdk-contact:update>
     </extension>
     <clTRID>1e66aeebf62a8d3b52fe6bb08886eed7</clTRID>
   </command>

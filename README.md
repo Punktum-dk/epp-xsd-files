@@ -54,6 +54,7 @@ by their respective authors, please refer to the RFCs for more information.
 - `host-1.0.xsd` [RFC:5732]
 - `secDNS-1.0.xsd` [RFC:4310]
 - `secDNS-1.1.xsd` [RFC:5910]
+- `loginSec-1.0.xsd` [RFC:8807]
 - `verisign-epp-balance` [VeriSign EPP Balance][VeriSignEPPBalance]
 - `rgp-1.0.xsd` [RFC:3915]
 
@@ -90,10 +91,10 @@ The following files are owned and copyright by Punktum dk A/S under the MIT Lice
 - `dkhm-domain-4.4.xsd`, Punktum dk EPP Domain extension version 4.4
 - `epp.xsd` (a collection files for easier test, validation and maintenance, see below)
 - `dkhm-4.5.xsd`, Punktum dk EPP extensions version 4.5
-- `dkhm-5.0.xsd`, Punktum dk EPP extensions version 5.0 (draft), a collection of the files below
-- `dkhm-contact-5.0.xsd`, Punktum dk EPP Contact extension version 5.0 (draft)
-- `dkhm-domain-5.0.xsd`, Punktum dk EPP Domain extension version 5.0 (draft)
-- `dkhm-host-5.0.xsd`, Punktum dk EPP Host extension version 5.0 (draft)
+- `dotdk-5.0.xsd`, Punktum dk EPP extensions version 5.0 (draft), a collection of the files below
+- `dotdk-contact-5.0.xsd`, Punktum dk EPP Contact extension version 5.0 (draft)
+- `dotdk-domain-5.0.xsd`, Punktum dk EPP Domain extension version 5.0 (draft)
+- `dotdk-host-5.0.xsd`, Punktum dk EPP Host extension version 5.0 (draft)
 
 The Punktum dk [EPP service specification][DKHMEPPSPEC] describes the use and contents of the files in more detail.
 
@@ -106,6 +107,21 @@ your_file.xml validates
 
 It will then either omit an error message or the success message: `your_file.xml validates`.
 
+Example files are in `xml/`, grouped by version:
+
+- `xml/rfc`, plain EPP examples without Punktum dk extensions (RFC 5730 to 5733, RFC 3915, RFC 5910 and the Verisign balance extension)
+- `xml/v4`, examples using the `dkhm` 4.x extensions
+- `xml/v5`, examples using the `dotdk` 5.0 extensions (draft)
+
+All examples are validated against `epp.xsd`. Examples in a `fail` folder, such as `xml/v5/fail`, must be rejected by the XSD.
+
+Run the checks with `prove t/runtests.t` or `.github/actions/xmllint/entrypoint.sh`. To skip examples that use a namespace `epp.xsd` does not load, for example after an import is removed, pass `--skip-unknown-ns` (with `prove`: `prove t/runtests.t :: --skip-unknown-ns`) or set `XSD_SKIP_UNKNOWN_NS=1`.
+
+Most examples exist in both `xml/v4` and `xml/v5` with the same name. Two scripts help keep them in step:
+
+- `bin/convert-example.pl --to v5 xml/v4/file.xml > xml/v5/file.xml` converts an example between the `dkhm` 4.5 extensions and the `dotdk` 5.0 extensions (`--to v4` the other way)
+- `bin/import-spec-examples.pl` copies the examples it lists from the [EPP service specification][DKHMEPPSPEC] (`../epp-service-specification`, `origin/master` by default) into `xml/rfc` and `xml/v4`, and converts the v4 ones to `xml/v5`
+
 <a id="xsd-history"></a>
 ## XSD History
 
@@ -113,19 +129,23 @@ It will then either omit an error message or the success message: `your_file.xml
 ### 5.0 (draft)
 
 - Work in progress. Version 4.6 is skipped, 5.0 follows 4.5 directly, and the change is a clean break from 4.x.
-- Extensions are grouped by EPP object, one namespace per object, starting with `dkhm-contact-5.0`.
-- Contact (`dkhm-contact-5.0`):
-  - Adding `dkhm-contact:updateAddress` in `infData` (EPP-1944), with the attributes `status` (`pending`, `completed` or `expired`) and `expDate`. It replaces the 4.6 draft `dkhm:update_address`.
-  - Adding `dkhm-contact:publicStatus` in `infData` (EPP-1957), with `publicAddress`, `publicPhone` and `publicEmail`.
+- Extensions are grouped by EPP object, one namespace per object, starting with `dotdk-contact-5.0`.
+- The names are `dotdk` and not `dkhm`, so the namespaces are `urn:dotdk:params:xml:ns:dotdk-contact-5.0` and so on. 4.x is unchanged.
+- Examples are in `xml/v5`, and the ones in `xml/v5/fail` must be rejected by the XSD. [`xml/v5/fail/README.md`](xml/v5/fail/README.md) describes why each of them must fail.
+- Contact (`dotdk-contact-5.0`):
+  - Adding `dotdk-contact:updateAddress` in `infData` (EPP-1944), with the attributes `status` (`pending`, `completed` or `expired`) and `expDate`. It replaces the 4.6 draft `update_address`.
+  - Adding `dotdk-contact:publicStatus` in `infData` (EPP-1957), with `publicAddress`, `publicPhone` and `publicEmail`.
   - Moved from 4.5 into the wrappers `create`, `update` and `infData`: `userType`, `ean`, `cvr`, `pNumber`, `mobilePhone`, `secondaryEmail`, `management`, `soleProprietorship`, `contactValidated` and `contactVerification`. The names are camel case, attributes are `expDate`, and the legacy `userType` values `C`, `P`, `A` and `I` are gone.
   - `mobilePhone` has no `x` attribute (PM-714 is undecided for `voice` and `fax`, which belong to RFC 5733).
-- Domain (`dkhm-domain-5.0`), with the wrappers `create`, `transfer`, `update`, `creData` and `infData`:
+- Domain (`dotdk-domain-5.0`), with the wrappers `create`, `transfer`, `update`, `creData` and `infData`:
   - `orderConfirmationToken` is required in `create` and in the new `transfer` wrapper (PM-1481). The XSD cannot require the wrapper itself, so the service must reject a command without it.
   - Moved from 4.5: `orderConfirmationToken`, `autoRenew`, `vid`, `registrantValidated`, `domainAdvisory`, `trackingNo`, `authInfo` (attribute `expdate` is now `expDate`) and `riskAssessment` (values are now lower camel case).
   - Adding `suspensionDate` in `infData` (PM-1633) and `waitingListCount` in `infData` (EPP-1688).
   - Adding `riskAssessment` in `creData` (PM-1364), so the create response no longer needs a poll message for it.
   - Booleans are `xs:boolean`, so `true`, `false`, `1` and `0` are valid.
-- Host (`dkhm-host-5.0`): `requestedNsAdmin` in `create` and `update`.
+- Host (`dotdk-host-5.0`): `requestedNsAdmin` in `create` and `update`.
+- Login Security Extension [RFC:8807] (`loginSec-1.0.xsd`) is included, so a client can send a password longer than 16 characters in `loginSec:pw` and `loginSec:newPW` with the constant `[LOGIN-SECURITY]` in `pw` and `newPW`. The server announces it with the `extURI` `urn:ietf:params:xml:ns:epp:loginSec-1.0`.
+- The `pwType` change in `epp-1.0.xsd` from 4.x (see 2.1) is rolled back to [RFC:5730] (6 to 16 characters).
 - Removed: the `withdraw` command, and (pending confirmation in PM-1621, PM-1480 and PM-1481) `domain_confirmed`, `url`, `authInfoExDate` and `delDate`.
 
 <a id="45"></a>
@@ -285,6 +305,7 @@ It will then either omit an error message or the success message: `your_file.xml
 - [RFC:5732: "Extensible Provisioning Protocol (EPP) Host Mapping"][RFC:5732]
 - [RFC:5733: "Extensible Provisioning Protocol (EPP) Contact Mapping"][RFC:5733]
 - [RFC:5910: "Domain Name System (DNS) Security Extensions Mapping for the Extensible Provisioning Protocol (EPP)"][RFC:5910]
+- [RFC:8807: "Login Security Extension for the Extensible Provisioning Protocol (EPP)"][RFC:8807]
 - [VeriSign: "Balance Mapping for the Extensible Provisioning Protocol (EPP)"][VeriSignEppBalance]
 - [xmlsoft.org: xmllint][xmllint]
 - [Punktum dk EPP Service Specification][DKHMEPPSPEC]
@@ -297,6 +318,7 @@ It will then either omit an error message or the success message: `your_file.xml
 [RFC:5732]: https://tools.ietf.org/html/rfc5732
 [RFC:5733]: https://tools.ietf.org/html/rfc5733
 [RFC:5910]: https://tools.ietf.org/html/rfc5910
+[RFC:8807]: https://tools.ietf.org/html/rfc8807
 [VeriSignEppBalance]: https://www.verisign.com/assets/epp-sdk/verisign_epp-extension_balance_v01.html
 [xmllint]: http://xmlsoft.org/xmllint.html
 [DKHMEPPSPEC]: https://github.com/DK-Hostmaster/epp-service-specification

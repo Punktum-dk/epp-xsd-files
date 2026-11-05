@@ -11,10 +11,10 @@
       </domain:creData>
     </resData>
     <extension>
-      <dkhm-domain:creData xmlns:dkhm-domain="urn:dkhm:params:xml:ns:dkhm-domain-5.0">
-        <dkhm-domain:trackingNo>1234567</dkhm-domain:trackingNo>
-        <dkhm-domain:riskAssessment>green</dkhm-domain:riskAssessment>
-      </dkhm-domain:creData>
+      <dotdk-domain:creData xmlns:dotdk-domain="urn:dotdk:params:xml:ns:dotdk-domain-5.0">
+        <dotdk-domain:trackingNo>1234567</dotdk-domain:trackingNo>
+        <dotdk-domain:riskAssessment>green</dotdk-domain:riskAssessment>
+      </dotdk-domain:creData>
     </extension>
     <trID>
       <clTRID>92724843f12a3e958588679551aa988d</clTRID>

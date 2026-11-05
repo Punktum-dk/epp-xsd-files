@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0 epp-1.0.xsd">
+  <response>
+    <result code="1301">
+      <msg>Command completed successfully; ack to dequeue</msg>
+    </result>
+    <msgQ count="1" id="6824622">
+      <qDate>2026-03-26T23:25:15.0Z</qDate>
+      <msg>The name server ns1.punktum.dk has been registered, as the registrant has approved it</msg>
+    </msgQ>
+    <resData>
+      <host:panData xmlns:host="urn:ietf:params:xml:ns:host-1.0">
+        <host:name paResult="1">ns1.punktum.dk</host:name>
+        <host:paTRID>
+          <clTRID>370a2037-66a7-49ea-99a3-0e38015c7721</clTRID>
+          <svTRID>A79425BE-8F21-11F1-8EDE-05474682B364</svTRID>
+        </host:paTRID>
+        <host:paDate>2026-03-26T23:25:15.0Z</host:paDate>
+      </host:panData>
+    </resData>
+    <trID>
+      <clTRID>52f735724ba84ee9b022a2298277f133</clTRID>
+      <svTRID>D1206E93-A2DB-746A-E065-000000000202</svTRID>
+    </trID>
+  </response>
+</epp>
