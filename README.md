@@ -54,6 +54,7 @@ by their respective authors, please refer to the RFCs for more information.
 - `host-1.0.xsd` [RFC:5732]
 - `secDNS-1.0.xsd` [RFC:4310]
 - `secDNS-1.1.xsd` [RFC:5910]
+- `loginSec-1.0.xsd` [RFC:8807]
 - `verisign-epp-balance` [VeriSign EPP Balance][VeriSignEPPBalance]
 - `rgp-1.0.xsd` [RFC:3915]
 
@@ -143,6 +144,8 @@ Most examples exist in both `xml/v4` and `xml/v5` with the same name. Two script
   - Adding `riskAssessment` in `creData` (PM-1364), so the create response no longer needs a poll message for it.
   - Booleans are `xs:boolean`, so `true`, `false`, `1` and `0` are valid.
 - Host (`dotdk-host-5.0`): `requestedNsAdmin` in `create` and `update`.
+- Login Security Extension [RFC:8807] (`loginSec-1.0.xsd`) is included, so a client can send a password longer than 16 characters in `loginSec:pw` and `loginSec:newPW` with the constant `[LOGIN-SECURITY]` in `pw` and `newPW`. The server announces it with the `extURI` `urn:ietf:params:xml:ns:epp:loginSec-1.0`.
+- The `pwType` change in `epp-1.0.xsd` from 4.x (see 2.1) is rolled back to [RFC:5730] (6 to 16 characters).
 - Removed: the `withdraw` command, and (pending confirmation in PM-1621, PM-1480 and PM-1481) `domain_confirmed`, `url`, `authInfoExDate` and `delDate`.
 
 <a id="45"></a>
@@ -302,6 +305,7 @@ Most examples exist in both `xml/v4` and `xml/v5` with the same name. Two script
 - [RFC:5732: "Extensible Provisioning Protocol (EPP) Host Mapping"][RFC:5732]
 - [RFC:5733: "Extensible Provisioning Protocol (EPP) Contact Mapping"][RFC:5733]
 - [RFC:5910: "Domain Name System (DNS) Security Extensions Mapping for the Extensible Provisioning Protocol (EPP)"][RFC:5910]
+- [RFC:8807: "Login Security Extension for the Extensible Provisioning Protocol (EPP)"][RFC:8807]
 - [VeriSign: "Balance Mapping for the Extensible Provisioning Protocol (EPP)"][VeriSignEppBalance]
 - [xmlsoft.org: xmllint][xmllint]
 - [Punktum dk EPP Service Specification][DKHMEPPSPEC]
@@ -314,6 +318,7 @@ Most examples exist in both `xml/v4` and `xml/v5` with the same name. Two script
 [RFC:5732]: https://tools.ietf.org/html/rfc5732
 [RFC:5733]: https://tools.ietf.org/html/rfc5733
 [RFC:5910]: https://tools.ietf.org/html/rfc5910
+[RFC:8807]: https://tools.ietf.org/html/rfc8807
 [VeriSignEppBalance]: https://www.verisign.com/assets/epp-sdk/verisign_epp-extension_balance_v01.html
 [xmllint]: http://xmlsoft.org/xmllint.html
 [DKHMEPPSPEC]: https://github.com/DK-Hostmaster/epp-service-specification
